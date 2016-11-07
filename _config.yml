@@ -1,0 +1,33 @@
+# Dependencies
+markdown:         kramdown
+highlighter:      pygments
+
+# Permalinks
+permalink:        none
+#relative_permalinks: true #stringa originale
+relative_permalinks: false
+
+# Setup
+title:            limulo
+tagline:          'sound design and coding'
+description:      'sound design and coding'
+url:              http://www.limulo.net
+baseurl:          /
+
+author:
+  name:           limulo.net
+  url:            https://twitter.com/Limulo_lab
+
+#paginate:         5
+
+comments:         true
+subcategory:      true
+
+gems:
+  - jekyll-paginate
+
+# Custom vars
+version:          2.1.0
+github:
+  repo:           https://github.com/poole/hyde
+thumbnail:
