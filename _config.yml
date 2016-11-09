@@ -8,14 +8,14 @@ permalink:        none
 relative_permalinks: false
 
 # Setup
-title:            limulo
+title: limulo
 tagline:          'sound design and coding'
 description:      'sound design and coding'
 url:              http://www.limulo.net
 baseurl:          /
 
 author:
-  name:           limulo.net
+  name: limulo.net
   url:            https://twitter.com/Limulo_lab
 
 #paginate:         5
