@@ -16,6 +16,7 @@ Seriuosly, we're huge fans of free software, open source and free sharing of ide
 <hr />
 
 <div> <!-- SHORTCUTs images -->
+
 {% for post in site.posts %}
 {% if post.shortcut %}
 <a href="{{ post.url }}">

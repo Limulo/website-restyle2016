@@ -1,33 +1,32 @@
 # Dependencies
-markdown:         kramdown
-highlighter:      pygments
+markdown: kramdown
+highlighter: pygments
 
 # Permalinks
-permalink:        none
+permalink: none
 #relative_permalinks: true #stringa originale
 relative_permalinks: false
 
 # Setup
 title: limulo
-tagline:          'sound design and coding'
-description:      'sound design and coding'
-url:              http://www.limulo.net
-baseurl:          /
+tagline: 'sound design and coding'
+description: 'sound design and coding'
+url: http://www.limulo.net
+baseurl: /
 
 author:
   name: limulo.net
-  url:            https://twitter.com/Limulo_lab
+  url: https://twitter.com/Limulo_lab
 
-#paginate:         5
+#paginate: 5
 
-comments:         true
-subcategory:      true
+comments: true
 
 gems:
   - jekyll-paginate
 
 # Custom vars
-version:          2.1.0
+version: 
 github:
-  repo:           https://github.com/poole/hyde
+  repo: https://github.com/Limulo/website-restyle2016
 thumbnail:

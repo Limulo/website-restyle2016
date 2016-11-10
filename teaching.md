@@ -4,4 +4,4 @@ layout: page
 
 # Teaching
 
-Welcome to our **Teaching** page!
+Welcome to our **teaching** page!
