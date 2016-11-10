@@ -9,19 +9,23 @@ For this particular restyle we are using a Jekyll theme called [**Hyde**](http:/
 ## How to create a page
 If you want the page to appears inside the sidebar you have to give that page a **front matter** like the one shown below
 
-  ---
-  layout: page
-  title: myAwsomwTitle
-  ---
+```
+	---
+	layout: page
+	title: myAwsomwTitle
+	---
+```
 
 where you explicitly define the title for the page.
 
 If you don't want your page to appear in the sidebar, simply put the title of the page outside the **front matter**:
 
-  ---
-  layout: page
-  ---
-  # myAwsomwTitle
+```
+	---
+  	layout: page
+  	---
+	# myAwsomwTitle
+```
 
 ## How to create a post
 
@@ -34,11 +38,11 @@ to create a post put relevant information inside the **front matter** such as:
 
 A post cannot avoid having at least one **category** since categories provides the site navigation logic. If you want your post to have more than one category, simply put all of them inside square brackets, comma separeted. For example:
 
-  category: [installation, issue]
+ 	category: [installation, issue]
 
 A post can also have a shortcut image that will be shown at the bottom of the **homepage**.
 
-  shortcut: shortcut-jags.png
+	shortcut: shortcut-jags.png
 
 If you don't specified a dedicated image for the post, the post will be given a default image accoring to its belonging to a particular category.
 
