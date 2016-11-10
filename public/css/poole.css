@@ -448,3 +448,14 @@ hr.clear {
   padding: .5em;
   text-align: center;
 }
+
+.table-custom {
+  border: none;
+  width: 100%;
+}
+.table-custom tbody td {
+ border: none;
+ background-color: #fff !important;
+ text-align: center;
+}
+
