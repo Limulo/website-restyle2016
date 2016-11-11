@@ -1,13 +1,12 @@
 ---
 layout: page
+title: Games
 ---
-
-# Games
 
 Welcome to our **Games** page!
 
 
-## Tools and Techiques 
+## Tools and Techiques
 
 What we have understood about videogames working principles:
 

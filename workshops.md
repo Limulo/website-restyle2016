@@ -1,8 +1,7 @@
 ---
 layout: page
+title: Workshops & Teachings
 ---
-
-# Workshops & Teachings
 
 Welcome to our **workshops** and **teaching** page!
 

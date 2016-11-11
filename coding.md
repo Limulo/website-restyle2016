@@ -1,8 +1,7 @@
 ---
 layout: page
+title: Coding
 ---
-
-# Coding
 
 Welcome to our **coding** page!
 

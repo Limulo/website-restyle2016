@@ -1,7 +1,6 @@
 ---
 layout: page
+title: Events
 ---
-
-# Events
 
 Welcome to our **events** page!

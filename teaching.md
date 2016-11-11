@@ -1,7 +1,6 @@
 ---
 layout: page
+title: Teaching
 ---
-
-# Teaching
 
 Welcome to our **teaching** page!

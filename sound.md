@@ -1,8 +1,7 @@
 ---
 layout: page
+title: Sound
 ---
-
-# Sound
 
 Welcome to our sound design page. Here's a collection of all our sound design works, including sound samples, videos, sound tools and articles about sound and sound design techniques.
 

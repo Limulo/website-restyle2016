@@ -1,7 +1,5 @@
 ---
 layout: page
+title: Writings
 ---
-
-# Writings
-
 Welcome to our **writings** page!

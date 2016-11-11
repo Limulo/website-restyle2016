@@ -17,7 +17,20 @@ Seriuosly, we're huge fans of free software, open source and free sharing of ide
 
 <div> <!-- SHORTCUTs images -->
 
-{% for post in site.posts %}
+
+{% for page in site.pages %} <!-- SHORTCUTs delle pagine -->
+{% if page.shortcut %}
+<a href="{{ page.url }}">
+  <img src="{{site.url}}/assets/images/shortcuts/{{ page.shortcut }}"
+     class="shortcut-image"
+     alt="{{ page.title }}"
+     title="{{ page.title }}" />
+</a>
+{% endif %}
+{% endfor %}
+
+
+{% for post in site.posts %}<!-- SHORTCUTs dei post -->
 {% if post.shortcut %}
 <a href="{{ post.url }}">
   <img src="{{site.url}}/assets/images/shortcuts/{{ post.shortcut }}"
@@ -27,6 +40,7 @@ Seriuosly, we're huge fans of free software, open source and free sharing of ide
 </a>
 {% endif %}
 {% endfor %}
+
 </div>
 
 <!-- La parte sottostante è da eliminare

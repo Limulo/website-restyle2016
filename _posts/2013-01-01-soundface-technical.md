@@ -1,44 +1,11 @@
 ---
 layout: post
-title: SoundFace
+title: SoundFace - technicals
 date: 2016-10-22 09:31:00
-excerpt: An interactive musical surface!
-category: [installation]
-shortcut: shortcut-soundface.png
+category: [installation, soundface]
+excerpt: technical details about soundface
 ---
 
-The **long story short**: it's an interactive tangible surface. Like a table. It's possible to interact with the surface by placing little objects with different shapes upon it.
-
-[![soundface](/assets/images/soundface/introduzione/orizzontale.jpg)]({{site.url}}/assets/images/soundface/introduzione/orizzontale.jpg)
-
-Every object is associated with a sound and and image. The surface reacts creating graphics and sounds in real time.
-
-![soundface players](/assets/images/soundface/introduzione/players_1.jpg){: width="100%"}
-
-{% comment %}
-[![soundface players](/assets/images/soundface/introduzione/giocatori-1.jpg"){: width="100%"}]({{site.url}}/assets/images/soundface/introduzione/giocatori-1.jpg") | [![soundface players](/assets/images/soundface/introduzione/giocatori-3.jpg"){: width="100%"}]({{site.url}}/assets/images/soundface/introduzione/giocatori-3.jpg")
-{% endcomment %}
-
-The software has been developed using **openFrameworks** libraries with some external addons, such as _ofxTUIO_ and _ofxOSC_. The audio is procedurally produced by a **Pure Data** patch we specifically developed.
-
-<iframe width="100%" height="360" src="http://www.youtube.com/embed/0xcAOFFxWuc" allowfullscreen></iframe>
-
----
-
-TO BE MOVED TO ANOTHER PAGE OR SECTION:
-
-Theory and practice of the "Soundface" project
-
-* [Soundface - last ver.]()
-
-The developement and prototyping steps:
-
-* [First prototypes]()
-* [Step 1: "the assembly"]()
-* [Step 2: "the setup: the camera"]()
-* [lighting, little disks, the projector and mirrors!]()
-* ["The tests -  how not to be defeated by discourage"]()
-* [The projector and the dimming fabric]()
 
 ### Hardware
 
