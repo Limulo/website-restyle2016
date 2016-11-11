@@ -7,6 +7,26 @@ category: [installation]
 shortcut: shortcut-soundface.png
 ---
 
+The **long story short**: it's an interactive tangible surface. Like a table. It's possible to interact with the surface by placing little objects with different shapes upon it.
+
+[![soundface](/assets/images/soundface/introduzione/orizzontale.jpg)]({{site.url}}/assets/images/soundface/introduzione/orizzontale.jpg)
+
+Every object is associated with a sound and and image. The surface reacts creating graphics and sounds in real time.
+
+![soundface players](/assets/images/soundface/introduzione/players_1.jpg){: width="100%"}
+
+{% comment %}
+[![soundface players](/assets/images/soundface/introduzione/giocatori-1.jpg"){: width="100%"}]({{site.url}}/assets/images/soundface/introduzione/giocatori-1.jpg") | [![soundface players](/assets/images/soundface/introduzione/giocatori-3.jpg"){: width="100%"}]({{site.url}}/assets/images/soundface/introduzione/giocatori-3.jpg")
+{% endcomment %}
+
+The software has been developed using **openFrameworks** libraries with some external addons, such as _ofxTUIO_ and _ofxOSC_. The audio is procedurally produced by a **Pure Data** patch we specifically developed.
+
+<iframe width="100%" height="360" src="http://www.youtube.com/embed/0xcAOFFxWuc" allowfullscreen></iframe>
+
+---
+
+TO BE MOVED TO ANOTHER PAGE OR SECTION:
+
 Theory and practice of the "Soundface" project
 
 * [Soundface - last ver.]()
@@ -20,50 +40,28 @@ The developement and prototyping steps:
 * ["The tests -  how not to be defeated by discourage"]()
 * [The projector and the dimming fabric]()
 
----
-
-## SoundFace
-
-
-The **long story short**: it's an interactive tangible surface. Like a table. It's possible to interact with the surface by placing little objects with different shapes upon it.
-
-[![soundface]({{site.url}}/assets/images/soundface/introduzione/orizzontale.jpg)]({{site.url}}/assets/images/soundface/introduzione/orizzontale.jpg)
-
-Every object is associated with a sound and and image. The surface reacts creating graphics and sounds in real time.
-
-
-![soundface players]({{site.url}}/assets/images/soundface/introduzione/players_1.jpg")
-
-{% comment %}
-[![soundface players]({{site.url}}/assets/images/soundface/introduzione/giocatori-1.jpg"){: width="100%"}]({{site.url}}/assets/images/soundface/introduzione/giocatori-1.jpg") | [![soundface players]({{site.url}}/assets/images/soundface/introduzione/giocatori-3.jpg"){: width="100%"}]({{site.url}}/assets/images/soundface/introduzione/giocatori-3.jpg")
-{% endcomment %}
-
-The software has been developed using **openFrameworks** libraries with some external addons, such as _ofxTUIO_ and _ofxOSC_. The audio is procedurally produced by a **Pure Data** patch we specifically developed.
-
-<iframe width="100%" height="360" src="http://www.youtube.com/embed/0xcAOFFxWuc" allowfullscreen></iframe>
-
 ### Hardware
 
 We said that the soundface is basically just a table. Well, yes, apparently it is. Anyway, it's also much more than this. Let's take a closer look...
 
 What's inside of it?
 
-![slide]({{site.url}}/assets/images/soundface/slide-1-tavolo_2-1024x694.png")
+![slide](/assets/images/soundface/slide-1-tavolo_2-1024x694.png")
 
 In order to visualise the graphics you need three things:
 * The projector: we use a _Acer S1210_ projector. We chose this model because it can render very big images at very small distances.
 * A transparent plexiglass PMMA sheet.
 * A _129 Heavy Frost_ sheet to be put upon the plexiglass sheet. The opacity provided by the frost let the user see what is projected from the engine underneath the surface on the plexiglass sheet
 
-![materials]({{site.url}}/assets/images/soundface/slide-2-materiali_2-1024x296.png)
+![materials](/assets/images/soundface/slide-2-materiali_2-1024x296.png)
 
-![lamps]({{site.url}}/assets/images/soundface/illuminatore-IR.jpg)
+![lamps](/assets/images/soundface/illuminatore-IR.jpg)
 
 What about the infra-red ligh spotlights?
 
 We placed 4 infra-red spotlights inside the table structure in order to properly radiate the infra-red light that hit the objects on the surface.
 
-![camera]({{site.url}}/assets/images/soundface/telecamera.jpg)
+![camera](/assets/images/soundface/telecamera.jpg)
 
 The infra-red light, after being bounced from the objects on the surface, is intercepted by the camera.
 
@@ -72,11 +70,10 @@ We removed the ps3Eye IR filter and we replaced it with a visible light filter (
 
 We also changed the ps3Eye lens, provinding it with a a wide-angle lens. This new lens allows peripheral vision and we can reduce the distance among the plexiglass sheet and the camera.
 
-![visible-IR-light]({{site.url}}/assets/images/soundface/visible-IR-light.jpg)
+![visible-IR-light](/assets/images/soundface/visible-IR-light.jpg)
 
 Visible light domain | Infra-red light domain
 Reception of the image related to the surface status | Projection of a graphic interface concordant with the surface statuse
-
 
 For more details about infra-red lighting, take a look at this site: [lucidscience.com](http://www.lucidscience.com/tut-invisible%20light%20basics-1.aspx)
 
@@ -88,7 +85,7 @@ As a precaution, to provide a proper air flow inside the table we mounted two fa
 Before implementing the '4 IR spotlights + camera' solution, we experimented other 'lighting and sensing' setups.
 First, we tried  a surveillance IR camera with an integrated IR spothlight circuit (implemented in **Prototype #2**). Then we attempted to create a specific circuit implementing a 555 timer IC to create a pulsating IR light spotlight with some IR LEDs.
 
-![555]({{site.url}}/assets/images/soundface/circuito-555.jpg)
+![555](/assets/images/soundface/circuito-555.jpg)
 
 Due to many problems arising from these setups, we finally decided to implement the current solution.
 
@@ -99,7 +96,7 @@ We can create an analogy among the visible light - IR light domains and the clie
 By "Client" we mean an application demanding a service. By "Server" we mean an application which can supply the service.
 Basically: the client asks the server a service -> the server identifies the client and supplies the service -> the client confirms the reception of the service to the server.
 
-![client & server]({{site.url}}/assets/images/soundface/client-e-server.jpg)
+![client & server](/assets/images/soundface/client-e-server.jpg)
 
 There are two main protocols to communicate between Client and Server. They both fulfill different and specific tasks:
 
@@ -176,7 +173,7 @@ There are other protocols which specify the format and the type of the data they
 
 In more detail, here are the TUIO v1.1 (the one we use in our project) specs:
 
-![tuio]({{site.url}}/assets/images/logos/tuio-logo.jpg){: width="20%;"}
+![tuio](/assets/images/logos/tuio-logo.jpg){: width="20%;"}
 
 This is the structure of a TUIO message:
 [src] / [alive] / [set] / [fseq]
@@ -192,7 +189,7 @@ The TUIO protocol has been developed by M. Kaltenbrunner, T. Bovermann, R. Benci
 
 The TUIO protocol is the [ReacTIVision](http://reactivision.sourceforge.net/) core. ReacTIVision is a server software that eases the creation and dispatch of properly formatted messages within interactive applications.
 
-![reacTIVision]({{site.url}}/assets/images/logos/reactivision-logo.jpg){: width="20%;"}
+![reacTIVision](/assets/images/logos/reactivision-logo.jpg){: width="20%;"}
 
 What are Fiducial markers? They are symbols/images easily and uniquely recognizable by a computer vision system.
 
@@ -204,12 +201,12 @@ What are Fiducial markers? They are symbols/images easily and uniquely recogniza
 
 * [d-touch](https://d-touch.org/) - generic fiducial markers. The markers discrimination is done on the basis of a topological analysis (black areas with white spots and viceversa);
 
-![dtouch 0]({{site.url}}/assets/images/soundface/dtouch-0.jpg)
+![dtouch 0](/assets/images/soundface/dtouch-0.jpg)
 
-![a]({{site.url}}/assets/images/soundface/dtouch-a.jpg) | ![b]({{site.url}}/assets/images/soundface/dtouch-b.jpg) | ![c]({{site.url}}/assets/images/soundface/dtouch-c.jpg)
+![a](/assets/images/soundface/dtouch-a.jpg) | ![b](/assets/images/soundface/dtouch-b.jpg) | ![c](/assets/images/soundface/dtouch-c.jpg)
 
 
-![d]({{site.url}}/assets/images/soundface/dtouch-cards.jpg)
+![d](/assets/images/soundface/dtouch-cards.jpg)
 
 {% comment %}
 <table>
@@ -240,11 +237,11 @@ What are Fiducial markers? They are symbols/images easily and uniquely recogniza
 
 * [Amoeba](http://reactivision.sourceforge.net/) - d-touch improvement. Amoeba has been created by a genetic algorithm to fulfill the proper space and efficency needs of the [Reactable](http://www.reactable.com/) project.
 
-![0]({{site.url}}/assets/images/soundface/amoeba-0.jpg)
+![0](/assets/images/soundface/amoeba-0.jpg)
 
-![1]({{site.url}}/assets/images/soundface/amoeba-1.jpg) | ![2]({{site.url}}/assets/images/soundface/amoeba-2.jpg) | ![3]({{site.url}}/assets/images/soundface/amoeba-3.jpg)
+![1](/assets/images/soundface/amoeba-1.jpg) | ![2](/assets/images/soundface/amoeba-2.jpg) | ![3](/assets/images/soundface/amoeba-3.jpg)
 
-![abcd]({{site.url}}/assets/images/soundface/amoeba-abcd.jpg)
+![abcd](/assets/images/soundface/amoeba-abcd.jpg)
 
 {% comment %}
 <table class="img">
@@ -272,20 +269,19 @@ What are Fiducial markers? They are symbols/images easily and uniquely recogniza
 </tr>
 </tbody>
 </table>
-{% endcomment %}
-
+ {% endcomment %}
 
 We have just seen that two computers (a server and a client) can communicate using specific protocols according to messages nature. Now, we investigate the physical structure that transfer data between server and client.
 
 Let's see some examples: The first one is the net (whether it's global or local), for example internet that can link two devices, no matter how distant they are.
 
-![computers]({{site.url}}/assets/images/soundface/slide-computers-1024x557.png)
+![computers](/assets/images/soundface/slide-computers-1024x557.png)
 
 The client and the server are not necessarily two physical separeted devices. The same device can work as a server and a client at the same time. In this case there will be two applications - one working as the client and the other as the server - running simultaneusly.
 
 That's our case! In our project, reacTIVision, acting as a server, dispatches TUIO messages to our custom application that is the client.
 
-![computer 2]({{site.url}}/assets/images/soundface/slide-computer-2-1024x428.png)
+![computer 2](/assets/images/soundface/slide-computer-2-1024x428.png)
 
 Ci siamo quindi concentrati sullo sviluppo del client, per il quale siamo partiti praticamente da zero.
 
@@ -305,7 +301,7 @@ Di seguito una tabella che riassume le principali caratteristiche dei nostri str
 <img src="{{site.url}}/assets/images/logos/processing-logo.jpg" alt="Processing_Logo" width="115" height="115" style="float:left;" />
 </td>
 <td style="text-align:center; vertical-align:top;" >
-[Processing](http://www.processing.org/): linguaggio e assieme IDE di programmazione. Nasce al MIT dal lavoro di Ben Fry e Casey Reas. Strumento molto versatile, veloce e facile da imparare.Purtroppo, se si rende necessario agire a basso livello per personalizzare il proprio programma, Processing non ne fornisce la possibilità.</td>
+<a href="http://www.processing.org/" target="_blank" alt="Processing">Processing</a>: linguaggio e assieme IDE di programmazione. Nasce al MIT dal lavoro di Ben Fry e Casey Reas. Strumento molto versatile, veloce e facile da imparare.Purtroppo, se si rende necessario agire a basso livello per personalizzare il proprio programma, Processing non ne fornisce la possibilità.</td>
 </tr>
 <tr>
 <td style="width: 10%">
@@ -363,11 +359,13 @@ Esistono 2 importanti addons di cui abbiamo fatto uso nel nostro progetto:
 <a class="ext" title="ofxtuio" href="https://github.com/patriciogonzalezvivo/ofxTuio" target="_blank">ofxTuio</a> è sviluppato da patriciogonzalezvivo
 </p>
 
-<p>prima di proseguire vi lasciamo qui il <a href="downloads.php">link</a> alla nostra pagina dei downloads dalla quale è possibile scaricare il codice sorgente di questo progetto</p>
+## Downloads
 
-<p>Qui di seguito elenchiamo quelli che, secondo noi, sono stati degli ottimi strumenti di studio e di approfondimento per affrontare questa nostra avventura.</p>
+Prima di proseguire vi lasciamo qui il [link](https://github.com/Limulo/videotavolo) al nostro repository GitHub dal quale potrete scaricare i codici sorgente del progetto.
 
-<h4>PAPERS</h4>
+Qui di seguito elenchiamo quelli che, secondo noi, sono stati degli ottimi strumenti di studio e di approfondimento per affrontare questa nostra avventura.
+
+## PAPERS
 
 <table class="dati" style="width: 100%;">
 <tbody>
@@ -441,11 +439,9 @@ Esistono 2 importanti addons di cui abbiamo fatto uso nel nostro progetto:
 </table>
 
 
-<h4>BOOKS</h4>
+## Books
 
-<div class="img">
-<img src="http://127.0.0.1/images/soundface/immagine-libri_v2_mod-1024x483.png" alt="reference books"/>
-</div>
+![books](/assets/images/soundface/immagine-libri_v2_mod-1024x483.png)
 
 <p>J. Kreidler, “<strong>loadbang</strong>”, 2009, wolke - un bel libro, leggero e veloce per imparare Pure Data.</p>
 <p>
@@ -459,12 +455,7 @@ J. Noble, ”<strong>Interactivity</strong>”, 2009, O'Reilly - Un libro intere
 <p>
 D. Shiffman, ”<strong>Learning Processing</strong>”, 2008, Morgan Kaufmann - Libro fantastico, simpatico, brillante, divertente per imparare a programmare in Processing. Bellissimo, come tutti gli altri lavori dell'autore.</p>
 
-
-    <footer>
-    <div class="firma">http://www.limulo.net</div>
-    <a class="top" href="#indice">torna all'indice</a>
-    </footer>
-    </article>
+---
 
 
     <!-- ARTICOLO -->
