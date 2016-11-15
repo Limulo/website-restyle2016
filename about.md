@@ -4,12 +4,10 @@ title: About
 nav: true
 ---
 
-Welcome to our **About** page!
-
-We are:
+Welcome to our **About** page! We are:
 
 <div>
-<img src="{{site.url}}/assets/images/about/valentina.png" alt="" style="float:left; width:40%; padding:2em;"/>
+<img src="{{site.url}}/assets/images/about/valentina.png" alt="" style="float:left; width:40%; padding:0; margin-right: 2em;"/>
 <h2>Valentina Lorè</h2>
 
 <p>I've studied as sound engineer for two years,  getting both a diploma  and a B.A. Hons. degree in Recording Arts.
@@ -29,7 +27,7 @@ I'm well versed in multimedia and interactive arts, music industry, video and so
 
 
 <div>
-<img src="{{site.url}}/assets/images/about/nicola.png" alt="" style="float:right; width:40%; padding:2em;"/>
+<img src="{{site.url}}/assets/images/about/nicola.png" alt="" style="float:right; width:40%; padding:0; margin-left: 2em;"/>
 <h2>Nicola Ariutti</h2>
 
 <p>I’m a sound designer and a sound editor with experience in creating brand new sounds for cartoons, videos, commercials,

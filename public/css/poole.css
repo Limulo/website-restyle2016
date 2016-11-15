@@ -230,7 +230,8 @@ blockquote p:last-child {
 img {
   display: block;
   max-width: 100%;
-  margin: 0 0 1rem;
+  /*margin: 0 0 1rem;*/
+  margin: auto;
   border-radius: 5px;
 }
 
@@ -432,7 +433,8 @@ a.pagination-item:hover {
 
 /* nuove regole, aggiunte il 1 Nov 2016 */
 .shortcut-image {
-	margin: 0.25em;
+	margin-right: 0.7em;
+  padding: 0em;
 	float: left;
 }
 
@@ -458,4 +460,3 @@ hr.clear {
  background-color: #fff !important;
  text-align: center;
 }
-

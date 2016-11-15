@@ -9,17 +9,23 @@ category: [installation]
 
 **Long story short**: it's an interactive tangible surface. Like a table. It's possible to interact with the surface by placing little objects with different shapes upon it.
 
-[![soundface](/assets/images/soundface/introduzione/orizzontale.jpg)]({{site.url}}/assets/images/soundface/introduzione/orizzontale.jpg)
+[![soundface](/assets/images/soundface/teaser/orizzontale.jpg)]({{site.url}}/assets/images/soundface/teaser/orizzontale.jpg)
 
-Every object is associated with a sound and and image. The surface reacts creating graphics and sounds in real time.
+Every object is associated with a sound and and image.
 
-![soundface players](/assets/images/soundface/introduzione/players_1.jpg){: width="100%"}
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/tiX9etAAEcI" frameborder="0" allowfullscreen></iframe>
 
-{% comment %}
-[![soundface players](/assets/images/soundface/introduzione/giocatori-1.jpg"){: width="100%"}]({{site.url}}/assets/images/soundface/introduzione/giocatori-1.jpg") | [![soundface players](/assets/images/soundface/introduzione/giocatori-3.jpg"){: width="100%"}]({{site.url}}/assets/images/soundface/introduzione/giocatori-3.jpg")
-{% endcomment %}
+The surface reacts creating graphics and sounds in real time.
 
-The software has been developed using **openFrameworks** libraries with some external addons, such as _ofxTUIO_ and _ofxOSC_. The audio is procedurally produced by a **Pure Data** patch we specifically developed.
+![red haired girl](/assets/images/soundface/teaser/P1020359.jpg){: width="100%"} | ![CMYK elk](/assets/images/soundface/teaser/P1020363.jpg){: width="100%"}
+
+![hands on](/assets/images/soundface/teaser/P1020308.jpg){: width="100%"}
+
+The software has been developed using **openFrameworks** libraries with some external addons, such as _ofxTUIO_ and _ofxOSC_.
+
+![ohibo](/assets/images/soundface/teaser/IMG_1802_marked.jpg)
+
+The audio is procedurally produced by a **Pure Data** patch we specifically developed.
 
 <iframe width="100%" height="360" src="http://www.youtube.com/embed/0xcAOFFxWuc" allowfullscreen></iframe>
 

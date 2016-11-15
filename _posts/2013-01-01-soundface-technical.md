@@ -6,35 +6,33 @@ category: [installation, soundface]
 excerpt: technical details about soundface
 ---
 
-
 ### Hardware
 
-The soundface is basically just a table. Well, apparently it is. Actually, it's also much more than this. 
+The soundface is basically just a table. Well, apparently it is. Actually, it's also much more than this.
 Let's take a closer look...
 
-
-![slide](/assets/images/soundface/slide-1-tavolo_2-1024x694.png")
+![slide](/assets/images/soundface/technical/slide-1-tavolo_2-1024x694.png)
 
 In order to visualise the graphics you need three elements:
-* The projector: we use a _Acer S1210_ projector. 
+* The projector: we use a _Acer S1210_ projector.
 
 We chose this model because it can render very big images at very small distances.
 
 * A transparent plexiglass PMMA sheet.
 
-* A _129 Heavy Frost_ sheet to be put upon the plexiglass sheet. 
+* A _129 Heavy Frost_ sheet to be put upon the plexiglass sheet.
 
-The opacity provided by the frost let the user see on the plexiglass sheet what is projected from the engine underneath the surface 
+The opacity provided by the frost let the user see on the plexiglass sheet what is projected from the engine underneath the surface
 
-![materials](/assets/images/soundface/slide-2-materiali_2-1024x296.png)
+![materials](/assets/images/soundface/technical/slide-2-materiali_2-1024x296.png)
 
-![lamps](/assets/images/soundface/illuminatore-IR.jpg)
+![lamps](/assets/images/soundface/technical/illuminatore-IR.jpg)
 
 Now, let's consider the infra-red ligh spotlights.
 
 We placed 4 of them inside the table structure in order to properly radiate the infra-red light to capture the objects on the surface.
 
-![camera](/assets/images/soundface/telecamera.jpg)
+![camera](/assets/images/soundface/technical/telecamera.jpg)
 
 The infra-red light, after being bounced from the objects on the surface, is intercepted by the camera.
 
@@ -43,7 +41,7 @@ We removed the ps3Eye IR filter and we replaced it with a visible light filter (
 
 We also changed the ps3Eye lens, provinding it with a a wide-angle lens. This new lens allows peripheral vision and we can reduce the distance among the plexiglass sheet and the camera.
 
-![visible-IR-light](/assets/images/soundface/visible-IR-light.jpg)
+![visible-IR-light](/assets/images/soundface/technical/visible-IR-light.jpg)
 
 Visible light domain | Infra-red light domain
 Reception of the image related to the surface status | Projection of a graphic interface concordant with the surface statuse
@@ -58,7 +56,7 @@ As a precaution, we mounted two fans to provide a proper air flow inside the tab
 Before implementing the '4 IR spotlights + camera' solution, we experimented other 'lighting and sensing' setups.
 First, we tried  a surveillance IR camera with an integrated IR spothlight circuit (implemented in **Prototype #2**). Then we attempted to create a specific circuit implementing a 555 timer IC to create a pulsating IR light spotlight with some IR LEDs.
 
-![555](/assets/images/soundface/circuito-555.jpg)
+![555](/assets/images/soundface/technical/circuito-555.jpg)
 
 Due to many problems arising from these setups, we finally decided to implement the current solution.
 
@@ -69,7 +67,7 @@ The software structure relies on a client-server architecture
 By "Client" we mean an application demanding a service. By "Server" we mean an application that can supply the service.
 Basically: the client asks the server a service. The server identifies the client and supplies the service. Eventually the client confirms the reception of the service to the server.
 
-![client & server](/assets/images/soundface/client-e-server.jpg)
+![client & server](/assets/images/soundface/technical/client-e-server.jpg)
 
 There are two main communictaion protocols between Client and Server. They both fulfill specific tasks:
 
@@ -172,38 +170,38 @@ Fiducial markers are symbols/images easily and uniquely recognizable by a comput
 
 * [ARToolKit](http://www.hitl.washington.edu/artoolkit/) - Augmented Reality fiducial markers;
 
-![ARToolkit fids]({{site.url}}/assets/images/soundface/ARToolkit.jpg)
+![ARToolkit fids]({{site.url}}/assets/images/soundface/technical/ARToolkit.jpg)
 
 * [d-touch](https://d-touch.org/) - generic fiducial markers. The markers discrimination is done on the basis of a topological analysis (black areas with white spots and viceversa);
 
-![dtouch 0](/assets/images/soundface/dtouch-0.jpg)
+![dtouch 0](/assets/images/soundface/technical/dtouch-0.jpg)
 
-![a](/assets/images/soundface/dtouch-a.jpg) | ![b](/assets/images/soundface/dtouch-b.jpg) | ![c](/assets/images/soundface/dtouch-c.jpg)
+![a](/assets/images/soundface/technical/dtouch-a.jpg) | ![b](/assets/images/soundface/technical/dtouch-b.jpg) | ![c](/assets/images/soundface/technical/dtouch-c.jpg)
 
 
-![d](/assets/images/soundface/dtouch-cards.jpg)
+![d](/assets/images/soundface/technical/dtouch-cards.jpg)
 
 {% comment %}
 <table>
 <tbody>
 <tr>
-<td colspan="3" style="text-align:center; vertical-align:top;" ><img src="{{site.url}}/assets/images/soundface/dtouch-0.jpg" alt="Schermata 2013-10-19 a 18.32.33"/>
+<td colspan="3" style="text-align:center; vertical-align:top;" ><img src="{{site.url}}/assets/images/soundface/technical/dtouch-0.jpg" alt="Schermata 2013-10-19 a 18.32.33"/>
 </td>
 </tr>
 <tr>
 <td style="width: 33%;">
-<img src="{{site.url}}/assets/images/soundface/dtouch-a.jpg" alt="a" />
+<img src="{{site.url}}/assets/images/soundface/technical/dtouch-a.jpg" alt="a" />
 </td>
 <td style="width: 33%;">
-<img src="{{site.url}}/assets/images/soundface/dtouch-b.jpg" alt="b" />
+<img src="{{site.url}}/assets/images/soundface/technical/dtouch-b.jpg" alt="b" />
 </td>
 <td style="width: 33%;">
-<img src="{{site.url}}/assets/images/soundface/dtouch-c.jpg" alt="c" />
+<img src="{{site.url}}/assets/images/soundface/technical/dtouch-c.jpg" alt="c" />
 </td>
 </tr>
 <tr>
 <td colspan="3" style="text-align:center; vertical-align:top;" >
-<img src="{{site.url}}/assets/images/soundface/cards.png" alt="cards" style="width: 60%;"/>
+<img src="{{site.url}}/assets/images/soundface/technical/cards.png" alt="cards" style="width: 60%;"/>
 </td>
 </tr>
 </tbody>
@@ -212,34 +210,34 @@ Fiducial markers are symbols/images easily and uniquely recognizable by a comput
 
 * [Amoeba](http://reactivision.sourceforge.net/) - d-touch improvement. Amoeba has been created by a genetic algorithm to fulfill the proper space and efficency needs of the [Reactable](http://www.reactable.com/) project.
 
-![0](/assets/images/soundface/amoeba-0.jpg)
+![0](/assets/images/soundface/technical/amoeba-0.jpg)
 
-![1](/assets/images/soundface/amoeba-1.jpg) | ![2](/assets/images/soundface/amoeba-2.jpg) | ![3](/assets/images/soundface/amoeba-3.jpg)
+![1](/assets/images/soundface/technical/amoeba-1.jpg) | ![2](/assets/images/soundface/technical/amoeba-2.jpg) | ![3](/assets/images/soundface/technical/amoeba-3.jpg)
 
-![abcd](/assets/images/soundface/amoeba-abcd.jpg)
+![abcd](/assets/images/soundface/technical/amoeba-abcd.jpg)
 
 {% comment %}
 <table class="img">
 <tbody>
 <tr>
 <td colspan="3" style="text-align:center; vertical-align:top;" >
-<img src="{{site.url}}/assets/images/soundface/Schermata-2013-10-19-a-18.34.28-1024x189.png" alt="Schermata 2013-10-19 a 18.34.28" />
+<img src="{{site.url}}/assets/images/soundface/technical/Schermata-2013-10-19-a-18.34.28-1024x189.png" alt="Schermata 2013-10-19 a 18.34.28" />
 </td>
 </tr>
 <tr>
 <td colspan="3" style="text-align:center; vertical-align:top;" >
-<img src="{{site.url}}/assets/images/soundface/Schermata-2013-10-19-a-18.33.34.png" alt="Schermata 2013-10-19 a 18.33.34"/>
+<img src="{{site.url}}/assets/images/soundface/technical/Schermata-2013-10-19-a-18.33.34.png" alt="Schermata 2013-10-19 a 18.33.34"/>
 </td>
 </tr>
 <tr>
 <td style="width: 33%;">
-<img src="{{site.url}}/assets/images/soundface/Schermata-2013-10-19-a-18.43.13.png" alt="Schermata 2013-10-19 a 18.43.13"/>
+<img src="{{site.url}}/assets/images/soundface/technical/Schermata-2013-10-19-a-18.43.13.png" alt="Schermata 2013-10-19 a 18.43.13"/>
 </td>
 <td style="width: 33%;">
-<img src="{{site.url}}/assets/images/soundface/Schermata-2013-10-19-a-18.43.03.png" alt="Schermata 2013-10-19 a 18.43.03"/>
+<img src="{{site.url}}/assets/images/soundface/technical/Schermata-2013-10-19-a-18.43.03.png" alt="Schermata 2013-10-19 a 18.43.03"/>
 </td>
 <td style="width: 33%;">
-<img src="{{site.url}}/assets/images/soundface/Schermata-2013-10-19-a-18.43.33.png" alt="Schermata 2013-10-19 a 18.43.33"/>
+<img src="{{site.url}}/assets/images/soundface/technical/Schermata-2013-10-19-a-18.43.33.png" alt="Schermata 2013-10-19 a 18.43.33"/>
 </td>
 </tr>
 </tbody>
@@ -248,18 +246,18 @@ Fiducial markers are symbols/images easily and uniquely recognizable by a comput
 
 let's now investigate the physical structure that transfer data between a server and a client.
 
-Here are some examples: 
+Here are some examples:
 
 * the **net** (whether global or local), for example internet that can link two devices, no matter how distant they are.
 
-![computers](/assets/images/soundface/slide-computers-1024x557.png)
+![computers](/assets/images/soundface/technical/slide-computers-1024x557.png)
 
 * the client and the server are not necessarily two physical separeted devices. The same device can work as a server and a client at the same time. In this case there will be two applications - one working as the client and the other as the server - running simultaneusly.
 
 
 The latter is our case! In our project, reacTIVision, acting as a server, dispatches TUIO messages to our custom application that is the client.
 
-![computer 2](/assets/images/soundface/slide-computer-2-1024x428.png)
+![computer 2](/assets/images/soundface/technical/slide-computer-2-1024x428.png)
 
 
 We use Reactivision on the server side, so we focused on the client side developement.
@@ -292,7 +290,7 @@ To examine in depth procedural audio, follow [Andy Farnell](http://obiwannabe.co
 <img src="{{site.url}}/assets/images/logos/openframeworks-logo.jpg" alt="ofw-logo" width="114" height="60" />
 </td>
 <td style="text-align:left; vertical-align:top;" >
-<a class="ext" title="OpenFrameworks" href="http://www.openframeworks.cc/" target="_blank">OpenFrameworks</a>: 
+<a class="ext" title="OpenFrameworks" href="http://www.openframeworks.cc/" target="_blank">OpenFrameworks</a>:
 It'a set of utilities libraries that embed Processing easiness within C/C++ completeness.
 Just like processing, it's a comunity developed project, suited for the main OSes (Linux, OSX, windows, ...)
 </td>
@@ -352,7 +350,7 @@ Here's our [source code](https://github.com/Limulo/videotavolo) al nostro reposi
 </tr>
 
 <tr>
-<td style="width: 20%;">Kaltenbrunner, M.Bovermann, T.Bencina, R.Costanza, E.
+<td style="width: 20%;">Kaltenbrunner M., Bovermann T., Bencina R., Costanza E.
 </td>
 <td>"TUIO- A Protocol for Table-Top Tangible User Interfaces".Proceedings of the 6th International Workshop on Gesture in Human-Computer Interaction and Simulation (GW 2005)
 </td>
@@ -364,7 +362,7 @@ Here's our [source code](https://github.com/Limulo/videotavolo) al nostro reposi
 </tr>
 
 <tr>
-<td style="width: 20%;">Kaltenbrunner, M.Bencina, R.
+<td style="width: 20%;">Kaltenbrunner M., Bencina R.
 </td>
 <td>"reacTIVision: A Computer-Vision Framework for Table-Based Tangible Interaction".Proceedings of the first international conference on "Tangible and Embedded Interaction" (TEI07)
 </td>
@@ -375,7 +373,7 @@ Here's our [source code](https://github.com/Limulo/videotavolo) al nostro reposi
 </td>
 </tr>
 <tr>
-<td style="width: 20%;">Wright, M.Freed, A.Momeni A.
+<td style="width: 20%;">Wright M., Freed A., Momeni A.
 </td>
 <td>"OpenSound Control: State of the Art 2003".Proceedings of the 3rd Conference on New Instruments for Musical Expression (NIME 03)
 </td>
@@ -385,7 +383,7 @@ Here's our [source code](https://github.com/Limulo/videotavolo) al nostro reposi
 <a class="ext" href="http://cnmat.berkeley.edu/system/files/attachments/Open+Sound+Control-state+of+the+art.pdf" target="_blank">link</a></td>
 </tr>
 <tr>
-<td style="width: 20%;">Kaltenbrunner, M.
+<td style="width: 20%;">Kaltenbrunner M.
 </td>
 <td>"reacTIVision and TUIO: A Tangible Tabletop Toolkit".Proceedings of the ACM International Conference on Interactive Tabletops and Surfaces (ITS2009)
 </td>
@@ -396,7 +394,7 @@ Here's our [source code](https://github.com/Limulo/videotavolo) al nostro reposi
 </td>
 </tr>
 <tr>
-<td style="width: 20%;">Bencina, R.Kaltenbrunner, M.
+<td style="width: 20%;">Bencina R., Kaltenbrunner M.
 </td>
 <td>"The Design and Evolution of Fiducials for the reacTIVision System".Proceedings of the 3rd International Conference on Generative Systems in the Electronic Arts (3rd Iteration 2005)
 </td>
@@ -412,18 +410,11 @@ Here's our [source code](https://github.com/Limulo/videotavolo) al nostro reposi
 
 ## Books
 
-![books](/assets/images/soundface/immagine-libri_v2_mod-1024x483.png)
+![books](/assets/images/soundface/technical/libri.jpg)
 
-<p>J. Kreidler, “<strong>loadbang</strong>”, 2009, wolke - un bel libro, leggero e veloce per imparare Pure Data.</p>
-<p>
-A. Farnell, ”<strong>Designing Sound</strong>”, 2010, MIT Press - Ottimo libro sul sound design e sull'audio procedurale. Come valore aggiunto, uno dei principali strumenti che l'autore utilizza è Pure Data.</p>
-<p>
-Wilson, Cottle, Collins, ”<strong>The SuperCollider Book</strong>”, 2011, MIT Press - Il titolo del libro dice tutto! Un bel libro per imparare ad utilizzare Super Collider
-</p><p>
-H. Scildt, “<strong>The Complete Reference C++</strong>”, 2003, McGraw Hill - Se si desidera imparare a programmare ecco un libro veramente completo che, partendo da C passa poi a C++ coprendo ogni argomento in modo molto esaustivo.</p>
-<p>
-J. Noble, ”<strong>Interactivity</strong>”, 2009, O'Reilly - Un libro interessante tratta l'argomento interattività in genere passando da Processing, Arduino e OpenFramewoks</p>
-<p>
-D. Shiffman, ”<strong>Learning Processing</strong>”, 2008, Morgan Kaufmann - Libro fantastico, simpatico, brillante, divertente per imparare a programmare in Processing. Bellissimo, come tutti gli altri lavori dell'autore.</p>
-
-
+* J. Kreidler, “**loadbang**”, 2009, wolke;
+* A. Farnell, ”**Designing Sound**”, 2010, MIT Press;
+* Wilson, Cottle, Collins, ”**The SuperCollider Book**”, 2011, MIT Press;
+* H. Scildt, “<strong>The Complete Reference C++</strong>”, 2003, McGraw Hill;
+* J. Noble, ”**Interactivity**”, 2009, O'Reilly;
+* D. Shiffman, ”**Learning Processing**”, 2008, Morgan Kaufmann;
