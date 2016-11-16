@@ -231,7 +231,8 @@ img {
   display: block;
   max-width: 100%;
   /*margin: 0 0 1rem;*/
-  margin: auto;
+  /*margin: auto;*/
+  margin: 0em auto 1em;
   border-radius: 5px;
 }
 
