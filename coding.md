@@ -24,7 +24,7 @@ A bunch of posts related to Arduino:
 {% if post.shortcut %}
 <img src="/assets/images/shortcuts/{{post.shortcut}}" alt="{{post.title}}" class="shortcut-image"/>
 {% else %}
-<img src="/assets/images/shortcuts/shortcut-E.png" alt="{{post.title}}" class="shortcut-image"/>
+<img src="/assets/images/shortcuts/shortcut-default-coding.png" alt="{{post.title}}" class="shortcut-image"/>
 {% endif %}
 </a>
 
@@ -37,8 +37,6 @@ A bunch of posts related to Arduino:
 
 {% endif %}
 {% endfor %}
-
-cia ciao
 
 
 

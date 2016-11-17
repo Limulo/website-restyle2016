@@ -7,10 +7,12 @@ category: [sound-design, work]
 shortcut: shortcut-gardenia.png
 ---
 
-Limulo.net ha avuto l'onore di lavorare ancora una volta con **ShortCut Studio** per la realizzazione della puntata pilota della serie animata **The Gardenia Palace**.
+The Gardenia Palace is an animated cartoons series created by Nello Ferrara and produced by the ShortCut Studio based in Florence, Italy.
+
+Here you can listen to our sound effects track for the pilote episode!
 
 ![Gardenia]({{ site.url }}/assets/images/gardenia/gardenia_0.jpg){: width="100%;"}
 
-<div class="img">
-<iframe src="http://www.youtube.com/embed/ejCZ8fGYH8Q" width="640" height="360" allowfullscreen></iframe>
-</div>
+<iframe src="http://www.youtube.com/embed/ejCZ8fGYH8Q" width="100%" height="360" allowfullscreen></iframe>
+
+Here you can watch the series [teaser]({% post_url 2010-08-20-gardenia-palace-teaser %}).

@@ -48,6 +48,21 @@ If you don't specified a dedicated image for the post, the post will be given a 
 
 In this case you will not see the post listed in the homepage but you can access the post browsing its category page.  
 
+## How to create an internal link between posts
+
+[here'a link between post]({% post_url 2015-02-01-name-of-the-post %})
+
+## How to create a .png shortcut from a font awesome character
+Use [font-awesome-png-converter](https://github.com/Pythonity/icon-font-to-png), an interesting utility to convert vectorial fonts into png images.
+
+Donwload the last **Font awesome** archive and browse inside it.
+
+Use the following command to generate the `IMAGE` from the corresponding `CHARACTER`:
+
+```
+icon-font-to-png --css ../css/font-awesome.css --ttf ./fontawesome-webfont.ttf --size 110 CHARACTER --filename IMAGE
+```
+
 ## Useful links
 
 * [Liquid Syntax](https://github.com/shopify/liquid/wiki/Liquid-for-Designers);

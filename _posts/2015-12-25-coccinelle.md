@@ -4,6 +4,7 @@ title: Coccinelle - A Christmas Tale!
 date: 2015-12-25 09:00:00
 excerpt: 4 little Christmas spots!
 category: [sound-design, work]
+shortcut: shortcut-coccinelle.png
 ---
 
 Ci siamo occupati del sound design, editing, mixing e mastering per la colonna sonora effetti di 4 brevi spot pubblicitari per Coccinelle (circa 20 secondi ciascuno).

@@ -15,7 +15,7 @@ Welcome to our **workshops** and **teaching** page!
 {% if post.shortcut %}
 <img src="/assets/images/shortcuts/{{post.shortcut}}" alt="{{post.title}}" class="shortcut-image"/>
 {% else %}
-<img src="/assets/images/shortcuts/shortcut-E.png" alt="{{post.title}}" class="shortcut-image"/>
+<img src="/assets/images/shortcuts/shortcut-default-workshop.png" alt="{{post.title}}" class="shortcut-image"/>
 {% endif %}
 </a>
 
@@ -39,7 +39,7 @@ Welcome to our **workshops** and **teaching** page!
 {% if post.shortcut %}
 <img src="/assets/images/shortcuts/{{post.shortcut}}" alt="{{post.title}}" class="shortcut-image"/>
 {% else %}
-<img src="/assets/images/shortcuts/shortcut-E.png" alt="{{post.title}}" class="shortcut-image"/>
+<img src="/assets/images/shortcuts/shortcut-default-teaching.png" alt="{{post.title}}" class="shortcut-image"/>
 {% endif %}
 </a>
 

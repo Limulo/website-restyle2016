@@ -461,3 +461,20 @@ hr.clear {
  background-color: #fff !important;
  text-align: center;
 }
+
+/* this rules has been added to format keys images inside paragraph and list
+item in 'Pong' and 'Chaotic Robots Music' articles.*/
+li img {
+  display: inline-block;
+  margin: auto;
+  /*
+  max-width: 100%;
+  margin: 0em auto 1em;
+  border-radius: 5px;
+  */
+}
+
+p.caption {
+  font-size: 0.7em;
+  text-align: center;
+}

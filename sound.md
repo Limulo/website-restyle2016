@@ -64,7 +64,7 @@ This list contains articles about our sound design works:
 {% if post.shortcut %}
 <img src="/assets/images/shortcuts/{{post.shortcut}}" alt="{{post.title}}" class="shortcut-image"/>
 {% else %}
-<img src="/assets/images/shortcuts/shortcut-E.png" alt="{{post.title}}" class="shortcut-image"/>
+<img src="/assets/images/shortcuts/shortcut-default-sound.png" alt="{{post.title}}" class="shortcut-image"/>
 {% endif %}
 </a>
 

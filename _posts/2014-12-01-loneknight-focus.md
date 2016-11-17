@@ -9,12 +9,11 @@ shortcut: shortcut-loneknight.png
 
 **Lone Knight** is the first videogame experiment made by [Giovanni](https://www.facebook.com/pages/Art-of-Giovanni-Ariutti/442721242537449?fref=ts) and [Nicola Ariutti](http://www.limulo.net) inspired by [Mark Ferrari](http://markferrari.com/art/8bit-game-art/) and [Tim e Adrien Soret](http://timsoret.itch.io/the-last-night) works in order to take part to the [itch.io](http://itch.io) [Flying Toast With Jam](http://itch.io/jam/flying-toast-with-jam).
 
-Take a look at the game [here](http://www.limulo.net/games/loneknight). [Here](http://limulo.itch.io/lone-knight) instead you can find the original version of it.
+Take a look at the game [here](http://www.limulo.net/games/loneknight).
 
-
+[Here](http://limulo.itch.io/lone-knight) instead you can find the original version of it.
 
 ![screen shot](/assets/images/lone-knight-focus/copertina-utente-loneknight-640_236.png)
-
 
 ### Tech notes
 

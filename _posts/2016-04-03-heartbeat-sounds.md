@@ -13,8 +13,7 @@ Heartbeat sound is maybe the most familiar and atavistic sound we know. It's pow
 Your browser does not support the <code>audio</code> element.
 <source src="{{ site.url }}/assets/sounds/heartbeat/Human_heart_beating_at_61_bpm_(Cc-by-3.0).ogg" type="audio/ogg">
 </audio>
-<br/>
-<caption>Human heart beating at 61 bpm (Cc-by-3.0)</caption>
+<p class="caption">Human heart beating at 61 bpm (Cc-by-3.0)</p>
 
 Without bothering of too many details, let's examine the typical ECG (electrocardiograph) curve: we will use this information to recreate the same curve procedurally.
 
@@ -60,8 +59,7 @@ Here's the sound as recorded directly from the patch. As you can hear it is slig
 Your browser does not support the <code>audio</code> element.
 <source src="{{ site.url }}/assets/sounds/heartbeat/PD_heartbeat.ogg" type="audio/ogg">
 </audio>
-<br/>
-<caption>heart sound synthetized with HeartBeater PureData patch by tracing the ECG curve shape</caption>
+<p class="caption">heart sound synthetized with HeartBeater PureData patch by tracing the ECG curve shape</p>
 
 The main difference is that this sound doesn't have the double beat rhythm characteristic of the sample sound and, though it has been used with interesting result (e.g. [OTTO]()) it is necessary to improve the PuraData patch to create a more realistic one.
 
@@ -84,22 +82,19 @@ As you can perceive in the samples below (recorded directly within the patch), t
  Your browser does not support the <code>audio</code> element.
  <source src="{{ site.url }}/assets/sounds/heartbeat/LovelyHeart_mix.ogg" type="audio/ogg">
 </audio>
-<br/>
-<caption>beats and murmurs mixed together</caption>
+<p class="caption">beats and murmurs mixed together</p>
 
 <audio controls="controls" style="width:100%;">
 Your browser does not support the <code>audio</code> element.
 <source src="{{ site.url }}/assets/sounds/heartbeat/LovelyHeart_beats.ogg" type="audio/ogg">
 </audio>
-<br/>
-<caption>beats sounds only</caption>
+<p class="caption">beats sounds only</p>
 
 <audio controls="controls" style="width:100%;">
 Your browser does not support the <code>audio</code> element.
 <source src="{{ site.url }}/assets/sounds/heartbeat/LovelyHeart_murmur.ogg" type="audio/ogg">
 </audio>
-<br/>
-<caption>murmurs sounds only</caption>
+<p class="caption">murmurs sounds only</p>
 
 ### Downloads
 

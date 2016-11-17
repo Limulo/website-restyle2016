@@ -40,7 +40,7 @@ The audio is procedurally produced by a **Pure Data** patch we specifically deve
 {% if post.shortcut %}
 <img src="/assets/images/shortcuts/{{post.shortcut}}" alt="{{post.title}}" class="shortcut-image"/>
 {% else %}
-<img src="/assets/images/shortcuts/shortcut-E.png" alt="{{post.title}}" class="shortcut-image"/>
+<img src="/assets/images/shortcuts/shortcut-default-installations.png" alt="{{post.title}}" class="shortcut-image"/>
 {% endif %}
 </a>
 
