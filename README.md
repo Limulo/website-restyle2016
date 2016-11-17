@@ -50,7 +50,9 @@ In this case you will not see the post listed in the homepage but you can access
 
 ## How to create an internal link between posts
 
+```
 [here'a link between post]({% post_url 2015-02-01-name-of-the-post %})
+```
 
 ## How to create a .png shortcut from a font awesome character
 Use [font-awesome-png-converter](https://github.com/Pythonity/icon-font-to-png), an interesting utility to convert vectorial fonts into png images.
