@@ -62,6 +62,14 @@ Use the following command to generate the `IMAGE` from the corresponding `CHARAC
 ```
 icon-font-to-png --css ../css/font-awesome.css --ttf ./fontawesome-webfont.ttf --size 110 CHARACTER --filename IMAGE
 ```
+## How to render Math formulae inside a post
+
+We can use [MathJax](https://www.mathjax.org/) as explained in the Jekyll Documentation [here](http://jekyllrb.com/docs/extras/#math-support).
+
+## How to have synthax highlighted
+
+TODO
+
 
 ## Useful links
 

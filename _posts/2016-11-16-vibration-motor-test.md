@@ -59,4 +59,6 @@ In this configuration, using a 220 Ohms resistor, we measure a current of ~65mA
 * Weight: 0.9 gram
 
 ## Future experiments
-A different experiment we can try is to use a **PN2222 transistor configuration** as shown in [this](https://learn.adafruit.com/adafruit-arduino-lesson-13-dc-motors) tutorial.
+A different experiment we can try is to use a **PN2222 transistor configuration** as shown in [this](https://learn.adafruit.com/adafruit-arduino-lesson-13-dc-motors) tutorial by Simon Monk.
+
+If we need a more technical explanation of the circuit (and I need it), we can look at [this](http://electronics.stackexchange.com/questions/95140/purpose-of-the-diode-and-capacitor-in-this-motor-circuit#95141) one.
