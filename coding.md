@@ -13,7 +13,7 @@ Everything that can not be otherwise classified will be piled on this page waiti
 Enjoy
 
 ### Arduino
-A bunch of posts related to Arduino:
+A bunch of posts related to Arduino and electronics:
 
 {% for post in site.posts %}
 {% if post.category contains 'coding' %}

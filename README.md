@@ -4,8 +4,6 @@ This is hte place where we are saving our **WIP** files for [limulo.net](http://
 
 For this particular restyle we are using a Jekyll theme called [**Hyde**](http://hyde.getpoole.com/) made by [Mark Otto](https://twitter.com/mdo).
 
----
-
 ## How to create a page
 If you want the page to appears inside the sidebar you have to give that page a **front matter** like the one shown below
 
@@ -67,6 +65,12 @@ icon-font-to-png --css ../css/font-awesome.css --ttf ./fontawesome-webfont.ttf -
 ## How to render Math formulae inside a post
 
 We can use [MathJax](https://www.mathjax.org/) as explained in the Jekyll Documentation [here](http://jekyllrb.com/docs/extras/#math-support).
+
+If you want to write a mathematical formula you have to create a _math latex block_ ([here](https://en.wikibooks.org/wiki/LaTeX/Mathematics) some info on how to create latex formulae), than you have to surround it with _two dollar sign_:
+
+```
+$$ x+y = 5 $$
+```
 
 ## How to have synthax highlighted
 
