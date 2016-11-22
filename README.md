@@ -46,6 +46,22 @@ If you don't specified a dedicated image for the post, the post will be given a 
 
 In this case you will not see the post listed in the homepage but you can access the post browsing its category page.  
 
+## How to create Tables
+[Here](http://kramdown.gettalong.org/syntax.html#tables) you can find more information, but in general below the code you can use to creare a simple table with an header and content centered:
+
+```
+header cell 1 | header cell 2 | header cell 3
+| :-: | :-: | :-: |
+data 1 | data 2 | data 3
+```
+
+## How to create a NOTE section
+To create a **note** section, simly put this line of code after the paragraph end (on a new line):
+
+```
+{: .note}
+```
+
 ## How to create an internal link between posts
 
 ```

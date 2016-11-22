@@ -11,7 +11,7 @@ excerpt: technical details about soundface
 The soundface is basically just a table. Well, apparently it is. Actually, it's also much more than this.
 Let's take a closer look...
 
-![slide](/assets/images/soundface/technical/slide-1-tavolo_2-1024x694.png)
+![slide](/assets/images/soundface/technical/soundface-structure.png)
 
 In order to visualise the graphics you need three elements:
 * The projector: we use a _Acer S1210_ projector.
@@ -67,7 +67,7 @@ The software structure relies on a client-server architecture
 By "Client" we mean an application demanding a service. By "Server" we mean an application that can supply the service.
 Basically: the client asks the server a service. The server identifies the client and supplies the service. Eventually the client confirms the reception of the service to the server.
 
-![client & server](/assets/images/soundface/technical/client-e-server.jpg)
+![client & server](/assets/images/soundface/technical/client-server.png)
 
 There are two main communictaion protocols between Client and Server. They both fulfill specific tasks:
 
@@ -250,14 +250,14 @@ Here are some examples:
 
 * the **net** (whether global or local), for example internet that can link two devices, no matter how distant they are.
 
-![computers](/assets/images/soundface/technical/slide-computers-1024x557.png)
+![computers](/assets/images/soundface/technical/client-server-2.png)
 
 * the client and the server are not necessarily two physical separeted devices. The same device can work as a server and a client at the same time. In this case there will be two applications - one working as the client and the other as the server - running simultaneusly.
 
 
 The latter is our case! In our project, reacTIVision, acting as a server, dispatches TUIO messages to our custom application that is the client.
 
-![computer 2](/assets/images/soundface/technical/slide-computer-2-1024x428.png)
+![computer 2](/assets/images/soundface/technical/client-server-tuio.png)
 
 
 We use Reactivision on the server side, so we focused on the client side developement.

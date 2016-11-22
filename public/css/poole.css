@@ -478,3 +478,32 @@ p.caption {
   font-size: 0.7em;
   text-align: center;
 }
+
+.note {
+  position: relative;
+  background-color: #ffd700;
+  padding: 1em;
+  margin: 1em 0 2em;
+  border-radius: 5px;
+
+}
+
+/*
+.note:before {
+    content: "Note";
+    background: none repeat scroll 0% 0% #ffd700;
+    box-shadow: 3px 3px 10px 0px #333;
+    color: #000 ;
+    padding: 0.15em 0.25em;
+    font-style: normal;
+    position: absolute  ;
+    top: -0.6em;
+    left: -0.6em;
+
+    -webkit-transform: rotate(-5deg);
+    -moz-transform: rotate(-5deg);
+    -ms-transform: rotate(-5deg);
+    -o-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+}
+*/
