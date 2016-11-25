@@ -3,7 +3,7 @@ layout: post
 title: Bipolar Transistor and other stuff
 date: 2016-11-20 12:40:00
 excerpt: on how to drive a motor with Arduino using transistors
-category: [coding]
+category: [coding, physical-computing]
 ---
 Coming from [this]({% post_url 2016-11-16-vibration-motor-test %}) experiment, now we want to improve it adding some more electric componets.
 

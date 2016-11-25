@@ -3,7 +3,7 @@ layout: post
 title: Vibration Motor test
 date: 2016-11-16 18:48:00
 excerpt: testing a little vibration motor with Arduino!
-category: coding
+category: [coding, physical-computing]
 ---
 
 Let's try our new [vibration motor](https://www.adafruit.com/products/1201). It is a little device that vibrates according to the tension applied.

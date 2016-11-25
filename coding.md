@@ -12,11 +12,11 @@ Everything that can not be otherwise classified will be piled on this page waiti
 
 Enjoy
 
-### Arduino
-A bunch of posts related to Arduino and electronics:
+### Physical Computing
+A bunch of posts related to Arduino, RaspberryPi and electronics:
 
 {% for post in site.posts %}
-{% if post.category contains 'coding' %}
+{% if post.category contains 'coding' and post.category contains 'physical-computing' %}
 
 <div>
 
@@ -38,7 +38,31 @@ A bunch of posts related to Arduino and electronics:
 {% endif %}
 {% endfor %}
 
+### Grammars
+A bunch of posts related to grammars:
 
+{% for post in site.posts %}
+{% if post.category contains 'coding' and post.category contains 'grammar' %}
+
+<div>
+
+<a href="{{post.url}}">
+{% if post.shortcut %}
+<img src="/assets/images/shortcuts/{{post.shortcut}}" alt="{{post.title}}" class="shortcut-image"/>
+{% else %}
+<img src="/assets/images/shortcuts/shortcut-default-coding.png" alt="{{post.title}}" class="shortcut-image"/>
+{% endif %}
+</a>
+
+<h3 class="post-title"><a href="{{post.url}}">{{ post.title }}</a></h3>
+{{ post.excerpt}}
+
+<hr class="clear" />
+
+</div>
+
+{% endif %}
+{% endfor %}
 
 {% comment %}
 ### Arduino e Processing
