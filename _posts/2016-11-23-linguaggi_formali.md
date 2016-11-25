@@ -9,7 +9,8 @@ category: [coding, grammar]
 ## Alphabet and Language
 
 An _alphabet_ is a finite set of elements, called _symbols_ or _terminals_.
-Let $$ \Sigma = \{ a_1, a_2, \dots, a_k \} $$ be a k symbols alphabet. The _cardinality_ is $$ \|\Sigma\| \= \k $$
+Let $$ \Sigma = \{ a_1, a_2, \dots, a_k \} $$ be an alphabet with k symbols. The _cardinality_ is $$ \|\Sigma\| = k $$.
+
 A _string_ or a _word_ is a sequence (ordered set with repetitions) of characters.
 
 A _language_ is a set of strings belonging to a given alphabet
