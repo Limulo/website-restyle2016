@@ -90,7 +90,15 @@ $$ x+y = 5 $$
 
 ## How to have synthax highlighted
 
-TODO
+Use these _liquid_ tags before and after code blocks.
+
+```
+{% highlight c %}
+
+	[code blocks]
+
+{% endhighlight %}
+```
 
 
 ## Useful links
