@@ -1,6 +1,6 @@
 ---
 layout: post
-title: A robotic Penguin @ Linux Day Milan 2016
+title: A robotic Penguin
 date: 2016-10-22 09:30:00
 excerpt: An interactive Penguin created with an Arduino controlled servo motor .
 category: [linuxday2016, installation]
@@ -56,32 +56,14 @@ You can find the code for this interactive installation from [this](https://gith
 
 ## Issues
 
-### LiPo Battery polarity Issue
-[Here]({% post_url 2016-10-20-LiPo-polarity %}) you can find another article about this issue
-
-### Servo and MP3 player issue
-[Arduino Leonardo](https://www.arduino.cc/en/Main/arduinoBoardLeonardo), on which the BareConductive TouchBoard is based , has 7 PWM channels: **3, 5, 6, 9, 10, 11**, and **13**.
-
-After some experiments where we wanted to make the board emit a sound and drive a servo at the same time when detecting a proximity via the MPR121, we have discovered that PWM pins **3, 5, 6** and **9** are not working as expected. In other words, attaching a servo to those pins ends up in unpredictable results: sometimes the servo seems to work but no sound is emitted while in other tries neither the MP3 player and the servo work and the board is freezed (no _loop_ cycling).
-
-Fortunately we were able to make everything work since PWM digital pins **10, 11** and **13** behaves normally.
-
-#### Link and references
-* [Sparkfun MP3 shield](https://learn.sparkfun.com/tutorials/mp3-player-shield-hookup-guide-v15);
-* an (old?) TouchBoard [schematic](https://cdn.sparkfun.com/datasheets/Dev/Arduino/Boards/touch-board-schematic.pdf) and [datasheet](https://cdn.sparkfun.com/datasheets/Dev/Arduino/Boards/TouchBoard_TechDataSheet.pdf);
+* [LiPo Battery polarity]({% post_url 2016-10-20-LiPo-polarity %}) issue;
+* [Servo and MP3 player]({% post_url 2016-10-21-servo-mp3 %}) issue;
 
 ---
 
 ## More
 
-* [Here](https://limulo.github.io/linuxday2016/) you can find more information about other interactive station we have created for the **Linux Day Milan 2016**. From thi same link you can reach our **GitHub** repository where you can find all interactive station source code.
-
-
-
-
-
-
-
+* Check out our [LinuxDay 2016](({% post_url 2016-10-22-linuxday2016 %})) page if you need more information about the event and the other interactive installations.
 
 
 

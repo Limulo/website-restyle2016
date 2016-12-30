@@ -7,7 +7,7 @@ category: [sound-design, work]
 shortcut: shortcut-chaotic-robots-music.png
 ---
 
-**Chaotic Robot Music** nasce come progetto complementare al lavoro dei ragazzi di [HackLab Terni]() '[Chaotic Robots](http://dev.hacklabterni.org/projects/cr21)' (sito veramente ben fatto, ricco di spiegazioni esaustive, immagini, tabelle e grafici per imparare e trarre spunti interessantissimi!).
+**Chaotic Robot Music** nasce come progetto complementare al lavoro dei ragazzi di [HackLab Terni](http://hacklabterni.org/) '[Chaotic Robots](http://dev.hacklabterni.org/projects/cr21)' (sito veramente ben fatto, ricco di spiegazioni esaustive, immagini, tabelle e grafici per imparare e trarre spunti interessantissimi!).
 
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/SDqNaqEHwzE" frameborder="0" allowfullscreen></iframe>
 

@@ -5,7 +5,7 @@ date: 2016-11-20 12:40:00
 excerpt: on how to drive a motor with Arduino using transistors
 category: [coding, physical-computing]
 ---
-Coming from [this]({% post_url 2016-11-16-vibration-motor-test %}) experiment, now we want to improve it adding some more electric componets.
+Coming from [this]({% post_url 2016-11-16-vibration-motor-test %}) experiment, now we want to improve it adding some more electric components.
 
 Infact we know that we cannot draw too much current from the Arduino pins as you can conclude from this wonderful [scheme](http://www.pighixxx.com/test/portfolio-items/uno/?portfolioID=314) by **Pighixxx**, or read [here](http://arduino-info.wikispaces.com/ArduinoPinCurrent?responseToken=595ebf2e544e90f92f087b693242b0a4). The motor we want to drive is a load that is better not to connect directly to the Arduino board in order to prevent this.
 
@@ -15,9 +15,9 @@ Before starting, take a look a [this](https://learn.adafruit.com/adafruit-arduin
 
 ## Background
 
-According to what we read in chapter 4 from the book **Practical Elctronics for inventors** by Paul Sherz about transistors, we have to consider some important formulae when we are using a _npn_ one:
+According to what we read in _chapter 4_ from the book "**Practical Elctronics for inventors**" by **Paul Sherz** about transistors, we have to consider some important formulae when we are using a _npn_ one:
 
-![fig 4.22](dal libro di Paul Sherz)
+![transistor graph 1](/assets/images/vibration-motor-test/transistor-graph-1.png)
 
 $$ I_{c} = H_{fe} I_{b} = \beta I_{b} $$
 
@@ -71,7 +71,7 @@ At page 153, in section **Important Things to Know about Bipolar Transistors** P
 
 The motor is partially a inductor. If the transistor shuts off quickly, then the current that must still flow thru the inductor for a little while will flow thru the diode and cause no harm. Without the diode, the voltage accross the motor would get as large as necessary to keep the current flowing, which would probably require frying the transistor.
 
-![see Fig. 4.38c]()
+![transistor graph 2](/assets/images/vibration-motor-test/transistor-graph-2.png){: width="30%;" }
 
 This way we avoid a positive $$ V_{ce} $$ voltage spark to break the transistor.
 
@@ -90,15 +90,15 @@ Considering different datasheet and also some [online discussion](http://forum.a
 ### Diode
 What kind of diode we need if we want to use such a PWM frequency? I'm usign [this](http://www.robot-italy.net/downloads/1N4148_1N4448_4.pdf) particular diode: **1N4148**. From the datasheet we read that it is capable of a maximum switching speed of 4ns, so I think that it will make it!
 
-## Using a capcitor in parallel with the motor
+## Using a capacitor in parallel with the motor
 As **Olin Lathrop** says, we can use a little capacitor in parralle lwith the motor to reduce readiation and the speed of voltage transitions:
 
 > A small capacitor accross the motor will reduce the speed of the possibly fast voltage transitions, which causes less radiation and limits the $$ \frac {dV}{dt} $$ the transistor is subjected to. 100 nF is excessive for this, and will prevent efficient operation at all but low PWM frequences. I'd use 100 pF or so, perhaps to up 1 nF.
 
 ## Testing
-Keep attention to the transistor pinout
+Keeping attention to the transistor pinout
 
-![transistor pinout]()
+![transistor pinout](/assets/images/vibration-motor-test/2N2222.png){: width="30%;" }
 
 and to the diode direction, we create the circuit shown in this _Fritzing_ diagram and schematics
 
@@ -135,7 +135,7 @@ As we can see, using a transistor in this particular configuration, we are able 
 
 Here's the code I have used, substituting the duty value for each measurement:
 
-```
+{% highlight c %}
 #define VIBRA 3
 #define duty 32
 
@@ -150,4 +150,4 @@ void loop() {
   digitalWrite( VIBRA, LOW );
   delay( 2000 );
 }
-```
+{% endhighlight %}

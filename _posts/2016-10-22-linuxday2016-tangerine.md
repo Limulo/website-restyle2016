@@ -69,3 +69,7 @@ Originally this interactive station was though to have 3 relays instead of one. 
 We have had some trouble using 3 relays with the Adafruit capboard and, ultimately with the mic also so we decided to simplify the station.
 
 ---
+
+## More
+
+* Check out our [LinuxDay 2016]({% post_url 2016-10-22-linuxday2016 %}) page if you need more information about the event and the other interactive installations.
