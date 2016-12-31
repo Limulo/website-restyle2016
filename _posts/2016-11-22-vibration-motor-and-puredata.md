@@ -6,4 +6,4 @@ excerpt: on how to test the vibration motor circuit using PureData
 category: [coding, physical-computing]
 ---
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/w8enRchRqAU" frameborder="0" allowfullscreen></iframe>
+<iframe width="100%" height="360" src="https://www.youtube.com/embed/w8enRchRqAU" frameborder="0" allowfullscreen></iframe>

@@ -55,7 +55,7 @@ While powering the motor we light a LED as a visual feedback of what's happening
 
 Everything seems to work very well:
 
-<iframe width="100%" height="360" src="https://youtu.be/h2FnEDQ2CWc" allowfullscreen></iframe>
+<iframe width="100%" height="360" src="https://www.youtube.com/embed/h2FnEDQ2CWc" frameborder="0" allowfullscreen></iframe>
 
 In this configuration, using a 220 Ohms resistor, we measure a current of ~65mA;
 

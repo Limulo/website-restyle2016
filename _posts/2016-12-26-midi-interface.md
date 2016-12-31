@@ -8,7 +8,11 @@ category: [coding, physical-computing]
 
 ## MIDI: an introduction
 
-blah blah blah
+[MIDI](Musical Instrument Digital Interface) stands for **Musical Instruments Digital Interface**, it is the name that musical instruments manufacturers early in the '80  gave to a new communication protocol between musical instruments and devices.
+
+Communication protocols already existed but the MIDI value was that it became a standard and that it used digital instead of analog signals.
+
+MIDI is a serial communication. On the physical layer it uses the classic [5 pin DIN connector](https://en.wikipedia.org/wiki/DIN_connector) and cable
 
 ### MIDI messages
 
@@ -85,7 +89,7 @@ void loop()
 
 In order to examine the MIDI messages flow we have to connect a MIDI device (such a MIDI keyboard or controller) to our little Arduino MIDI interface.
 
-![Studio MIDI In Setup](/assets/images/midi-interface/MIDI-studio-1.png)
+![Studio MIDI In Setup](/assets/images/midi-interface/MIDI-studio-in.png)
 
 ### Tests
 
@@ -129,6 +133,10 @@ If we examine more deeply our software serial output, we see also long list of c
 
 ## Arduino simple MIDI OUT interface
 
+
+![Studio MIDI Out Setup](/assets/images/midi-interface/MIDI-studio-out.png)
+
+
 ### Hardware
 
 ### Software
@@ -136,6 +144,16 @@ If we examine more deeply our software serial output, we see also long list of c
 ### Studio Setup
 
 ---
+
+## Arduino MIDI IN & OUT interface
+
+![Studio MIDI In Out Setup](/assets/images/midi-interface/MIDI-studio-in-out.png)
+
+### Hardware
+
+### Software
+
+### Studio Setup
 
 Here's another sketch. Thanks to this one we are able to see all the different kind of _Status byte_ types directly inside the _Serial Monitor_:
 
