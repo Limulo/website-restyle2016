@@ -50,7 +50,7 @@ The MIDI protocol provides up to 16 different MIDI channels. Each MIDI message c
 
 ### Reference
 
-If you need more information about MIDI and how it works I would warmly recommend reading the book "_MIDI computer e musica_" by **Giovanni Perrotti**, I've found it a precious resource in many sitations. It's iItalian but I think we can also find good alternatives in English.
+If you need more information about MIDI and how it works I would warmly recommend reading the book "_MIDI computer e musica_" by **Giovanni Perotti**, I've found it a precious resource in many sitations. It's iItalian but I think we can also find good alternatives in English.
 
 ---
 
@@ -230,111 +230,68 @@ void loop()
 
 ---
 
-## Arduino MIDI IN & OUT interface
+## Arduino simple MIDI IN & OUT interface
 
-
-![Studio MIDI In Out Setup](/assets/images/midi-interface/MIDI-studio-in-out.png)
+Great! Now it's time to make it more complex: now we will create a new circuit and write new code to make our Arduino get MIDI messages in and send them out.
 
 ### Hardware
 
-### Software
+What we need to build our circuit:
+* an [**6N138**](http://www.vishay.com/docs/83605/6n138.pdf) or a [4n28](http://www.vishay.com/docs/83725/4n25.pdf) optocoupler.
+* an [**1N4148**](https://en.wikipedia.org/wiki/1N4148) high speed diode;
+* four **220 Ohm** resistors;
+* and two **5 pin DIN**.
+
+Here's the _Fritzing_ scheme:
+
+![Fritzing MIDI in & out](/assets/images/midi-interface/MIDI-IN-OUT_bb.png)
 
 ### Studio Setup
 
-Here's another sketch. Thanks to this one we are able to see all the different kind of _Status byte_ types directly inside the _Serial Monitor_:
+We are going to connect our MIDI keyboard/controller to the Arduino MIDI interface. The we connect the interface to the synth rack. We can eventually use the USB serial communication to debug our code using the PC.
+
+![Studio MIDI In Out Setup](/assets/images/midi-interface/MIDI-studio-in-out.png)
+
+To be thorough here we added the speaker icons!
+
+### Software
+
+The first thing to pay attention to is that the **SoftwareSerial Library** cannot send and receive data simultaneously as we can read [here](http://www.pjrc.com/teensy/td_libs_AltSoftSerial.html#speed):
+
+>  SoftwareSerial can not simultaenously transmit and receive, so it should be used with a device that never sends in both directions at once.
+
+We have made some test and we can confirm that. So we have to use a different library. The [AltSoftSerial](https://www.pjrc.com/teensy/td_libs_AltSoftSerial.html) worked well for us: we have to remember that, on the Arduino UNO, the library is using:
+* pin 8 for receiving;
+* pin 9 for transmitting.
 
 {% highlight c %}
-#include <SoftwareSerial.h>
+#include <AltSoftSerial.h>
+AltSoftSerial midiSerial;
 
-const byte rxPin = 11;
-const byte txPin = 10;
-
-unsigned char midiCh, statusByte;
-
-// VOICE CHANNEL MESSAGES
-const unsigned char noteOn = 144;
-const unsigned char noteOff= 128;
-const unsigned char chPressure = 208; // channel after Touch
-const unsigned char polyKeyPressure = 160; // polyphonic after Touch
-const unsigned char controlChange = 176;
-const unsigned char prgChange = 192;
-const unsigned char pitchBenderChange = 224;
-
-SoftwareSerial mySerial(rxPin, txPin);
+// #define RXPIN 8
+// #define TXPIN 9
 
 // SETUP ///////////////////////////////////////////
 void setup()
 {
   Serial.begin( 9600 );
-
-  pinMode( rxPin, INPUT );
-  pinMode( txPin, OUTPUT);
-  mySerial.begin( 31250 );
+  midiSerial.begin(31250);
 }
-
 
 // LOOP ////////////////////////////////////////////
 void loop()
-{
-
-  if(mySerial.available() > 0) {
-    unsigned char incomingByte = mySerial.read();
-
-    if( incomingByte > 127 ) // status byte
-    {
-      midiCh = incomingByte & 0x0F;
-      statusByte = incomingByte & 0xF0;
-
-      if(statusByte == noteOn) {
-        Serial.println();
-        Serial.print( statusByte, DEC);
-        Serial.print(" - Note ON (ch ");
-        Serial.print( midiCh, DEC);
-        Serial.println(");");
-      } else if(statusByte == chPressure) {
-        Serial.println();
-        Serial.print( statusByte, DEC);
-        Serial.print(" - ch pressure (ch ");
-        Serial.print( midiCh, DEC);
-        Serial.println(");");
-      } else if(statusByte == polyKeyPressure) {
-        Serial.println();
-        Serial.print( statusByte, DEC);
-        Serial.print(" - polyKeyPressure (ch ");
-        Serial.print( midiCh, DEC);
-        Serial.println(");");
-      } else if(statusByte == pitchBenderChange) {
-        Serial.println();
-        Serial.print( statusByte, DEC);
-        Serial.print(" - pitchBenderChange (ch ");
-        Serial.print( midiCh, DEC);
-        Serial.println(");");
-      } else if(statusByte == controlChange) {
-        Serial.println();
-        Serial.print( statusByte, DEC);
-        Serial.print(" - controlChange (ch ");
-        Serial.print( midiCh, DEC);
-        Serial.println(");");
-      } else if(statusByte == prgChange) {
-        Serial.println();
-        Serial.print( statusByte, DEC);
-        Serial.print(" - prgChange (ch ");
-        Serial.print( midiCh, DEC);
-        Serial.println(");");
-      } else {
-        Serial.println();
-        Serial.print( statusByte, DEC);
-        Serial.print(" - another kind of status byte (ch ");
-        Serial.print( midiCh, DEC);
-        Serial.println(");");
-      }
-    } else { // data byte
-      Serial.println( incomingByte, DEC);
-    }
+{  
+  while( midiSerial.available() > 0 )
+  {
+    int incomingByte = midiSerial.read();
+    midiSerial.write( incomingByte );
+    Serial.println( incomingByte, DEC );
   }
 }
 {% endhighlight %}
 
-Pay attention: the **SoftwareSerial Library** cannot send and receive data simultaneously as we can read [here](http://www.pjrc.com/teensy/td_libs_AltSoftSerial.html#speed):
+## Conclusion
 
->  SoftwareSerial can not simultaenously transmit and receive, so it should be used with a device that never sends in both directions at once.
+We have built our simple MIDI interface with Arduino, good job! Now the only limit is our imagination: what about adding a piece of code that modifies MIDI data in and send them back so to create particulare armonizations or other kind of musical effects?
+
+Now we are happy with this but stay tuned for more about it...
