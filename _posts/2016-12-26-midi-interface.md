@@ -12,15 +12,47 @@ category: [coding, physical-computing]
 
 Communication protocols already existed but the MIDI value was that it became a standard and that it used digital instead of analog signals.
 
-MIDI is a serial communication. On the physical layer it uses the classic [5 pin DIN connector](https://en.wikipedia.org/wiki/DIN_connector) and cable
+Modern musical instruments use MIDI to talk to each other and, when they exchange messages, they are exchanging _bytes_ indeed.
+
+![MIDI communcation](/assets/images/midi-interface/MIDI-intro.png)
+
+From a more technical point of view, MIDI is an asynchronous serial communication which transmission speed is of **31250 baud**. On the physical layer it uses the classic [5 pin DIN connector](https://en.wikipedia.org/wiki/DIN_connector) and cable.
 
 ### MIDI messages
 
-blah blah blah
+Here you have a picture of a standard MIDI message:
 
-We know we have different kind of MIDI messages and we are able to differenciate them thanks to their first byte: the **Status Byte**. Inside the Status Byte is enclosed another importat information: the **MIDI Channel**.
+![standard MIDI msg](/assets/images/midi-interface/status-and-data.png){: width="60%;"}
 
-blah blah blah
+As you see, there are two main categories for bytes inside a MIDI message:
+* **Status Byte**;
+* **Data Byte**;
+
+Suppose we are a MIDI device and that we are receiving MIDI messages from a MIDI controller: how can we differenciate between _status bytes_ and _data bytes_? The main difference between them stands in their values: **Status Bytes** are byte which value is greater than 127 while **Data Bytes** always have values comprised between 0 and 127.
+
+From a binary point of view it meas that the leftmost _bit_ of a _status byte_ is always 1 while it is 0 for the _data byte_.
+
+![immagine binary point of view](/assets/images/midi-interface/status-and-data-bits.png){: width="60%;"}
+
+#### MIDI channels
+
+What is a MIDI channel? Suppose we have only one MIDI keyboard/controller connected to many rack synths.
+
+![MIDI channels](/assets/images/midi-interface/MIDI-channels.png)
+
+How can we use all the synths sounds, maybe one for each portion of the keyboard, so to play different sounds with different notes?
+
+Here comes the **MIDI channel**! Using MIDI channels we can say to each one of our rack instruments to listen only at messages coming from a specific MIDI channel, discarding all the others. Similarly we can do with our MIDI keyboard, setting it to send messages to different MIDI channels if we play different notes or use different controls.
+
+The MIDI protocol provides up to 16 different MIDI channels. Each MIDI message contains information on the MIDI channel used to send it and we can find that in the lower nibble of the _status byte_
+
+![status byte and its nibbles](/assets/images/midi-interface/nibbles.png){: width="60%;"}
+
+### Reference
+
+If you need more information about MIDI and how it works I would warmly recommend reading the book "_MIDI computer e musica_" by **Giovanni Perrotti**, I've found it a precious resource in many sitations. It's iItalian but I think we can also find good alternatives in English.
+
+---
 
 ## Arduino simple MIDI IN interface
 
@@ -42,10 +74,10 @@ First of all we have to build the circuit. We take advantage of the beautiful [p
 
 ---
 Let's focusing on the **MIDI In** section. What we need:
-* a bunch of **220 Ohm** resistors;
+* two **220 Ohm** resistors;
 * an [**6N138**](http://www.vishay.com/docs/83605/6n138.pdf) optocoupler. We may also use a [4n28](http://www.vishay.com/docs/83725/4n25.pdf) optocoupler as **Joshua Noble** says in his "_Programming Interactivity_" book;
 * an [**1N4148**](https://en.wikipedia.org/wiki/1N4148) high speed diode;
-* and - obviously - two **5 pin DIN**.
+* and - obviously - one **5 pin DIN**.
 
 Here the _Fritzing scheme_ of our circuit.
 
@@ -127,25 +159,79 @@ If we examine more deeply our software serial output, we see also long list of c
 **Observation 2**: this is called **Running Status**. MIDI standard provides that the _status byte_ is sent only when it changes from the previous one. So, if we are playing a long series of notes, without modifying any other controls, the status byte, sent at the beginning of the sequence, is always the same so we don't need to send it againg every new note. This way we can save a third of time in sending MIDI data! This is the same reason _Note ON_ messages (with a 0 velocity value) are preferred to _Note OFF_ ones.
 {: class="note"}
 
-
-
-
-
 ## Arduino simple MIDI OUT interface
 
+So now let's try with the opposite approach: we want to create an Arduino MIDI instrument.
+
+### Studio Setup
+This would be our studio configuration:
 
 ![Studio MIDI Out Setup](/assets/images/midi-interface/MIDI-studio-out.png)
 
+What we need is a synth rack to be connected to our Arduino MIDI interface output.
 
 ### Hardware
 
+We have to create a **MIDI out** interface so we need only:
+* two **220 Ohm** resistors;
+* and one **5 pin DIN**.
+
+Here the _Fritzing scheme_ of our circuit.
+
+![Fritzing MIDI in](/assets/images/midi-interface/MIDI-OUT_bb.png)
+
 ### Software
 
-### Studio Setup
+Here we have a simple code to make our Arduino instruments plays random notes:
+
+{% highlight c %}
+#include <SoftwareSerial.h>
+
+const byte rxPin = 11; // not used for the moment
+const byte txPin = 10;
+
+SoftwareSerial mySerial(rxPin, txPin);
+
+int dly = 100;
+int note, velocity;
+
+// SETUP ///////////////////////////////////////////
+void setup()
+{
+ pinMode( rxPin, INPUT );
+ pinMode( txPin, OUTPUT);
+ mySerial.begin( 31250 );
+}
+
+// LOOP ////////////////////////////////////////////
+void loop()
+{
+ note = random(24)+60;
+ velocity = 127;
+
+ // note On
+ mySerial.write(144);
+ mySerial.write(note);
+ mySerial.write( velocity );
+
+ delay(dly);
+
+ velocity = 0;
+
+ // note Off
+ mySerial.write(144);
+ mySerial.write(note);
+ mySerial.write( velocity );
+
+ delay(dly);
+}
+
+{% endhighlight %}
 
 ---
 
 ## Arduino MIDI IN & OUT interface
+
 
 ![Studio MIDI In Out Setup](/assets/images/midi-interface/MIDI-studio-in-out.png)
 
