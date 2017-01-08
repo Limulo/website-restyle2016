@@ -7,7 +7,26 @@ category: [sound-design, work]
 shortcut: shortcut-coccinelle.png
 ---
 
-Ci siamo occupati del sound design, editing, mixing e mastering per la colonna sonora effetti di 4 brevi spot pubblicitari per Coccinelle (circa 20 secondi ciascuno).
+This Christmas we have worked on 4 short spot for **Coccinelle**: sound design, editing, mixing and mastering.
+
+These four spots have been published on-line, one per week, beginning from the 1st to the last day of of December 2015.
+
+[![clip 01]({{ site.url }}/assets/images/coccinelle-2015/pt1_img01.jpg){: width="100%;"}]({{ site.url }}/assets/images/coccinelle-2015/pt1_img01.jpg) | [![clip 02]({{ site.url }}/assets/images/coccinelle-2015/pt2_img01.jpg){: width="100%;"}]({{ site.url }}/assets/images/coccinelle-2015/pt2_img01.jpg) | [![clip 02-bis]({{ site.url }}/assets/images/coccinelle-2015/pt2_img02.jpg){: width="100%;"}]({{ site.url }}/assets/images/coccinelle-2015/pt2_img02.jpg)
+
+[![clip 03]({{ site.url }}/assets/images/coccinelle-2015/pt3_img02.jpg){: width="100%"}]({{ site.url }}/assets/images/coccinelle-2015/pt3_img02.jpg) | [![clip 03bis]({{ site.url }}/assets/images/coccinelle-2015/pt3_img04.jpg){: width="100%"}]({{ site.url }}/assets/images/coccinelle-2015/pt3_img04.jpg) | [![clip 04]({{ site.url }}/assets/images/coccinelle-2015/pt4_img01.jpg){: width="100%"}]({{ site.url }}/assets/images/coccinelle-2015/pt4_img01.jpg)
+
+
+Here's a video where you can watch all of them:
+
+<iframe src="https://www.youtube.com/embed/QePFFlFa2So" width="100%" height="360" allowfullscreen></iframe>
+
+It was a very interesting project that involved us in creating brand new sounds and tools!
+
+
+
+
+{% comment %}
+Ci siamo occupati del sound design, editing, mixing e mastering per la colonna sonora effetti di 4 brevi spot pubblicitari per **Coccinelle** (circa 20 secondi ciascuno).
 
 I 4 spot sono stati pubblicati on-line a cadenza settimanale a partire dal 1 Dicembre 2015 fino a natale dello stesso anno.
 
@@ -81,3 +100,4 @@ http://ddsmq5pja47q4.cloudfront.net/app/uploads/2015/12/Coccinelle_Xmas_p2_.m4v
 http://ddsmq5pja47q4.cloudfront.net/app/uploads/2015/12/Coccinelle_Xmas_p3_.m4v
 http://ddsmq5pja47q4.cloudfront.net/app/uploads/2015/12/Coccinelle_Xmas_p4_.m4v
 -->
+{% endcomment %}

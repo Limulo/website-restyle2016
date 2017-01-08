@@ -292,6 +292,6 @@ void loop()
 
 ## Conclusion
 
-We have built our simple MIDI interface with Arduino, good job! Now the only limit is our imagination: what about adding a piece of code that modifies MIDI data in and send them back so to create particulare armonizations or other kind of musical effects?
+We have built our simple MIDI interface with Arduino, good job! Now the only limit is our imagination: what about adding a piece of code that modifies MIDI data in and send them back so to create particular harmonizations or other kind of musical effects?
 
-Now we are happy with this but stay tuned for more about it...
+Now we are happy with it but stay tuned for more about it...
