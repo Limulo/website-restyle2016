@@ -2,16 +2,15 @@
 layout: post
 title: Scumm versions
 date: 2015-06-01 09:00:00
-excerpt: Let's talk about the different versions of Scumm imterpreter
+excerpt: Let's talk about the different versions of Scumm interpreter
 category: [game, scumm]
-shortcut: shortcut-xxx.png
 ---
 
 Quando nel 1987 **Ron Gilbert** e **Aric Wilmunder**, poi ribattezzati gli "_SCUMM lords_", si misero al lavoro su SCUMM, la pratica di scomporre il software in due parti concettualmente distinte, _risorse_ da una parte ed _interprete_ dall'altra, non era certo una novità, almeno per quanto riguarda i videogiochi di avventura.
 
 La cosa era già stata sperimentata con successo dagli sviluppatori della **Sierra On-Line** sin dal 1984 con **AGI** e successivamente con **SCI** e prima ancora dalla celebre **Infocom**, siamo nell'anno 1979, con **Z-Machine**, la macchina virtuale in grado di interpretare i files di risorse che costituivano i contenuti delle loro _interactive fiction_.
 
-![Adventure genre hierarchy](http://www.limulo.net/images/scumm/adventure-genre.png)
+![Adventure genre hierarchy](/assets/images/scumm/adventure-genre.png)
 
 Se cercate _Interactive Fiction_ su Wikipedia, scoprirete che questo è uno dei nomi alternativi associati al sottogenere dei giochi di avventura testuali.
 
@@ -45,7 +44,7 @@ Si tratta dell'interprete SCUMM: il programma che si occupava di decodificare i 
 
 Ci sarà utile individuare la **versione** dell'interprete, per farlo occorre far partire il programma indicando un parametro volutamente non corretto per indurre il programma a terminare l'esecuzione e mostrare alcuni messaggi a console.
 
-![interpreter version](http://www.limulo.net/images/scumm/ver-interpreter.png)
+![interpreter version](/assets/images/scumm/ver-interpreter.png)
 
 Come si può vedere da questa schermata, il programma ci sta mostrando quali siano i paramentri corretti. Nell'angolo in alta a destra invece è ben visibile l'indicazione della sua versione.
 
@@ -55,14 +54,14 @@ A programma avviato, usiamo una combinazione di tasti per rivelare, quasta volta
 
 <p>La combinazione di tasti da usare è <img alt="Ctrl" src="http://www.limulo.net/images/scumm/Ctrl.jpg"> + <img alt="V" src="http://www.limulo.net/images/scumm/V.jpg"> e provocherà la comparsa di un messaggio al centro dello schermo che riporta appunto la versione del gioco, differente rispetto a quella dell'interprete, oltre ad altre statistiche relative all'uso della memoria (che magari vedremo meglio in un altro post).</p>
 
-![game version](http://www.limulo.net/images/scumm/ver-game.png)
+![game version](/assets/images/scumm/ver-game.png)
 
 Versione del gioco e versione dell'interprete sono differenti perchè gioco ed interprete sono due componeneti software diverse tra loro. Il **gioco** altro non è che un insieme di dati come immagini, testo e scripts, compattati e codificati in files appositi all'interno della directory. L'**interprete** invece è un programma che, in poche parole, ha il compito di  scompattare ed interpretare questi files per far funzionare il videogame sul nostro computer.
 {: class="note"}
 
 La combinazione di tasti vista sopra è ancora valida se giochiamo al gioco utilizzando **ScummVM**!
 
-![game version in scummVM](http://www.limulo.net/images/scumm/ver-game-scummvm.png)
+![game version in scummVM](/assets/images/scumm/ver-game-scummvm.png)
 
 Ecco una tabella in cui riporto le versioni degli interpreti per i nostri giochi LucasArts PC IBM compatibile originali:
 
@@ -137,18 +136,14 @@ Ecco una tabella in cui riporto le versioni degli interpreti per i nostri giochi
         <td>//</td>
     </tr>
 </table>
-<div class="author">Nicola</div>
 
 ### Riferimenti
 
 **Books and Papers**
 
-<ul>
-    <li>Accordi Richards, M. (2014). <a class="ext" href="http://www.carocci.it/index.php?option=com_carocci&task=schedalibro&Itemid=72&isbn=9788843074167">Storia del videogioco</a>. Carocci Editore.;</li>
-</ul>
+* Accordi Richards, M. (2014). [Storia del videogioco](http://www.carocci.it/index.php?option=com_carocci&task=schedalibro&Itemid=72&isbn=9788843074167). Carocci Editore.
 
 **Links**
-<ul>
-    <li> <a class="ext" href="http://wiki.scummvm.org/index.php/SCUMM/Versions" >Qui</a> la sezione dedicata alle versioni, direttamente dalla <em>Technical Reference</em> per SCUMM dal Wiki del progetto ScummVM;</li>
-    <li>da Wikipedia: il genere <a class="ext" href="https://en.wikipedia.org/wiki/Adventure_game" >Avventura</a>, <a class="ext" href="https://en.wikipedia.org/wiki/Interactive_fiction" >Interactive Fiction</a>, <a class="ext" href="https://it.wikipedia.org/wiki/Librogame">Librogame</a>;</li>
-</ul>
+
+* [Qui](http://wiki.scummvm.org/index.php/SCUMM/Versions) la sezione dedicata alle versioni, direttamente dalla _Technical Reference_ per SCUMM dal Wiki del progetto ScummVM;
+* da Wikipedia: il genere [Avventura](https://en.wikipedia.org/wiki/Adventure_game), [Interactive Fiction](https://en.wikipedia.org/wiki/Interactive_fiction), [Librogame](https://it.wikipedia.org/wiki/Librogame);
