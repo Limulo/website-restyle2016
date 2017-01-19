@@ -113,7 +113,7 @@ There are games that will remain in our heart forever: these are a few of our pr
 
 {% endif %}
 {% endfor %}
-
+{% endcomment %}
 
 
 ## SCUMM and Adventure Games
@@ -151,5 +151,3 @@ Qui esamineremo un po' per volta il lavoro svolto dal team ScummVM nel tradurre 
 
 {% endif %}
 {% endfor %}
-
-{% endcomment %}
