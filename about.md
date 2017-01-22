@@ -20,7 +20,7 @@ I worked as a trainee as a digital label manager assistant. After that I started
 <p>The fields in which I'm mostly skilled  are multimedia and interactive art, music industry, programming.
 I'm well versed in multimedia and interactive arts, music industry, video and sound editing, programming.</p>
 
-<a href="https://www.linkedin.com/in/valentinalore" target="_blank">linkedin</a>
+<a href="https://www.linkedin.com/in/valentinalore">linkedin</a>
 </div>
 
 <hr class="clear" />
@@ -41,5 +41,5 @@ won several prizes and received special mentions in different animation festival
 <p>Being passionate about software development, I often create my own sound design tools and I eventually release them
 through my web site limulo.net, in compliancy with free software licenses.</p>
 
-<a href="https://www.linkedin.com/in/nicolaariutti" target="_blank">linkedin</a>
+<a href="https://www.linkedin.com/in/nicolaariutti">linkedin</a>
 </div>

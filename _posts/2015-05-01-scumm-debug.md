@@ -1,21 +1,20 @@
+---
+layout: post
+title: Debug
+date: 2015-05-01 09:00:00
+excerpt: SCUMM & ScummVM Debugging
+category: [game, scumm]
+---
 
-<article>
-<header>
-<a id="debugger"></a>
-<h2>SCUMM & ScummVM Debugging</h2>
-<time datetime="2015-05-01T09:00:00+01:00">1 Maggio 2015</time>
-</header>
+Come si può leggere nel WiKi del progetto ScummVM **[a]** e **[b]**, i giochi della LucasArts possiedono delle password e delle combinazioni di tasti per effettuare il controllo degli errori all'interno del gioco.<br>Questo tipo di _debug_ viene escluso dal sistema ScummVM: queste combinazioni e password non funzionano se il gioco è giocato al suo interno, tuttavia è ancora possibile vederle in azione se si fa uso degli eseguibili Dos originali (ad esempio tramite DOSBox).
 
-<p>Come si può leggere nel WiKi del progetto ScummVM <b>[a]</b> e <b>[b]</b>, i giochi della LucasArts possiedono delle password e delle combinazioni di tasti per effettuare il controllo degli errori all'interno del gioco.<br>Questo tipo di <em>debug</em> viene escluso dal sistema ScummVM: queste combinazioni e password non funzionano se il gioco è giocato al suo interno, tuttavia è ancora possibile vederle in azione se si fa uso degli eseguibili Dos originali (ad esempio tramite DOSBox).</p>
+ìPer il gioco **Indiana Jones and the Fate of Atlantis** ad esempio, occorre inserire prima di tutto una password (**debug pasword**) alla quale viene fatta seguire una prima combinazione di tasti (**activation key**), per attivare la modalità di _debug_ e poi una seconda combinazione, per effettuare il controllo o la modifica del comportamento del gioco.
 
-<p>Per il gioco <b>Indiana Jones and the Fate of Atlantis</b> ad esempio, occorre inserire prima di tutto una password (<b>debug pasword</b>) alla quale viene fatta seguire una prima combinazione di tasti (<b>activation key</b>), per attivare la modalità di <em>debug</em> e poi una seconda combinazione, per effettuare il controllo o la modifica del comportamento del gioco.</p>
+Sul WiKi **[b]** sono riportate tutte le informazioni relative alle modalità di debug per i vari giochi LucasArts. In questo articolo ci concentreremo sul mio favorito 'Indiana Jones And the Fate of Atlantis'.
 
-<p>Sul WiKi <b>[b]</b> sono riportate tutte le informazioni relative alle modalità di debug per i vari giochi LucasArts. In questo articolo ci concentreremo sul mio favorito 'Indiana Jones And the Fate of Atlantis'.</p>
-
-<p>La password deve essere inserita esattamente così com'è, a seguire, una combinazione di attivazione va fatta seguire per entrare a tutti gli effetti nella modalità debug!</p>
+La password deve essere inserita esattamente così com'è, a seguire, una combinazione di attivazione va fatta seguire per entrare a tutti gli effetti nella modalità debug!
 
 <div class="dashed-border" style="padding: 1em;">
-<p></p>
 
 <p><b>Debug Password</b>: shinymetal</p>
 <p><b>Activation Key</b>: <b><img alt="Ctrl" src="http://www.limulo.net/images/scumm/Ctrl.jpg"> + <img alt="Shift" src="http://127.0.0.1/limulo.net/images/scumm/shift.jpg"> + <img alt="D" src="http://www.limulo.net/images/scumm/D.jpg"></b></p>
@@ -255,70 +254,4 @@ specifica un livello -1 per annullare il debug.</p>
 <div class="firma">http://www.limulo.net</div>
 <a class="top" href="#indice">torna all'indice</a>
 </footer>
-</article>    
-
-
-<article>
-<header>
-<a id="room"></a>
-<h2>SCUMM Room System</h2>
-<time datetime="2015-05-01T09:00:00+01:00">1 Maggio 2015</time>
-</header>
-<p>Le room perchè si chiamano così? Di sicuro si può traovare la spiegazione di questo nel fatto che, con SCUMM creato per supportare la creazione del gioco Maniac Mansion, in cui i protagonisti, di fatto, vagano all'interno di una casa, la varie parti del gioco altro non sono che delle vere e proprie stanze, <em>room</em> appunto!</p>
-<footer>
-<div class="firma">http://www.limulo.net</div>
-<a class="top" href="#indice">torna all'indice</a>
-</footer>
-</article>
-
-
-
-<article>
-<header>
-<a id="actor"></a>
-<h2>SCUMM Actor System</h2>
-<time datetime="2015-05-01T09:00:00+01:00">1 Maggio 2015</time>
-</header>
-<p>chi sono gli attori?</p>
-<footer>
-<div class="firma">http://www.limulo.net</div>
-<a class="top" href="#indice">torna all'indice</a>
-</footer>
-</article>
-
-
-
-<article>
-<header>
-<a id="scripts"></a>
-<h2>SCUMM Scripts pt.1</h2>
-<time datetime="2015-05-01T09:00:00+01:00">1 Maggio 2015</time>
-</header>
-<p>vedi: http://www.pagetable.com/?p=603</p>
-<p>http://www.pagetable.com/?p=614</p>
-<footer>
-<div class="firma">http://www.limulo.net</div>
-<a class="top" href="#indice">torna all'indice</a>
-</footer>
-</article>
-
-
-<article>
-<header>
-<a id="roland"></a>
-<h2>Roland MT-32</h2>
-<time datetime="2015-05-01T09:00:00+01:00">1 Maggio 2015</time>
-</header>
-<p>Come suona?</p>
-<p>Munt</p>
-
-<p>pre GM-MIDI devices?</p>
-<p>http://www.sierrahelp.com/Utilities/Emulators/Munt.html</p>
-<p>https://github.com/munt/munt</p>
-<p>http://munt.sourceforge.net/</p>
-
-<footer>
-<div class="firma">http://www.limulo.net</div>
-<a class="top" href="#indice">torna all'indice</a>
-</footer>
-</article>
+</article>  
