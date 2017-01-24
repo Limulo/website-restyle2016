@@ -2,153 +2,167 @@
 layout: post
 title: Chaotic Robots Music
 date: 2014-05-31 09:30:00
-excerpt: Musica e Robots, un algoritmo procedurale per comporre con i robots
+excerpt: Music and Robots, a procedural algorithm to compose music using robots
 category: [sound-design, work]
 shortcut: shortcut-chaotic-robots-music.png
 ---
 
-**Chaotic Robot Music** nasce come progetto complementare al lavoro dei ragazzi di [HackLab Terni](http://hacklabterni.org/) '[Chaotic Robots](http://dev.hacklabterni.org/projects/cr21)' (sito veramente ben fatto, ricco di spiegazioni esaustive, immagini, tabelle e grafici per imparare e trarre spunti interessantissimi!).
+**Chaotic Robot Music** is part of a project developed by the [hacklab Terni](http://hacklabterni.org/) '[Chaotic Robots](http://dev.hacklabterni.org/projects/cr21) guys. We strongly invite you to visit their site: it's extremely well done, full of useful explanations, step-by-step instructions, images, tabs, graphs and anything you'd need to feel inspired.
 
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/SDqNaqEHwzE" frameborder="0" allowfullscreen></iframe>
 
-## Note sul progetto principale
-Il progetto '[Chaotic Robots](http://dev.hacklabterni.org/projects/cr21)' riguarda lo sviluppo di robot BEAM (BEAM - Biology, Electronics, Aesthetics, and Mechanics). Il comportamento dei robot e' controllato da circuiti High Entropy e fonti di luce opportunamente posizionate. Un'applicazione openFrameworks acquisisce il video da una telecamera sul soffitto e sovrappone delle scie curve che evidenziano le traiettorie dei robot. Alla fine di questa pagina e' possibile scaricare l'applicazione.
+## Notes on the main project
+The [Chaotic Robots](http://dev.hacklabterni.org/projects/cr21) project concerns the developement of BEAM (**B**iology, **E**lectronics, **A**esthetics, **M**echanics) robots. 
+High Entropy circuits and accurately located light sources control the robots behaviour. An openFrameworks application obtains the images from a camera positioned on the ceiling facing downwards towards the robots arena. The data are visually rendered as colored curved trails following the robots tracks as they move .
+The application is available for download at the bottom of the section.
 
 ![robot A]({{site.url}}/assets/images/chaotic-robots-music/a.jpg){: width="100%" } | ![robot B]({{site.url}}/assets/images/chaotic-robots-music/b.jpg){: width="100%" }
 
-## Note sul progetto complementare
 
-'_Chaotic Robot Music_' e' una patch realizzata usando il linguaggio di programmazione a nodi **PureData**.
+## Notes on the complementary project
 
-Le traiettorie dei robots vengono evidenziate e tracciate dall'applicazione principale. Questa stessa applicazione si occupa di inviare messaggi OSC contenenti informazioni relative a queste traiettorie.
+_Chaotic Robot Music_ is a [**PureData**](http://puredata.info) patch
 
-La patch si occupa di ricevere questi messaggi OSC e di interpretarli per generare un arrangiamento musicale in tempo reale.
-L'arrangiamento musicale finale sara' caratterizzato dalla presenza di una sezione ritmica di batteria (cassa, rullante e tamburello) e di basso.
-Un sintetizzatore polifonico-stereo si occupa di sostenere l'armonia eseguendo le note dell'accordo.
-Ci sono poi ulteriori sintetizzatore monofonici i cui parametri di sintesi sono dipendenti dal movimento dei robot.
+While tracking  and tracing the robots trajectories, the main application is also sending important information about that very trajectories via OSC messages.
+
+The PureData patch receives the messages and computes the data in order to obtain the proper input to compose music in real time.
+In the final music composition we can hear a rhythmic drums session (kick, snare, tom) and a bass line.
+A polyphonic-stereo synth handles the harmonic elements producing the chord notes.
+Other mono synths have their controls  subjected to robots movements.
 
 ## Downloads
-Ecco il [link](https://github.com/Limulo/ChaoticRobotsMusic) alla pagina GitHub del progetto: da qui è possibile scaricare il codice sorgente dell'applicativo di test e patches di Pure Data!
+[Here](https://github.com/Limulo/ChaoticRobotsMusic)'s the GitHub page of the project. You can find the main application source code and the puredata patches to download.
 
 ---
 
-## Istruzioni
+## Instructions
 
 <iframe width="100%" height="360" src="http://www.youtube.com/embed/Qxm16oeOaQE"  allowfullscreen></iframe>
 
-Per poter far funzionare l'applicativo sul proprio computer, non potendo disporre dei robot e del sistema di telecamera per la ripresa del loro movimento, e' possibile sfruttare una applicazione scritta in linguaggio 'Processing'. Questa applicazione di test ha il compito di simulare il movimento dei robot e di inviare a 'ChaoticRobotsMusic' gli stessi dati relativi al movimento, come se i robot fossero effettivamente presenti.
+To test the application without the actual robots wandering around, we can use a simulation application written in **Processing**. The simulation application mimics the robots moving on the arena and sends the data to the _Chaotic Robot_Music_ patch.
 
-Gli strumenti necessari sono 2:
+We need two tools:
 
-* **Processing**, scaricabile gratuitamente per tutti i sistemi operativi da questo [link](http://www.processing.org);
-* **PureData**, versione **extended**, scaricabarile questo [link](http://puredata.info);
+* **Processing** (you can find it [here](http://www.processing.org));
+* **PureData** (versione **extended**, you can find it [here](http://puredata.info));
 
-Un ulteriore elemento, indispensabile per permettere la comunicazione tramite messaggi OSC tra le due applicazioni '_test_' e '_ChaoticRobotsMusic_' e' l'installazione della libreria aggiuntiva per Processing **oscP5** di Andreas Schlegel.
+In order to communicate via OSC from Processing(the _test_ application) to PureData (the _ChaoticRobotsMusic_ patch)and viceversa, we need the **oscP5** Processing external library, by Andreas Schlegel. You can find it [here](http://www.sojamo.de/libraries/oscP5/) or you can install it directly within the Processing IDE (Menu Sketch > Import Library > Add Library. From the Library Manager window, select oscP5, the install it. Restart Processing for the changes to take effect).
+([Here](http://www.processing.org/reference/libraries/) you can find more information about installing external libraries in Processing)
 
-La libreria può' essere scaricata direttamente dal [sito](http://www.sojamo.de/libraries/oscP5/) ufficiale oppure installata direttamente da Processing, selezionando "Import Library…" e quindi cliccando su "Add Library" dal menu' a tendina "Sketch". Così facendo, all'apertura della finestra "Library Manager" basterà' cercare la libreria 'oscP5' nel campo di ricerca apposito e, una volta trovatala, selezionarla e fare click su 'Install'. Per completare il processo sarà' necessario riavviare Processing.
-
-Ulteriori informazioni sull'installazione delle librerie aggiuntive possono essere reperite a [questa](http://www.processing.org/reference/libraries/) pagina web.
 
 ![play button]({{site.url}}/assets/images/chaotic-robots-music/play-button.jpg){: width:"40%", border="1px solid #ccc;"}
 
-Fatto questo, dopo aver scaricato il codice sorgente dalla pagina del progetto su GitHub (vedi sopra), possiamo proseguire.
-Una volta scompattato l'archivio .zip, i file da mandare in esecuzione, con un semplice doppio click, sono:</p>
+To sum up, there are two files to execute:
 
-* _test/test.pde_ (codice sorgente Processing dell'applicato di test per la simulazione del movimento dei robot);
-* _puredata/ChaoticRobotsMusic.pd_ (codice sorgente PureData per l'applicativo che genera musica e audio procedurale).
+* _test/test.pde_ (source code of the Processing simultaion application);
+* _puredata/ChaoticRobotsMusic.pd_ (source code of the PureData patch to produce music procedurally);
 
-Click sul pulsate play/run di Processing (in alto a sinistra) per avviare l'applicativo test.
+Clicking on the play/run button in the Processing IDE starts the test application.
 
-Click sull'interruttore 'Audio_ON' della sezione 'MASTER' in PureData per attivare la riproduzione dell'audio.
+Clicking on the 'Audio_ON' switch in the 'MASTER' section in PureData activates DSP and audio production.
 
 ![interfaccia]({{site.url}}/assets/images/chaotic-robots-music/interfaccia.jpg)
 
-## Istruzioni per l'applicativo di test
 
-L'applicativo test permette alcuni rudimentali controlli per visualizzare le traiettorie dei singoli robot, la suddivisione immaginaria del piano di gioco nei 4 quadranti e la posizione della media aritmetica delle coordinate dei 4 robot:
+## Instructions for the test application
 
-* Premi ![1]({{site.url}}/assets/images/chaotic-robots-music/1.jpg){: display="inline"}, ![2]({{site.url}}/assets/images/chaotic-robots-music/2.jpg){: display="inline"}, ![3]({{site.url}}/assets/images/chaotic-robots-music/3.jpg){: display="inline"}, ![4]({{site.url}}/assets/images/chaotic-robots-music/4.jpg){: display="inline"}, per visualizzare la traiettoria del singolo robot;
-* Premi ![C]({{site.url}}/assets/images/chaotic-robots-music/C.jpg) per visualizzare sa suddivisione del piano in 4 quadranti;
-* Premi ![M]({{site.url}}/assets/images/chaotic-robots-music/M.jpg) per visualizzare la media aritmetica delle posizioni dei 4 robot;
-* Premi un qualsiasi altro tasto per tornare in condizioni normali.
+The application offers some basic controls to manage the visualisation of important data, such as the robots trajectories, the subdivision of the arena in 4 quadrants and position of the arithmetic avarage of the robots coordinates:
 
-## Istruzioni per l'applicativo _CHAOTIC ROBOTS MUSIC_
+* Press ![1]({{site.url}}/assets/images/chaotic-robots-music/1.jpg){: display="inline"}, ![2]({{site.url}}/assets/images/chaotic-robots-music/2.jpg){: display="inline"}, ![3]({{site.url}}/assets/images/chaotic-robots-music/3.jpg){: display="inline"}, ![4]({{site.url}}/assets/images/chaotic-robots-music/4.jpg){: display="inline"}, to display the specif robot trajectory;
+* Press ![C]({{site.url}}/assets/images/chaotic-robots-music/C.jpg) to visualise the 4 quadrants subdivision of the arena;
+* Press ![M]({{site.url}}/assets/images/chaotic-robots-music/M.jpg) to picture the robots positions avarage;
+* Press any other key to return to default view.
 
-### Analisi delle sezioni
 
-**SEZIONE OSC**
-data la porta di comunicazione, cliccando sul pulsante 'ON' e' possibile avviare la ricezione di messaggi da parte della applicazione principale. Il cerchio nero lampeggiante indica la presenza di messaggi OSC in ingresso.
+## Instructions for the _CHAOTIC ROBOTS MUSIC_ application
 
-**SEZIONE AREA**
-Dal momento che i suoni e la generazione delle note musicali si basa direttamente sui dati di posizione X e Y dei robot, occorre indicare nei due campi 'width' e 'height' le dimensioni effettive - in pixel - dello spazio entro il quale le traiettorie dei robot vengono tracciate nell'applicazione principale.
+### Sections analysis
 
-**SEZIONE ROBOTS**
-In questa sezione occorre cliccare sul simbolo corrispondente al robot, ogni volta che un nuovo robot viene inserito o tolto dall'area di gioco. Di default la patch si apre indicando sempre la presenza di un robot.
+**OSC SECTION**
+once given the communication port, clicking on the 'ON' button starts the receiving of messages coming from the main apllication.
+The black blinking circle reveals the presence of OSC messages in input.
 
-**SEZIONE CHORDS and STYLE**
-In questa sezione e' possibile avere un rapido riscontro visivo su quale sia l'accordo e lo stile ritmico attuale.
+**AREA SECTION**
+The sounds and the notes generation rely directly on the X and Y position of the robots. Thus in the 'width' and 'height' fields we need to specify the real dimensions (in pixels) of the area from which the main application obtains the data to be sent.
 
-**SEZIONE MASTER**
-In questa sezione e' presente un solo interruttore il cui scopo e' quello di accendere o spegnere tutto l'audio in uscita dalla patch.
+**ROBOTS SECTION**
+Once a robot is added or removed from the arena, click on the corresponding button in this section to adjust the behaviour of the system. By default the application starts with one robot on the arena.
 
-**SEZIONE MIXER**
-In questa sezione e' possibile regolare singolarmente i volumi di tutti gli strumenti musicali che compongono l'arrangiamento del brano: i fader R0, R1, R2 e R3 sono preposti al controllo del volume dei 4 sintetizzatori monofonici associati ai 4 robots. PADS e BASS regolano rispettivamente il volume per il sintetizzatore polifonico 'pads' e il basso. KICK, SNARE e TAMB sono invece i fader per il controllo dei volumi della batteria (cassa, rullante e tamburello). Gli ultimi due faders, REV e MASTER, sono i rispettivi controlli per l'effetto riverbero e per il volume complessivo. Tutti i faders, ad eccezione di R0, R1, R2, R3 e MASTER, possiedono un ulteriore controllo ad interruttore per mettere il suono in MUTE.
+**CHORDS and STYLE SECTION**
+This section provides a quick overview of the chord being played and the present rythmic style.
 
-### Analisi del funzionamento
-Tutta la struttura del brano musicale si basa su un tempo BPM di circa 120 e sulla unita' di tempo della biscroma (pari a 62 millisecondi).
+**MASTER SECTION**
+The only switch present in this section is responsible for the starting and stopping of the patch audio engine.
 
-L'arrangiamento e' fisso: gli stili si susseguono sempre allo stesso modo per una durata complessiva di 96 battute di musica + 8 battute di silenzio.
-Nelle successive versioni sara' possibile implementare un controllo manuale sul tempo BPM (tap tempo) e modificare l'arrangiamento in modo che venga costruito in tempo reale.
+**MIXER SECTION**
+In this section we can regulate one by one the volumes of all the instrument present in the composition. 
+The R0, R1, R2 and R3 fader manage the 4 mono synths volumes.
+PADS and BASS control the 'pads' polyphonic synth and the 'bass' volumes respectively.
+KICK, SNARE and TAMB faders handle the drums (kick, snare, tom) volume.
+REV and MASTER faders monitor the reverb effect and the global volum, each in order.
+Every fader, save R0, R1, R2, R3 and MASTER, has a switch control to MUTE the sound.
+
+### Behaviour analysis
+
+
+The entire music piece structure is based on a 120 BPM tempo and the demisemiquaver (aproximately 62 msecs) as tempo unit.
+
+The arrangement is given: the styles sequence in the same fashion. The whole duration is 96 bars + 8 silence bars.
+In future versions we'll be able to manually operate on the BPM (tap tempo) and to create the arrangement in real time.
 
 <div class="nota">
-Questa parte del programma e' visibile dalle sub-patch 'time-control', 'mix-presets' e 'score-generator' dalla sezione MASTER.
+This section can be reached from the sub-patches 'time-control', 'mix-presets' and 'score-generator' within the MASTER section.
 </div>
 
-Tutti gli strumenti melodici/armonici, si intonano sulle note di un accordo. Questo accordo è scelto su base della media aritmetica delle posizioni dei robot selezionati. Gli accordi possibili sono 4: Do, Sol, Fa e Re minore.
+Every melodic/harmonic tool is in tune with a chord note. The chord choice is based on the avarage of the positions. There are four possible chords: C, G, F, Dmin.
 
-Lo spazio di gioco dei robot e' suddiviso virtualmente in 4 riquadri. La posizione media, muovendosi tra un riquadro e l'altro seleziona l'accordo corrispondente. L'accordo cambia in relazione alla posizione media ma viene inviato a tutti gli strumenti solo in corrispondenza del tempo forte della battuta (ogni 8 crome) in modo che il cambiamento armonico avvenga sempre 'a tempo' con l'esecuzione musicale.
+The arena is subdivided in four quadrants. The avarage position, wavering from a quadrant to the next ones, select the chord corresponding to the loctaion.
+The chord change happens on the strong stress of the bar (every 8 quavers), so the harmonic change is always 'in time' with music execution. 
 
 <div class="nota">
-Questa parte e' visibile dalla sezione CHORDS and STYLES
+This feature can be analysed in the CHORDS and STYLES sections.
 </div>
 
 ---
 
-**SYNTH CHIMES1 e SYNTH CHIMES2**
-Questi due sintetizzatori monofonici sono associati ai primi due robot. Si occupano di eseguire le note della pentatonica di Do eseguendo le 5 note della scala in direzione ascendente o discendente a seconda della direzione del robot. Talvolta le note vengono eseguite molto rapidamente a mo' di trillo/glissando.
+**SYNTH CHIMES1 and SYNTH CHIMES2**
+The two mono synth are associated with the first two robots.
+They execute the notes of the C pentatonic scale. The 5 notes are ascending or descending according to the robot direction.
+Sometimes the notes are executed very quickly, resulting in a sort of trill/glissando.
 
-**SYNTH PROPH** (arpeggiatore)
-Questo sintetizzatore esegue l'arpeggio sulle note dell'accordo attuale. L'ordine in cui le note si susseguono e' legato alla direzione di movimento del robot.
+**SYNTH PROPH** (arpeggiator)
+This synth plays arpeggios of the current chord notes. The note order is linked to the rebot direction.
 
-Un ulteriore parametro di sintesi è il filtro dinamico applicato al suono del synth. Questo filtro si chiude, lasciando passare le frequenze più' gravi, quando il robot si muove nelle zone periferiche dell'area di gioco. il filtro invece si apre, rendendo il suono più' chiaro e brillante, se il robot si avvicina alla parte centrale del piano di gioco.
+Applied to the sound from the synth there's a dynamic filter. When the robots move towards the rim of the arena, the filter closes, so only low frequencies make it across. If the robot heads towards the center of the arena, the filetr opens and the sound is clearer and  more vibrant.
 
-**SYNTH SINGER** (con dispositivo automatico di scelta della nota da cantare)
-Questo synth implementa un sistema intelligente per scegliere autonomamente la nota che debba seguire quella attualmente in riproduzione su base dei seguenti elementi:
+**SYNTH SINGER** (with an automatic engine choosing the note to be sung)
+This synth implements an intelligent system that choose the note to be sung immediately after the one currently in reproduction.
+The system is based on these elements:
 
-* accordo in cui ci si trova;
-* la direzione (stessa intonazione, più' grave o più' acuta);
-* la nota attualmente in riproduzione.
+* the current chord;
+* the direction (same intonation, lower or higher); 
+* the note currently reproduced.
 
-In particolare l'algoritmo implementato calcola, ad ogni nota riprodotta, la probabilita' della nota successiva. Ogni possibile nota avra' una probabilita' differente, pesata in base a 3 regole imposte:
+For every note reproduced, the algorithm computes the probability for the next one.
+Every note will have a different probability, according to three given rules:
 
-1. la nuova nota dovra' avere una probabilita' "pA" di appartenere all'accordo musicale in cui ci si trova attualmente;
-2. la nota dovra' avere una probabilita' "pDIR" di trovarsi nella stessa direzione prescelta dal movimento del robot (se il robot si muove ad esempio nella direzione 0, allora avremo probabilita' "pDIR" che la nota a seguire sia più' grave rispetto a quella attualmente in riproduzione; se invece il robot si muove nella direzione 1 o 2, andando quindi dritto o svoltando a destra, avremo la stessa probabilita' "pDIR" che la nota successiva mantenga la stessa intonazione oppure sia più' acuta).
-3. la nuova nota dovra' avere una probabilita' "pSN" (probabilita' a campana distribuita sulle 7 note musicali e centrata sulla nota attuale) d'essere vicina alla nota corrente.
+1. the next note must have a "pA" probability of belonging to the current chord;
+2. the next note must have a "pDIR" probability of being in the same direction chosen by the robot (if the robots moves in direction 0, we'll have a "pDIR" probability that the next note will be lower the the current one; if the robots moves in direction 1 or 2, that is, moving forward or turning right, we'll have "pDIR" probability for the note to be, respectively, higher or maintaining the intonation);
+3. the next note must have a "pSN" probability of being near the current one. This is a normal distribution of 7 notes, centered on the actual one.
 
-E' stato introdotto un ulteriore elemento che permette al synth di cantare frasi musicali che abbiano una lunghezza media di 2 battute; queste frasi musicali sono a loro volta separate da valori di pausa.
+The synth can also sing music phrases avaragely 2 bars long; these phrases are separated by pauses.
+The chance for the next note to be a quaver pause instead of a note is directly proportional to the number of notes (quavers) sung in sequence.
+The longer the sung phrase is, the more likely it will ben interrupted by a quaver pause.
+Similarly, the longer is the interruption, the more likely it is that the next note is a real note.
 
-La probabilita' che la nota successiva, anziché' essere una nota, sia invece un valore di pausa-di-croma e' direttamente proporzionale al numero di note (crome) cantante in successione. In altre parole, tanto più' la frase musicale cantata e' lunga, tanto più' si avrà la probabilità' che questa venga interrotta da una pausa-di-croma.
-
-In maniera simile, una volta che si e' interrotta la frase musicale, la probabilità' che la nota successiva sia effettivamente una nota e non un ulteriore valore di pausa-di-croma è direttamente proporzionale alla durata dell'interruzione.
-
-**PADS** (polifonico stereofonico)
-Pads e' un sintetizzatore polifonico che ha per compito quello di suonare le note dell'accordo creando una suono persistente e dinamico per sostenere l'esecuzione solista dei robots
+**PADS** (polyphonic stereophonic)
+Pads is a polyphonic synth playing the chord notes, creating a persistent and dynamic sound that supports the solo executions of the robots.
 
 **BASS**
-Sintetizzatore monofonico che si occupa di eseguire la melodia del basso.
+Mono synth executin the bass line.
 
-**KICK, SNARE e TAMB**
-I 3 elementi che fanno parte della batteria e, a seconda dello stile musicale prescelto, eseguono un pattern ritmico.
+**KICK, SNARE and TAMB**
+The three drums elements performing a rythmic pattern, according to the chosen musical theme.
 
 **REV**
-E' un effetto riverbero verso il quale confluiscono le mandate dagli strumenti SINGER, SNARE e TAMB.
+It' s a reverb effect. Its inputs are the aux sends from SINGER, SNARE and TAMB.
