@@ -63,6 +63,8 @@ A bunch of posts related to graphics:
 {% endif %}
 {% endfor %}
 
+
+{% comment %}
 ### Grammars
 A bunch of posts related to grammars:
 
@@ -89,7 +91,7 @@ A bunch of posts related to grammars:
 {% endif %}
 {% endfor %}
 
-{% comment %}
+
 ### Arduino e Processing
 A collection of _Interaction Design_ project realized using _Arduino_ and _Processing_ programming languages.
 

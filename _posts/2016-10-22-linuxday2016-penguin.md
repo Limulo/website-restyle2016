@@ -14,9 +14,11 @@ This OS is often associated with the image of a penguin called _tux_.
 
 That's why **limulo.net** used a penguin stuffed animal in one of its interactive installation for the [**Linux Day Milan 2016**](http://www.linuxdaymilano.org), an important annual event in Italy dedicated to Free and Open Source software.
 
-![penguin 2]({{site.url}}/assets/images/linuxday2016/IMG_0864.jpg)
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/lpZxsX3hyhc" frameborder="0" allowfullscreen></iframe>
 
 This interactive station is entirely based on the [**TouchBoard**](https://www.bareconductive.com/shop/touch-board/), a prototyping board by [Bareconductive](https://www.bareconductive.com/) based on the **Arduino Leonardo**. This board is specifically designed to be used with capacitive sensors and it is suited for situations where you need to be completely independent from the main power supply.
+
+![penguin 2]({{site.url}}/assets/images/linuxday2016/IMG_0864.jpg)
 
 The board can be powered using a LiPo battery, so it can be place everywhere. The board also mounts an MP3 shield and a female minijack TRS that we used to reproduce a sound.
 
