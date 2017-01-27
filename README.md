@@ -88,6 +88,14 @@ If you want to write a mathematical formula you have to create a _math latex blo
 $$ x+y = 5 $$
 ```
 
+## How to create a LaTeX formula inside an Inkscape images
+
+Use the ```Extensions -> Render -> LaTeX formula...``` extension. In the editable field add LaTeX formulae like the one shown below:
+
+```
+$\frac{1}{\sqrt{2}}$
+```
+
 ## How to have synthax highlighted
 
 Use these _liquid_ tags before and after code blocks.
@@ -106,3 +114,4 @@ Use these _liquid_ tags before and after code blocks.
 * [Liquid Syntax](https://github.com/shopify/liquid/wiki/Liquid-for-Designers);
 * [Jekyll official site](http://jekyllrb.com/);
 * **Hyde** [theme repository](https://github.com/poole/hyde) and [demo page](http://hyde.getpoole.com/);
+* Inkscape [extensions]() ([this one](https://github.com/fsmMLK/inkscapeCircuitSymbols) for example let's you create circuits symbols)!
