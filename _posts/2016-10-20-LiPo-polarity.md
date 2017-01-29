@@ -7,6 +7,10 @@ category: [installation, issue]
 tags: [interactive, Arduino, electronics]
 ---
 
+Work in progress! This article will be soon available!
+
+{% comment %}
+
 Nelle nostre sperimentazioni abbiamo capito che in applicazioni in cui occorra percepire l'interazione dell'utente sottoforma di tocco o prossimità, l'**MPR121** è la soluzione! Questo chip è stato progettato per lavorare con sensori di tipo capacitivo e implementa al suo interno tutta una serie di algoritmi che lo rendono molto versatile e robusto.
 
 Il chip _MPR121_ lo si trova integrato ad esempio in una piccola _breakout board_ prodotta da **Adafruit**: si tratta della [Adafruit 12-Key Capacitive Touch Sensor Breakout - MPR121](https://www.adafruit.com/product/1982) che abbiamo usato con grande soddisfazione in diversi progetti. La scheda _Adafruit_ monta tutto il necessario a renderla compatibile con Arduino e velocemente interfacciabile tramite protocollo **I2C**.
@@ -60,3 +64,5 @@ A titolo di promemoria lasciamo qui anche alcuni altri riferimenti ad informazio
 ## More
 
 * Check out our [LinuxDay 2016]({% post_url 2016-10-22-linuxday2016 %}) page if you need more information about the event and the other interactive installations.
+
+{% endcomment %}
