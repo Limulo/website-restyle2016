@@ -20,18 +20,18 @@ This interactive station is entirely based on the [**TouchBoard**](https://www.b
 
 ![penguin 2]({{site.url}}/assets/images/linuxday2016/IMG_0864.jpg)
 
-The board can be powered using a LiPo battery, so it can be place everywhere. The board also mounts an MP3 shield and a female minijack TRS that we used to reproduce a sound.
+The board can be powered using a LiPo battery, so it can be placed everywhere. The board also mounts an MP3 shield and a female minijack TRS that we used to reproduce a sound.
 
 We connected the _TouchBoard_ to a particular electrode made of a square shaped copper foil attached inside a little card box.
 
 ![front desk]({{site.url}}/assets/images/linuxday2016/station_7.png)
 
-This sensor detects user proximity while the TouchBoard sends trigger to two different servo motors:
+This sensor detects user proximity while the _TouchBoard_ sends trigger to two different servo motors:
 
 * one motor is attached to the penguin armpit and is responsible for moving the penguin arm;
 * the other servo is connected with some wind chimes;
 
-When the user approaches the little card box to donate, the sensor inside it sends an electric stimulus to the TouchBoard. This stimulus is elaborated by the software on the board and eventually triggers an electric signal addressed to the servos.
+When the user approaches the little card box to donate, the sensor inside it sends an electric stimulus to the _TouchBoard_. This stimulus is elaborated by the software on the board and eventually triggers an electric signal addressed to the servos.
 
 While the penguin is waiving you hear the warble by the wind chimes.
 
@@ -39,7 +39,7 @@ While the penguin is waiving you hear the warble by the wind chimes.
 
 ## How does it work?
 
-We have created a little _control unit_ where we placed the TouchBoard and the LiPo battery. Inside the same box we placed a 4 AA battery pack to provide a separate power supply for the servos.
+We have created a little _control unit_ where we placed the _TouchBoard_ and the LiPo battery. Inside the same box we placed a 4 AA battery pack to provide a separate power supply for the servos.
 
 The _control unit_ contained also a tiny breadboard used to create all the necessary connections between components.
 
@@ -51,7 +51,9 @@ Here is an image that gives you the idea:
 
 [![fritzing]({{site.url}}/assets/images/linuxday2016/station_7_def_circuit_bb_bis.png)]({{site.url}}/assets/images/linuxday2016/station_7_def_circuit_bb_bis.png)
 
-You can find the code for this interactive installation from [this](https://github.com/Limulo/linuxday2016) repository.
+## Source Code
+
+You can donwnload the code for this interactive installation from [this](https://github.com/Limulo/linuxday2016/tree/master/stazione_7/Arduino_sketches/station_7_v01) repository.
 
 ---
 
