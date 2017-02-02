@@ -11,7 +11,7 @@ The Gardenia Palace is an animated cartoons series created by Nello Ferrara and 
 
 Here you can listen to our sound effects track for the pilote episode!
 
-![Gardenia]({{ site.url }}/assets/images/gardenia/gardenia_0.jpg){: width="100%;"}
+![Gardenia]({{ site.baseurl }}/assets/images/gardenia/gardenia_0.jpg){: width="100%;"}
 
 <iframe src="http://www.youtube.com/embed/ejCZ8fGYH8Q" width="100%" height="360" allowfullscreen></iframe>
 

@@ -11,9 +11,9 @@ This Christmas we have worked on 4 short spot for **Coccinelle**: sound design, 
 
 These four spots have been published on-line, one per week, beginning from the 1st to the last day of of December 2015.
 
-[![clip 01]({{ site.url }}/assets/images/coccinelle-2015/pt1_img01.jpg){: width="100%;"}]({{ site.url }}/assets/images/coccinelle-2015/pt1_img01.jpg) | [![clip 02]({{ site.url }}/assets/images/coccinelle-2015/pt2_img01.jpg){: width="100%;"}]({{ site.url }}/assets/images/coccinelle-2015/pt2_img01.jpg) | [![clip 02-bis]({{ site.url }}/assets/images/coccinelle-2015/pt2_img02.jpg){: width="100%;"}]({{ site.url }}/assets/images/coccinelle-2015/pt2_img02.jpg)
+[![clip 01]({{ site.baseurl }}/assets/images/coccinelle-2015/pt1_img01.jpg){: width="100%;"}]({{ site.baseurl }}/assets/images/coccinelle-2015/pt1_img01.jpg) | [![clip 02]({{ site.baseurl }}/assets/images/coccinelle-2015/pt2_img01.jpg){: width="100%;"}]({{ site.baseurl }}/assets/images/coccinelle-2015/pt2_img01.jpg) | [![clip 02-bis]({{ site.baseurl }}/assets/images/coccinelle-2015/pt2_img02.jpg){: width="100%;"}]({{ site.baseurl }}/assets/images/coccinelle-2015/pt2_img02.jpg)
 
-[![clip 03]({{ site.url }}/assets/images/coccinelle-2015/pt3_img02.jpg){: width="100%"}]({{ site.url }}/assets/images/coccinelle-2015/pt3_img02.jpg) | [![clip 03bis]({{ site.url }}/assets/images/coccinelle-2015/pt3_img04.jpg){: width="100%"}]({{ site.url }}/assets/images/coccinelle-2015/pt3_img04.jpg) | [![clip 04]({{ site.url }}/assets/images/coccinelle-2015/pt4_img01.jpg){: width="100%"}]({{ site.url }}/assets/images/coccinelle-2015/pt4_img01.jpg)
+[![clip 03]({{ site.baseurl }}/assets/images/coccinelle-2015/pt3_img02.jpg){: width="100%"}]({{ site.baseurl }}/assets/images/coccinelle-2015/pt3_img02.jpg) | [![clip 03bis]({{ site.baseurl }}/assets/images/coccinelle-2015/pt3_img04.jpg){: width="100%"}]({{ site.baseurl }}/assets/images/coccinelle-2015/pt3_img04.jpg) | [![clip 04]({{ site.baseurl }}/assets/images/coccinelle-2015/pt4_img01.jpg){: width="100%"}]({{ site.baseurl }}/assets/images/coccinelle-2015/pt4_img01.jpg)
 
 
 Here's a video where you can watch all of them:
@@ -41,9 +41,9 @@ Qui di seguito un video che li mostra tutti e quattro di seguito:
 Protagonista degli spot, una piccola borsetta! Essa vive un'avventura interessante, rapita da una vetrina di un negozio e dopo un terribile incubo si ritrova catapultata nel paese di Babbo Natale per divenire infine un invidiabile regalo sotto l'albero!
 
 
-[![clip 01]({{ site.url }}/assets/images/coccinelle-2015/pt1_img01.jpg){: width="100%;"}]({{ site.url }}/assets/images/coccinelle-2015/pt1_img01.jpg) | [![clip 02]({{ site.url }}/assets/images/coccinelle-2015/pt2_img01.jpg){: width="100%;"}]({{ site.url }}/assets/images/coccinelle-2015/pt2_img01.jpg) | [![clip 02-bis]({{ site.url }}/assets/images/coccinelle-2015/pt2_img02.jpg){: width="100%;"}]({{ site.url }}/assets/images/coccinelle-2015/pt2_img02.jpg)
+[![clip 01]({{ site.baseurl }}/assets/images/coccinelle-2015/pt1_img01.jpg){: width="100%;"}]({{ site.baseurl }}/assets/images/coccinelle-2015/pt1_img01.jpg) | [![clip 02]({{ site.baseurl }}/assets/images/coccinelle-2015/pt2_img01.jpg){: width="100%;"}]({{ site.baseurl }}/assets/images/coccinelle-2015/pt2_img01.jpg) | [![clip 02-bis]({{ site.baseurl }}/assets/images/coccinelle-2015/pt2_img02.jpg){: width="100%;"}]({{ site.baseurl }}/assets/images/coccinelle-2015/pt2_img02.jpg)
 
-[![clip 03]({{ site.url }}/assets/images/coccinelle-2015/pt3_img02.jpg){: width="100%"}]({{ site.url }}/assets/images/coccinelle-2015/pt3_img02.jpg) | [![clip 03bis]({{ site.url }}/assets/images/coccinelle-2015/pt3_img04.jpg){: width="100%"}]({{ site.url }}/assets/images/coccinelle-2015/pt3_img04.jpg) | [![clip 04]({{ site.url }}/assets/images/coccinelle-2015/pt4_img01.jpg){: width="100%"}]({{ site.url }}/assets/images/coccinelle-2015/pt4_img01.jpg)
+[![clip 03]({{ site.baseurl }}/assets/images/coccinelle-2015/pt3_img02.jpg){: width="100%"}]({{ site.baseurl }}/assets/images/coccinelle-2015/pt3_img02.jpg) | [![clip 03bis]({{ site.baseurl }}/assets/images/coccinelle-2015/pt3_img04.jpg){: width="100%"}]({{ site.baseurl }}/assets/images/coccinelle-2015/pt3_img04.jpg) | [![clip 04]({{ site.baseurl }}/assets/images/coccinelle-2015/pt4_img01.jpg){: width="100%"}]({{ site.baseurl }}/assets/images/coccinelle-2015/pt4_img01.jpg)
 
 
 Un progetto molto divertente che ci ha impegnati nel registrare molti suoni diversi e nel costruire nuovi tools interessanti.

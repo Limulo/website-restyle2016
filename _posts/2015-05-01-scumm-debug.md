@@ -17,7 +17,7 @@ La password deve essere inserita esattamente così com'è, a seguire, una combin
 <div class="dashed-border" style="padding: 1em;">
 
 <p><b>Debug Password</b>: shinymetal</p>
-<p><b>Activation Key</b>: <b><img alt="Ctrl" src="http://www.limulo.net/images/scumm/Ctrl.jpg"> + <img alt="Shift" src="http://127.0.0.1/limulo.net/images/scumm/shift.jpg"> + <img alt="D" src="http://www.limulo.net/images/scumm/D.jpg"></b></p>
+<p><b>Activation Key</b>: <b><img alt="Ctrl" src="{{ site.baseurl }}/assets/images/scumm/Ctrl.jpg"> + <img alt="Shift" src="http://127.0.0.1/limulo.net/images/scumm/shift.jpg"> + <img alt="D" src="http://www.limulo.net/images/scumm/D.jpg"></b></p>
 <p><b>Keys</b></p>
 <ul>
     <li><b><img alt="Ctrl" src="http://www.limulo.net/images/scumm/Ctrl.jpg"> + <img alt="E" src="http://127.0.0.1/limulo.net/images/scumm/E.jpg"> =</b> Set variable ;</li>

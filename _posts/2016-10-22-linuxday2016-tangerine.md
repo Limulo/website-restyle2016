@@ -9,7 +9,7 @@ shortcut: shortcut-linuxday2016-tangerine.png
 
 During the [**Linux Day Milan 2016**](http://www.linuxdaymilano.org), an inportant event dedicated to free and open source software in Italy, we shown an interactive station that used capacitive sensors to detect user touches.
 
-[![elettrodes]({{site.url}}/assets/images/linuxday2016/IMG_0860.jpg)]({{site.url}}/assets/images/linuxday2016/IMG_0860.jpg)
+[![elettrodes]({{ site.baseurl }}/assets/images/linuxday2016/IMG_0860.jpg)]({{ site.baseurl }}/assets/images/linuxday2016/IMG_0860.jpg)
 
 
 Some electrodes created with a special [electric paint](https://www.bareconductive.com/shop/electric-paint-50ml/) by [BareConductive](https://www.bareconductive.com/) are painted on a normal sheet of paper.
@@ -17,17 +17,17 @@ Some electrodes created with a special [electric paint](https://www.bareconducti
 These electrodes allows an **Arduino** and some others circuits connected to it to send messages to a computer.
 Messages are interpreted and used to created real time graphics and sounds.
 
-[![station 2]({{site.url}}/assets/images/linuxday2016/station_2quater.png)]({{site.url}}/assets/images/linuxday2016/station_2quater.png)
+[![station 2]({{ site.baseurl }}/assets/images/linuxday2016/station_2quater.png)]({{ site.baseurl }}/assets/images/linuxday2016/station_2quater.png)
 
 To create a different feeling we have added a special electrode: a **tangerine**!
 
-[![bimbi 3]({{site.url}}/assets/images/linuxday2016/IMG_0921.jpg)]({{site.url}}/assets/images/linuxday2016/IMG_0921.jpg)
+[![bimbi 3]({{ site.baseurl }}/assets/images/linuxday2016/IMG_0921.jpg)]({{ site.baseurl }}/assets/images/linuxday2016/IMG_0921.jpg)
 
 If you touch it you will see the world lamp to light up while a new interesting sound is generated.
 
-[![bimbi 1]({{site.url}}/assets/images/linuxday2016/IMG_0915.jpg)]({{site.url}}/assets/images/linuxday2016/IMG_0915.jpg)
+[![bimbi 1]({{ site.baseurl }}/assets/images/linuxday2016/IMG_0915.jpg)]({{ site.baseurl }}/assets/images/linuxday2016/IMG_0915.jpg)
 
- [![bimbi 2]({{site.url}}/assets/images/linuxday2016/IMG_0927.jpg){: width="100%;"}]({{site.url}}/assets/images/linuxday2016/IMG_0927.jpg) | [![bimbi 4]({{site.url}}/assets/images/linuxday2016/IMG_0917.jpg){: width="100%;"}]({{site.url}}/assets/images/linuxday2016/IMG_0917.jpg)
+ [![bimbi 2]({{ site.baseurl }}/assets/images/linuxday2016/IMG_0927.jpg){: width="100%;"}]({{ site.baseurl }}/assets/images/linuxday2016/IMG_0927.jpg) | [![bimbi 4]({{ site.baseurl }}/assets/images/linuxday2016/IMG_0917.jpg){: width="100%;"}]({{ site.baseurl }}/assets/images/linuxday2016/IMG_0917.jpg)
 
 ---
 
@@ -47,7 +47,7 @@ The eighth electrode is a _tangerine_ we have skewered with another clip, it con
 
 The program is studied in a way that the Arduino closes the relay when the capboard detects a touch on the tangerine so to light up the world lamp connected to the relay module.
 
-[![station 4]({{site.url}}/assets/images/linuxday2016/station_4.png)]({{site.url}}/assets/images/linuxday2016/station_4.png)
+[![station 4]({{ site.baseurl }}/assets/images/linuxday2016/station_4.png)]({{ site.baseurl }}/assets/images/linuxday2016/station_4.png)
 
 At the same time Arduino sends a message via the bluetooth serial communication to a [**Processing**](https://processing.org/) sketch running on a near laptop.
 
@@ -64,7 +64,7 @@ In addition there are 4 more electrodes: they have a square shape and they are a
 ### More relay
 Originally this interactive station was though to have 3 relays instead of one. One of these was driven by a little electret microphone while the third had to be commanded by _Processing_ through the BlueTooth connection.
 
-[![station 2 original]({{site.url}}/assets/images/linuxday2016/station_2origin.png)]({{site.url}}/assets/images/linuxday2016/station_2origin.png)
+[![station 2 original]({{ site.baseurl }}/assets/images/linuxday2016/station_2origin.png)]({{ site.baseurl }}/assets/images/linuxday2016/station_2origin.png)
 
 We have had some trouble using 3 relays with the Adafruit capboard and, ultimately with the mic also so we decided to simplify the station.
 

@@ -16,15 +16,15 @@ What we have understood about videogames working principles:
 {% if post.category contains 'game' and post.category contains 'tecnique' %}
 
 <div>
-<a href="{{post.url}}">
+<a href="{{site.baseurl}}{{post.url}}">
 {% if post.shortcut %}
-<img src="/assets/images/shortcuts/{{post.shortcut}}" alt="{{post.title}}" class="shortcut-image"/>
+<img src="{{site.baseurl}}/assets/images/shortcuts/{{post.shortcut}}" alt="{{post.title}}" class="shortcut-image"/>
 {% else %}
-<img src="/assets/images/shortcuts/shortcut-E.png" alt="{{post.title}}" class="shortcut-image"/>
+<img src="{{site.baseurl}}/assets/images/shortcuts/shortcut-E.png" alt="{{post.title}}" class="shortcut-image"/>
 {% endif %}
 </a>
 
-<h3 class="post-title"><a href="{{post.url}}">{{ post.title }}</a></h3>
+<h3 class="post-title"><a href="{{site.baseurl}}{{post.url}}">{{ post.title }}</a></h3>
 {{ post.excerpt}}
 
 <hr class="clear" />
@@ -44,15 +44,15 @@ Here some of our experiments in _game design_.
 {% if post.category contains 'game' and post.category contains 'experiment' %}
 
 <div>
-<a href="{{post.url}}">
+<a href="{{site.baseurl}}{{post.url}}">
 {% if post.shortcut %}
-<img src="/assets/images/shortcuts/{{post.shortcut}}" alt="{{post.title}}" class="shortcut-image"/>
+<img src="{{site.baseurl}}/assets/images/shortcuts/{{post.shortcut}}" alt="{{post.title}}" class="shortcut-image"/>
 {% else %}
-<img src="/assets/images/shortcuts/shortcut-E.png" alt="{{post.title}}" class="shortcut-image"/>
+<img src="{{site.baseurl}}/assets/images/shortcuts/shortcut-E.png" alt="{{post.title}}" class="shortcut-image"/>
 {% endif %}
 </a>
 
-<h3 class="post-title"><a href="{{post.url}}">{{ post.title }}</a></h3>
+<h3 class="post-title"><a href="{{site.baseurl}}{{post.url}}">{{ post.title }}</a></h3>
 {{ post.excerpt}}
 
 <hr class="clear" />
@@ -71,15 +71,15 @@ Curious fact about our preferred games:
 {% if post.category contains 'game' and post.category contains 'curiosity' %}
 
 <div>
-<a href="{{post.url}}">
+<a href="{{site.baseurl}}{{post.url}}">
 {% if post.shortcut %}
-<img src="/assets/images/shortcuts/{{post.shortcut}}" alt="{{post.title}}" class="shortcut-image"/>
+<img src="{{site.baseurl}}/assets/images/shortcuts/{{post.shortcut}}" alt="{{post.title}}" class="shortcut-image"/>
 {% else %}
-<img src="/assets/images/shortcuts/shortcut-E.png" alt="{{post.title}}" class="shortcut-image"/>
+<img src="{{site.baseurl}}/assets/images/shortcuts/shortcut-E.png" alt="{{post.title}}" class="shortcut-image"/>
 {% endif %}
 </a>
 
-<h3 class="post-title"><a href="{{post.url}}">{{ post.title }}</a></h3>
+<h3 class="post-title"><a href="{{site.baseurl}}{{post.url}}">{{ post.title }}</a></h3>
 {{ post.excerpt}}
 
 <hr class="clear" />
@@ -97,15 +97,15 @@ There are games that will remain in our heart forever: these are a few of our pr
 {% if post.category contains 'game' and post.category contains 'abandonia' %}
 
 <div>
-<a href="{{post.url}}">
+<a href="{{site.baseurl}}{{post.url}}">
 {% if post.shortcut %}
-<img src="/assets/images/shortcuts/{{post.shortcut}}" alt="{{post.title}}" class="shortcut-image"/>
+<img src="{{site.baseurl}}/assets/images/shortcuts/{{post.shortcut}}" alt="{{post.title}}" class="shortcut-image"/>
 {% else %}
-<img src="/assets/images/shortcuts/shortcut-E.png" alt="{{post.title}}" class="shortcut-image"/>
+<img src="{{site.baseurl}}/assets/images/shortcuts/shortcut-E.png" alt="{{post.title}}" class="shortcut-image"/>
 {% endif %}
 </a>
 
-<h3 class="post-title"><a href="{{post.url}}">{{ post.title }}</a></h3>
+<h3 class="post-title"><a href="{{site.baseurl}}{{post.url}}">{{ post.title }}</a></h3>
 {{ post.excerpt}}
 
 <hr class="clear" />
@@ -135,15 +135,15 @@ Qui esamineremo un po' per volta il lavoro svolto dal team ScummVM nel tradurre 
 {% if post.category contains 'game' and post.category contains 'scumm' %}
 
 <div>
-<a href="{{post.url}}">
+<a href="{{site.baseurl}}{{post.url}}">
 {% if post.shortcut %}
-<img src="/assets/images/shortcuts/{{post.shortcut}}" alt="{{post.title}}" class="shortcut-image"/>
+<img src="{{site.baseurl}}/assets/images/shortcuts/{{post.shortcut}}" alt="{{post.title}}" class="shortcut-image"/>
 {% else %}
-<img src="/assets/images/shortcuts/shortcut-E.png" alt="{{post.title}}" class="shortcut-image"/>
+<img src="{{site.baseurl}}/assets/images/shortcuts/shortcut-E.png" alt="{{post.title}}" class="shortcut-image"/>
 {% endif %}
 </a>
 
-<h3 class="post-title"><a href="{{post.url}}">{{ post.title }}</a></h3>
+<h3 class="post-title"><a href="{{site.baseurl}}{{post.url}}">{{ post.title }}</a></h3>
 {{ post.excerpt}}
 
 <hr class="clear" />

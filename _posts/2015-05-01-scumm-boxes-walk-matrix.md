@@ -13,7 +13,7 @@ Ad ogni click l'attore, lo SCUMM engine individua un percorso e l'attore cominci
 La letteratura **[1]** tratta approfonditamente l'argomento, indicando diversi tipi di algoritmi che si usano per risolvere problemi di questo tipo, detti problemi del _pathfinding_. il più conosciuto è forse <b>A*</b>.
 
 <div class="note">
-<img alt="Edsger Dijkstra" src="{{site.url}}/assets/images/scumm/Dijkstra.jpg" style="float: right;" />
+<img alt="Edsger Dijkstra" src="{{site.baseurl}}/assets/images/scumm/Dijkstra.jpg" style="float: right;" />
 <p>Come riporta <b>[1]</b>, l'algoritmo <b>A*</b> è una naturale evoluzione del più semplice algorimo di <b>Dijkstra</b>. Quest'ultimo viene più spesso utilizzato per risolvere problemi di <em>tactical decision making</em> piuttosto che per il <em>pathfinding</em>.</p>
 <p>L'agoritmo di Dijkstra prende il nome dal suo scopritore, il matematico Edsger Dijkstra. Originariamente progettato per risolvere un problema nella teoria matematica dei grafi, un problema detto dello <em>shortest path</em>, questo algoritmo è stato poi messo al servizio del videogioco ed è diventato il punto di partenza per la risoluzione di una particolare classe di problemi.</p>
 <p>Tra le altre cose, proprio il sig. Dijkstra, con il suo celebre articolo <em>"GOTO statement considered harmful"</em> <b>[b]</b> del 1968, si batteva contro lo <em><b>Spaghetti code</b></em>, ossia contro i programmi di scarsa qualità, difficilmente leggibili e modificabili per la malsana tendenza all'uso della direttiva <b>GOTO</b> (vedi <b>[c]</b>).</p>
@@ -74,10 +74,10 @@ da notare che **k** può anche essere uguale a **j** se **i** e **j** sono adiac
 <p>Carichiamo il salvataggio <em>Tikal</em> ed entriamo nel templio.</p>
 
 <div class="img">
-<img alt="tikal" src="http://www.limulo.net/images/scumm/tikal.png" />
+<img alt="tikal" src="{{site.baseurl}}/assets/images/scumm/tikal.png" />
 </div>
 
-Una volta qui, richiamiamo il debugger di ScummVM con la combinazione di tasti ![Ctrl]({{site.url}}/assets/images/scumm/Ctrl.jpg){: display="inline"} + ![D]({{site.url}}/assets/images/scumm/D.jpg){: display="inline"}
+Una volta qui, richiamiamo il debugger di ScummVM con la combinazione di tasti ![Ctrl]({{site.baseurl}}/assets/images/scumm/Ctrl.jpg){: display="inline"} + ![D]({{site.baseurl}}/assets/images/scumm/D.jpg){: display="inline"}
 
 Il debugger di ScummVM offre 2 principali comandi per esaminare le informazioni di cui abbiamo parlato; esaminiamoli nel dettaglio:
 * comando <a href="#debugger-comando-box">box</a>;</li>
@@ -90,7 +90,7 @@ Il debugger di ScummVM offre 2 principali comandi per esaminare le informazioni 
 <p>Il comando <b>box</b> mostra un resoconto delle più importatnti informazioni relative alle box della room corrente, proviamo a digitarlo a console e a dare l'invio: ecco qui quanto riportato dall'output:</p>
 
 <div class="img">
-<img alt="tikal boxes" src="http://www.limulo.net/images/scumm/console-01.png" />
+<img alt="tikal boxes" src="{{ site.baseurl }}/assets/images/scumm/console-01.png" />
 </div>
 
 <p>12 righe di testo in output, una per ciascuna delle box presenti nella room (la room 0 sembra avere delle caratteristiche anomale e per il momento la tralascieremo). Le informazioni sono mostrate nella forma seguente (la versione SCUMM su cui questo gioco si basa è la 5, per altri giochi le informazioni mostrate potrebbero essere diverse):</p>
@@ -110,7 +110,7 @@ Il debugger di ScummVM offre 2 principali comandi per esaminare le informazioni 
 <p>Tralasciando per ora gli ultimi tre campi (<b>Mask</b>, <b>Flags</b> e <b>Scale</b>) che tratteremo in articoli separati, concentriamoci ora sulle prime 4 coppie di valori.</p>
 
 <div>
-<img alt="box" src="http://www.limulo.net/images/scumm/box.jpg" style="margin: 1em; float: right;" />
+<img alt="box" src="{{site.baseurl}}/assets/images/scumm/box.jpg" style="margin: 1em; float: right;" />
 
 <p>Ognuna di queste coppie altro non è che una coppia di coordinate espresse in <em>pixels</em> relative ai vertici della <b>box</b>, (ricordiano che la box altro non è se non un' area quadrangolare).</p>
 <p>I vertici vengono indicati da quello più in alto a sinistra (<b>U</b>pper <b>L</b>eft) fino a quello che si trova in basso a sinistra (<b>L</b>ower <b>L</b>eft)procedendo in senso orario. Nell'ordine quindi si hanno i 4 vertici <b>UL</b>, <b>UR</b>, <b>LR</b> e infine <b>LL</b>, come mostrato nella figura qui di fianco.</p>
@@ -125,7 +125,7 @@ Il debugger di ScummVM offre 2 principali comandi per esaminare le informazioni 
 <p>Riportando i valori delle coordinate sull'immagine di sfondo otteniamo questa rappresentazione che rende subito l'idea di come siano fatte le box e di come esse siano disposte in modo tale da affiancarsi tra loro per creare, di fatto, l'intera area calpestabile dagli attori.</p>
 
 <div class="img">
-<img alt="tikal boxes" src="http://www.limulo.net/images/scumm/tikal-boxes-02.png" />
+<img alt="tikal boxes" src="{{site.baseurl}}/assets/images/scumm/tikal-boxes-02.png" />
 </div>
 
 <div class="note">
@@ -139,7 +139,7 @@ Il debugger di ScummVM offre 2 principali comandi per esaminare le informazioni 
 <p>Usiamo ora il comando <em>matrix</em>, eccone l'output:</p>
 
 <div class="img">
-<img alt="tikal boxes" src="http://www.limulo.net/images/scumm/console-02.png" />
+<img alt="tikal boxes" src="{{ site.baseurl }}/assets/images/scumm/console-02.png" />
 </div>
 
 <p>Visto così non è molto chiaro. Costruiamoci uno spreadsheet ricavando le informazioni necessarie in questo modo:</p>
@@ -340,7 +340,7 @@ Il debugger di ScummVM offre 2 principali comandi per esaminare le informazioni 
 
 Per comodità, torno a mostrare l'immagine vista poco più su. Facciamo ora un paio di esperimenti come se fossimo noi l'engine di gioco e dovessimo risolvere il problema del _pathfinding_!
 
-![tikal boxes](/assets/images/scumm/tikal-boxes-02.png)
+![tikal boxes]({{ site.baseurl }}/assets/images/scumm/tikal-boxes-02.png)
 
 Supponiamo che l'attore Indy si trovi sulla box **1** (Indy->currente box = 1).
 

@@ -11,7 +11,7 @@ Heartbeat sound is maybe the most familiar and atavistic sound we know. It's pow
 
 <audio controls="controls" style="width:100%;">
 Your browser does not support the <code>audio</code> element.
-<source src="{{ site.url }}/assets/sounds/heartbeat/Human_heart_beating_at_61_bpm_(Cc-by-3.0).ogg" type="audio/ogg">
+<source src="{{ site.baseurl }}/assets/sounds/heartbeat/Human_heart_beating_at_61_bpm_(Cc-by-3.0).ogg" type="audio/ogg">
 </audio>
 <p class="caption">Human heart beating at 61 bpm (Cc-by-3.0)</p>
 
@@ -19,7 +19,7 @@ Without bothering of too many details, let's examine the typical ECG (electrocar
 
 <!-- <p>Senza entrare troppo nei dettagli esaminiamo la curva tipica del battito così come ce la mostra il grafico dell'elettrocardiogramma. Useremo questa curva come linea guida per la costruzione del nostro modello.</p>-->
 
-![Normal sinus rhythm image]({{ site.url }}/assets/images/heartbeat/nsr2.png){: width="100%;"}
+![Normal sinus rhythm image]({{ site.baseurl }}/assets/images/heartbeat/nsr2.png){: width="100%;"}
 
 As we see, the waveform is made-up of many portions (wave P, Q, R, S, T and U), each one related to the contraction/relaxation of a specific section of the heart muscle.
 
@@ -29,13 +29,13 @@ Each of these parts has it's own relative amplitude and duration. We've based ou
 
 <!-- <p>Ogni parte ha una propria ampiezza e durata relativa. Anche se si tratta di valori medi, che variano da individuo a individuo e da quale sia il punto in cui la misurazione è stata effettuata, abbiamo costruito un grafico qualitativo sul quale basarci per la sintesi.</p> -->
 
-![waveform]({{ site.url }}/assets/images/heartbeat/waveform.jpg)
+![waveform]({{ site.baseurl }}/assets/images/heartbeat/waveform.jpg)
 
  This is a challenging work, we don't know how it will sound at the end, but we're sure it's worth working on.
 
 ### HeartBeater: first attempt of heartbeat sound synthesis
 
-![HeartBeater interface]({{ site.url }}/assets/images/heartbeat/heartbeater-interface.png)
+![HeartBeater interface]({{ site.baseurl }}/assets/images/heartbeat/heartbeater-interface.png)
 
 **HeartBeater** is our first attempt to build a synthetizer producing an heartbeat sound in a procedural way.
 
@@ -57,7 +57,7 @@ Here's the sound as recorded directly from the patch. As you can hear it is slig
 
 <audio controls="controls" style="width:100%;">
 Your browser does not support the <code>audio</code> element.
-<source src="{{ site.url }}/assets/sounds/heartbeat/PD_heartbeat.ogg" type="audio/ogg">
+<source src="{{ site.baseurl }}/assets/sounds/heartbeat/PD_heartbeat.ogg" type="audio/ogg">
 </audio>
 <p class="caption">heart sound synthetized with HeartBeater PureData patch by tracing the ECG curve shape</p>
 
@@ -67,7 +67,7 @@ The main difference is that this sound doesn't have the double beat rhythm chara
 
 ### LovelyHeart
 
-![LovelyHeart interface]({{ site.url }}/assets/images/heartbeat/lovelyheart-interface.png)
+![LovelyHeart interface]({{ site.baseurl }}/assets/images/heartbeat/lovelyheart-interface.png)
 
 Thus, we restarted from scratch, redesigning the patch, basing no more on the ECG graph but applying a "_retro-engineering_" process on the sample sound!
 
@@ -80,25 +80,25 @@ As you can perceive in the samples below (recorded directly within the patch), t
 
 <audio controls="controls" style="width:100%;">
  Your browser does not support the <code>audio</code> element.
- <source src="{{ site.url }}/assets/sounds/heartbeat/LovelyHeart_mix.ogg" type="audio/ogg">
+ <source src="{{ site.baseurl }}/assets/sounds/heartbeat/LovelyHeart_mix.ogg" type="audio/ogg">
 </audio>
 <p class="caption">beats and murmurs mixed together</p>
 
 <audio controls="controls" style="width:100%;">
 Your browser does not support the <code>audio</code> element.
-<source src="{{ site.url }}/assets/sounds/heartbeat/LovelyHeart_beats.ogg" type="audio/ogg">
+<source src="{{ site.baseurl }}/assets/sounds/heartbeat/LovelyHeart_beats.ogg" type="audio/ogg">
 </audio>
 <p class="caption">beats sounds only</p>
 
 <audio controls="controls" style="width:100%;">
 Your browser does not support the <code>audio</code> element.
-<source src="{{ site.url }}/assets/sounds/heartbeat/LovelyHeart_murmur.ogg" type="audio/ogg">
+<source src="{{ site.baseurl }}/assets/sounds/heartbeat/LovelyHeart_murmur.ogg" type="audio/ogg">
 </audio>
 <p class="caption">murmurs sounds only</p>
 
 ### Downloads
 
-![GitHub Octocat]({{ site.url }}/assets/images/logos/github-octocat.jpg){: float="left;" width="20%;" }
+![GitHub Octocat]({{ site.baseurl }}/assets/images/logos/github-octocat.jpg){: float="left;" width="20%;" }
 
 * If you want to try our **HeartBeater** PureData patch, you can download it for free from our [GitHub project page](https://github.com/Limulo/HeartBeater). It's free software!
 * If you want to use the newer **LovelyHeart** synthetizer [here](https://github.com/Limulo/LovelyHeart)'s the project link;

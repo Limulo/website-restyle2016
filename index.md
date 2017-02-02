@@ -20,8 +20,8 @@ Seriuosly, we're huge fans of free software, open source and free sharing of ide
 
 {% for page in site.pages %} <!-- SHORTCUTs delle pagine -->
 {% if page.shortcut %}
-<a href="{{ page.url }}">
-  <img src="{{site.url}}/assets/images/shortcuts/{{ page.shortcut }}"
+<a href="{{ site.baseurl }}{{ page.url }}">
+  <img src="{{ site.baseurl }}/assets/images/shortcuts/{{ page.shortcut }}"
      class="shortcut-image"
      alt="{{ page.title }}"
      title="{{ page.title }}" />
@@ -32,8 +32,8 @@ Seriuosly, we're huge fans of free software, open source and free sharing of ide
 
 {% for post in site.posts %}<!-- SHORTCUTs dei post -->
 {% if post.shortcut %}
-<a href="{{ post.url }}">
-  <img src="{{site.url}}/assets/images/shortcuts/{{ post.shortcut }}"
+<a href="{{ site.baseurl }}{{ post.url }}">
+  <img src="{{ site.baseurl }}/assets/images/shortcuts/{{ post.shortcut }}"
      class="shortcut-image"
      alt="{{ post.title }}"
      title="{{ post.title }}" />

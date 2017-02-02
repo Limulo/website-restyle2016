@@ -18,15 +18,15 @@ See our installations in action.
 {%  else %}
 
 <div>
-<a href="{{page.url}}">
+<a href="{{site.baseurl}}{{page.url}}">
 {% if page.shortcut %}
-<img src="/assets/images/shortcuts/{{page.shortcut}}" alt="{{page.title}}" class="shortcut-image"/>
+<img src="{{site.baseurl}}/assets/images/shortcuts/{{page.shortcut}}" alt="{{page.title}}" class="shortcut-image"/>
 {% else %}
-<img src="/assets/images/shortcuts/shortcut-default-installations.png" alt="{{page.title}}" class="shortcut-image"/>
+<img src="{{site.baseurl}}/assets/images/shortcuts/shortcut-default-installations.png" alt="{{page.title}}" class="shortcut-image"/>
 {% endif %}
 </a>
 
-<h3 class="post-title"><a href="{{page.url}}">{{ page.title }}</a></h3>
+<h3 class="post-title"><a href="{{site.baseurl}}{{page.url}}">{{ page.title }}</a></h3>
 {{ page.excerpt}}
 
 <hr class="clear" />
@@ -51,15 +51,15 @@ In quanto tutti i post pur di categoria 'installation' ma anche 'soundface' veng
 {%  else %}
 
 <div>
-<a href="{{post.url}}">
+<a href="{{site.baseurl}}{{post.url}}">
 {% if post.shortcut %}
-<img src="/assets/images/shortcuts/{{post.shortcut}}" alt="{{post.title}}" class="shortcut-image"/>
+<img src="{{site.baseurl}}/assets/images/shortcuts/{{post.shortcut}}" alt="{{post.title}}" class="shortcut-image"/>
 {% else %}
-<img src="/assets/images/shortcuts/shortcut-default-installations.png" alt="{{post.title}}" class="shortcut-image"/>
+<img src="{{site.baseurl}}/assets/images/shortcuts/shortcut-default-installations.png" alt="{{post.title}}" class="shortcut-image"/>
 {% endif %}
 </a>
 
-<h3 class="post-title"><a href="{{post.url}}">{{ post.title }}</a></h3>
+<h3 class="post-title"><a href="{{site.baseurl}}{{post.url}}">{{ post.title }}</a></h3>
 {{ post.excerpt}}
 
 <hr class="clear" />
@@ -78,15 +78,15 @@ Shit happens (also to good people):
 {% if post.category contains 'issue' %}
 
 <div>
-<a href="{{post.url}}">
+<a href="{{site.baseurl}}{{post.url}}">
 {% if post.shortcut %}
-<img src="/assets/images/shortcuts/{{post.shortcut}}" alt="{{post.title}}" class="shortcut-image"/>
+<img src="{{site.baseurl}}/assets/images/shortcuts/{{post.shortcut}}" alt="{{post.title}}" class="shortcut-image"/>
 {% else %}
-<img src="/assets/images/shortcuts/shortcut-default-installations.png" alt="{{post.title}}" class="shortcut-image"/>
+<img src="{{site.baseurl}}/assets/images/shortcuts/shortcut-default-installations.png" alt="{{post.title}}" class="shortcut-image"/>
 {% endif %}
 </a>
 
-<h3 class="post-title"><a href="{{post.url}}">{{ post.title }}</a></h3>
+<h3 class="post-title"><a href="{{site.baseurl}}{{post.url}}">{{ post.title }}</a></h3>
 {{ post.excerpt}}
 
 <hr class="clear" />

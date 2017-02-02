@@ -30,23 +30,23 @@ Il [datasheet](https://www.bareconductive.com/wp-content/uploads/2015/01/TouchBo
 
 Approfondendo la cosa siamo arrivati a [questo documento](http://www.jst-mfg.com/product/pdf/eng/ePH.pdf) che descrive proprio la tipologia di connettori di cui stiamo parlando e qualcosa ha cominciato ad essere più chiaro.
 
-![battery img 1](/assets/images/lipo-battery/IMG_0782.jpg)
+![battery img 1]({{ site.baseurl }}/assets/images/lipo-battery/IMG_0782.jpg)
 
 In sostanza abbiamo scoperto che la polarità della nostra batteria non era quella giusta. Così, armati di pazienza e _mano ferma_ l'abbiamo invertita semplicemente tagliando i due conduttori e facendo un paio di piccole saldature.
 
-![battery img 2](/assets/images/lipo-battery/IMG_0784.jpg)
-![battery img 3](/assets/images/lipo-battery/IMG_0785.jpg)
+![battery img 2]({{ site.baseurl }}/assets/images/lipo-battery/IMG_0784.jpg)
+![battery img 3]({{ site.baseurl }}/assets/images/lipo-battery/IMG_0785.jpg)
 
 Nelle foto è mostrato il risultato finale dove si può vedere anche l'uso di guaina termorestringente a protezione dei punti dove abbiamo effettauto la saldatura.
 
-![battery img 4](/assets/images/lipo-battery/IMG_0788_mod.jpg)
+![battery img 4]({{ site.baseurl }}/assets/images/lipo-battery/IMG_0788_mod.jpg)
 
 Ora, con la polarità invertita, la batteria lavora nel modo descritto da _BareConductive_. Connettendo alla scheda anche il cavo micro USB se ne ha la prova in quanto il led ambra **CHG** si accende e resta illuminato per tutta la fase di ricarica della batteria.
 
 In queste ultime foto invece è mostrata la batteria e la scheda _TouchBoard_ come appaiono nella loro sistemazione definitiva, alloggiate all'interno della piccola centralina costruita appositamente in occasione del [Linux Day 2016](http://www.linuxdaymilano.org/).  
 
-![battery img 5](/assets/images/lipo-battery/IMG_0794_mod.jpg)
-![battery img 6](/assets/images/lipo-battery/IMG_0799_mod.jpg)
+![battery img 5]({{ site.baseurl }}/assets/images/lipo-battery/IMG_0794_mod.jpg)
+![battery img 6]({{ site.baseurl }}/assets/images/lipo-battery/IMG_0799_mod.jpg)
 
 A titolo di promemoria lasciamo qui anche alcuni altri riferimenti ad informazione relative alla batteria, raggiungibili dalla sezione [FAQ](https://faqs.bareconductive.com/hc/en-gb/categories/200751141-Touch-Board) del sito _BareConductive_:
 

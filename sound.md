@@ -20,11 +20,11 @@ This list is dedicated to sound and sound designing tools and techniques. We wil
 
 <div>
 
-<a href="{{post.url}}">
+<a href="{{site.baseurl}}{{post.url}}">
 {% if post.shortcut %}
-<img src="/assets/images/shortcuts/{{post.shortcut}}" alt="{{post.title}}" class="shortcut-image"/>
+<img src="{{site.baseurl}}/assets/images/shortcuts/{{post.shortcut}}" alt="{{post.title}}" class="shortcut-image"/>
 {% else %}
-<img src="/assets/images/shortcuts/shortcut-E.png" alt="{{post.title}}" class="shortcut-image"/>
+<img src="{{site.baseurl}}/assets/images/shortcuts/shortcut-E.png" alt="{{post.title}}" class="shortcut-image"/>
 {% endif %}
 </a>
 
@@ -43,8 +43,8 @@ This list is dedicated to sound and sound designing tools and techniques. We wil
 {% for post in site.posts%}
 {% if post.category contains 'sound-design' and post.category contains 'tool' %}
 <li>
-  <a href="{{ post.url }}">{{ post.title }}</a>
-  <img src="/assets/images/shortcuts/shortcut-E.png" alt="gianni" />
+  <a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a>
+  <img src="{{site.baseurl}}/assets/images/shortcuts/shortcut-E.png" alt="gianni" />
 </li>
 {%endif%}
 {% endfor %}
@@ -60,15 +60,15 @@ This list contains articles about our sound design works:
 
 <div>
 
-<a href="{{post.url}}">
+<a href="{{site.baseurl}}{{post.url}}">
 {% if post.shortcut %}
-<img src="/assets/images/shortcuts/{{post.shortcut}}" alt="{{post.title}}" class="shortcut-image"/>
+<img src="{{site.baseurl}}/assets/images/shortcuts/{{post.shortcut}}" alt="{{post.title}}" class="shortcut-image"/>
 {% else %}
-<img src="/assets/images/shortcuts/shortcut-default-sound.png" alt="{{post.title}}" class="shortcut-image"/>
+<img src="{{site.baseurl}}/assets/images/shortcuts/shortcut-default-sound.png" alt="{{post.title}}" class="shortcut-image"/>
 {% endif %}
 </a>
 
-<h3 class="post-title"><a href="{{post.url}}">{{ post.title }}</a></h3>
+<h3 class="post-title"><a href="{{site.baseurl}}{{post.url}}">{{ post.title }}</a></h3>
 {{ post.excerpt}}
 
 <hr class="clear" />

@@ -12,11 +12,11 @@ shortcut: shortcut-chaotic-robots-music.png
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/SDqNaqEHwzE" frameborder="0" allowfullscreen></iframe>
 
 ## Notes on the main project
-The [Chaotic Robots](http://dev.hacklabterni.org/projects/cr21) project concerns the developement of BEAM (**B**iology, **E**lectronics, **A**esthetics, **M**echanics) robots. 
+The [Chaotic Robots](http://dev.hacklabterni.org/projects/cr21) project concerns the developement of BEAM (<b>B</b>iology, <b>E</b>lectronics, <b>A</b>esthetics, <b>M</b>echanics) robots.
 High Entropy circuits and accurately located light sources control the robots behaviour. An openFrameworks application obtains the images from a camera positioned on the ceiling facing downwards towards the robots arena. The data are visually rendered as colored curved trails following the robots tracks as they move .
 The application is available for download at the bottom of the section.
 
-![robot A]({{site.url}}/assets/images/chaotic-robots-music/a.jpg){: width="100%" } | ![robot B]({{site.url}}/assets/images/chaotic-robots-music/b.jpg){: width="100%" }
+![robot A]({{site.baseurl}}/assets/images/chaotic-robots-music/a.jpg){: width="100%" } | ![robot B]({{site.baseurl}}/assets/images/chaotic-robots-music/b.jpg){: width="100%" }
 
 
 ## Notes on the complementary project
@@ -50,7 +50,7 @@ In order to communicate via OSC from Processing(the _test_ application) to PureD
 ([Here](http://www.processing.org/reference/libraries/) you can find more information about installing external libraries in Processing)
 
 
-![play button]({{site.url}}/assets/images/chaotic-robots-music/play-button.jpg){: width:"40%", border="1px solid #ccc;"}
+![play button]({{site.baseurl}}/assets/images/chaotic-robots-music/play-button.jpg){: width:"40%", border="1px solid #ccc;"}
 
 To sum up, there are two files to execute:
 
@@ -61,16 +61,16 @@ Clicking on the play/run button in the Processing IDE starts the test applicatio
 
 Clicking on the 'Audio_ON' switch in the 'MASTER' section in PureData activates DSP and audio production.
 
-![interfaccia]({{site.url}}/assets/images/chaotic-robots-music/interfaccia.jpg)
+![interfaccia]({{site.baseurl}}/assets/images/chaotic-robots-music/interfaccia.jpg)
 
 
 ## Instructions for the test application
 
 The application offers some basic controls to manage the visualisation of important data, such as the robots trajectories, the subdivision of the arena in 4 quadrants and position of the arithmetic avarage of the robots coordinates:
 
-* Press ![1]({{site.url}}/assets/images/chaotic-robots-music/1.jpg){: display="inline"}, ![2]({{site.url}}/assets/images/chaotic-robots-music/2.jpg){: display="inline"}, ![3]({{site.url}}/assets/images/chaotic-robots-music/3.jpg){: display="inline"}, ![4]({{site.url}}/assets/images/chaotic-robots-music/4.jpg){: display="inline"}, to display the specif robot trajectory;
-* Press ![C]({{site.url}}/assets/images/chaotic-robots-music/C.jpg) to visualise the 4 quadrants subdivision of the arena;
-* Press ![M]({{site.url}}/assets/images/chaotic-robots-music/M.jpg) to picture the robots positions avarage;
+* Press ![1]({{site.baseurl}}/assets/images/chaotic-robots-music/1.jpg){: display="inline"}, ![2]({{site.baseurl}}/assets/images/chaotic-robots-music/2.jpg){: display="inline"}, ![3]({{site.baseurl}}/assets/images/chaotic-robots-music/3.jpg){: display="inline"}, ![4]({{site.baseurl}}/assets/images/chaotic-robots-music/4.jpg){: display="inline"}, to display the specif robot trajectory;
+* Press ![C]({{site.baseurl}}/assets/images/chaotic-robots-music/C.jpg) to visualise the 4 quadrants subdivision of the arena;
+* Press ![M]({{site.baseurl}}/assets/images/chaotic-robots-music/M.jpg) to picture the robots positions avarage;
 * Press any other key to return to default view.
 
 
@@ -95,7 +95,7 @@ This section provides a quick overview of the chord being played and the present
 The only switch present in this section is responsible for the starting and stopping of the patch audio engine.
 
 **MIXER SECTION**
-In this section we can regulate one by one the volumes of all the instrument present in the composition. 
+In this section we can regulate one by one the volumes of all the instrument present in the composition.
 The R0, R1, R2 and R3 fader manage the 4 mono synths volumes.
 PADS and BASS control the 'pads' polyphonic synth and the 'bass' volumes respectively.
 KICK, SNARE and TAMB faders handle the drums (kick, snare, tom) volume.
@@ -117,7 +117,7 @@ This section can be reached from the sub-patches 'time-control', 'mix-presets' a
 Every melodic/harmonic tool is in tune with a chord note. The chord choice is based on the avarage of the positions. There are four possible chords: C, G, F, Dmin.
 
 The arena is subdivided in four quadrants. The avarage position, wavering from a quadrant to the next ones, select the chord corresponding to the loctaion.
-The chord change happens on the strong stress of the bar (every 8 quavers), so the harmonic change is always 'in time' with music execution. 
+The chord change happens on the strong stress of the bar (every 8 quavers), so the harmonic change is always 'in time' with music execution.
 
 <div class="nota">
 This feature can be analysed in the CHORDS and STYLES sections.
@@ -140,7 +140,7 @@ This synth implements an intelligent system that choose the note to be sung imme
 The system is based on these elements:
 
 * the current chord;
-* the direction (same intonation, lower or higher); 
+* the direction (same intonation, lower or higher);
 * the note currently reproduced.
 
 For every note reproduced, the algorithm computes the probability for the next one.

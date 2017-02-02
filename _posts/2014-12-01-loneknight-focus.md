@@ -13,32 +13,32 @@ Take a look at the game [here](http://www.limulo.net/games/loneknight).
 
 [Here](http://limulo.itch.io/lone-knight) instead you can find the original version of it.
 
-![screen shot](/assets/images/lone-knight-focus/copertina-utente-loneknight-640_236.png)
+![screen shot]({{ site.baseurl }}/assets/images/lone-knight-focus/copertina-utente-loneknight-640_236.png)
 
 ### Tech notes
 
 Lone Knight is a web app that takes advantage of the HTML5 _canvas_ object strength. Like the old '80 and '90 s videogames, the [indexed colors](#) and **Palette Shifting** techniques are implemented.
 
 
-![aseprite](/assets/images/lone-knight-focus/aseprite-logo.png)
+![aseprite]({{ site.baseurl }}/assets/images/lone-knight-focus/aseprite-logo.png)
 
 The artwork has been made by Giovanni on the basis of an old flash animation project. The images have been converted in pixel art paintings using [Aseprite](http://www.aseprite.org/). The code has been written by Nicola.
 
 
-![comparison](/assets/images/lone-knight-focus/cavaliere.gif)
+![comparison]({{ site.baseurl }}/assets/images/lone-knight-focus/cavaliere.gif)
 
 The very first videogame version resolution is 320x240 pixels, with a **pseudocolor palette** with 256 colors.
 
 Game assets:
 
-* 1x **spritesheet** with 12 knight animation **sprite**s. This describes the main game element animation.
+* 1x **spritesheet** with 12 knight animation <b>sprite</b>s. This describes the main game element animation.
 
 
-![spritesheet](/assets/images/lone-knight-focus/spritesheet.png)
+![spritesheet]({{ site.baseurl }}/assets/images/lone-knight-focus/spritesheet.png)
 
 * 4x files describing the 4 parallax elements.
 
-![parallax](/assets/images/lone-knight-focus/schema-parallasse.png)
+![parallax]({{ site.baseurl }}/assets/images/lone-knight-focus/schema-parallasse.png)
 
 The images are converted in **JSON**, so they can be parsed by the **JavaScript** code.
 
@@ -86,69 +86,69 @@ Every local pseudocolor palette entry represent one of the element colors at a g
 </tr>
 <tr>
     <td style="width: 12%; text-align: center; vertical-align: middle; background-color: rgb(200, 200, 200);"><b>sky</b></td>
-    <td style="width: 40%; "><img src="http://www.limulo.net/images/lone-knight-focus/cielo_0_AM.png" alt="cielo_00_AM" style="width: 100%;" /></td>
-    <td style="width: 40%; "><img src="http://www.limulo.net/images/lone-knight-focus/cielo_9_AM.png" alt="cielo_09_AM" style="width: 100%;" /></td>
+    <td style="width: 40%; "><img src="{{ site.baseurl }}/assets/images/lone-knight-focus/cielo_0_AM.png" alt="cielo_00_AM" style="width: 100%;" /></td>
+    <td style="width: 40%; "><img src="{{ site.baseurl }}/assets/images/lone-knight-focus/cielo_9_AM.png" alt="cielo_09_AM" style="width: 100%;" /></td>
 </tr>
 
 <tr>
     <td style="width: 12%; text-align: right; vertical-align: top; background-color: rgb(200, 200, 200);"><i>palette</i></td>
-    <td style="width: 40%; "><img src="http://www.limulo.net/images/lone-knight-focus/palette-0-cielo.png" alt="palette cielo 00 AM" style="width: 100%;" /></td>
-    <td style="width: 40%; "><img src="http://www.limulo.net/images/lone-knight-focus/palette-9-cielo.png" alt="palette cielo 09 AM" style="width: 100%;" /></td>
+    <td style="width: 40%; "><img src="{{ site.baseurl }}/assets/images/lone-knight-focus/palette-0-cielo.png" alt="palette cielo 00 AM" style="width: 100%;" /></td>
+    <td style="width: 40%; "><img src="{{ site.baseurl }}/assets/images/lone-knight-focus/palette-9-cielo.png" alt="palette cielo 09 AM" style="width: 100%;" /></td>
 </tr>
 
  <tr>
     <td style="width: 12%; text-align: center; vertical-align: middle; background-color: rgb(200, 200, 200);"><b>mountains 1</b></td>
-    <td style="width: 40%; "><img src="http://www.limulo.net/images/lone-knight-focus/montagne2_0_AM.png" alt="montagne2_00_AM" style="width: 100%;" /></td>
-    <td style="width: 40%; "><img src="http://www.limulo.net/images/lone-knight-focus/montagne2_9_AM.png" alt="montagne2_09_AM" style="width: 100%;" /></td>
+    <td style="width: 40%; "><img src="{{ site.baseurl }}/assets/images/lone-knight-focus/montagne2_0_AM.png" alt="montagne2_00_AM" style="width: 100%;" /></td>
+    <td style="width: 40%; "><img src="{{ site.baseurl }}/assets/images/lone-knight-focus/montagne2_9_AM.png" alt="montagne2_09_AM" style="width: 100%;" /></td>
 </tr>
 
 <tr>
     <td style="width: 12%; text-align: right; vertical-align: top; background-color: rgb(200, 200, 200);"><i>palette</i></td>
-    <td style="width: 40%; "><img src="http://www.limulo.net/images/lone-knight-focus/palette-0-montagne-dietro.png" alt="palette montagne2 00 AM" style="width: 100%;" /></td>
-    <td style="width: 40%; "><img src="http://www.limulo.net/images/lone-knight-focus/palette-9-montagne-dietro.png" alt="palette montagne2 09 AM" style="width: 100%;" /></td>
+    <td style="width: 40%; "><img src="{{ site.baseurl }}/assets/images/lone-knight-focus/palette-0-montagne-dietro.png" alt="palette montagne2 00 AM" style="width: 100%;" /></td>
+    <td style="width: 40%; "><img src="{{ site.baseurl }}/assets/images/lone-knight-focus/palette-9-montagne-dietro.png" alt="palette montagne2 09 AM" style="width: 100%;" /></td>
 </tr>
 
 <tr>
     <td style="width: 12%; text-align: center; vertical-align: middle; background-color: rgb(200, 200, 200);"><b>mountains 2</b></td>
-       <td style="width: 40%; "><img src="http://www.limulo.net/images/lone-knight-focus/montagne1_0_AM.png" alt="montagne1_00_AM" style="width: 100%;" /></td>
-    <td style="width: 40%; "><img src="http://www.limulo.net/images/lone-knight-focus/montagne1_9_AM.png" alt="montagne1_09_AM" style="width: 100%;" /></td>
+       <td style="width: 40%; "><img src="{{ site.baseurl }}/assets/images/lone-knight-focus/montagne1_0_AM.png" alt="montagne1_00_AM" style="width: 100%;" /></td>
+    <td style="width: 40%; "><img src="{{ site.baseurl }}/assets/images/lone-knight-focus/montagne1_9_AM.png" alt="montagne1_09_AM" style="width: 100%;" /></td>
 </tr>
 
 <tr>
     <td style="width: 12%; text-align: right; vertical-align: top; background-color: rgb(200, 200, 200);"><i>palette</i></td>
-    <td style="width: 40%; "><img src="http://www.limulo.net/images/lone-knight-focus/palette-0-montagne-davanti.png" alt="palette montagne1 00 AM" style="width: 100%;" /></td>
-    <td style="width: 40%; "><img src="http://www.limulo.net/images/lone-knight-focus/palette-9-montagne-davanti.png" alt="palette montagne1 09 AM" style="width: 100%;" /></td>
+    <td style="width: 40%; "><img src="{{ site.baseurl }}/assets/images/lone-knight-focus/palette-0-montagne-davanti.png" alt="palette montagne1 00 AM" style="width: 100%;" /></td>
+    <td style="width: 40%; "><img src="{{ site.baseurl }}/assets/images/lone-knight-focus/palette-9-montagne-davanti.png" alt="palette montagne1 09 AM" style="width: 100%;" /></td>
 </tr>
 
 
 <tr>
     <td style="width: 12%; text-align: center; vertical-align: middle; background-color: rgb(200, 200, 200);"><b>grass</b></td>
-     <td style="width: 40%; "><img src="http://www.limulo.net/images/lone-knight-focus/prato_0_AM.png" alt="prato_00_AM" style="width: 100%;" /></td>
-     <td style="width: 40%; "><img src="http://www.limulo.net/images/lone-knight-focus/prato_9_AM.png" alt="prato_09_AM" style="width: 100%;" /></td>
+     <td style="width: 40%; "><img src="{{ site.baseurl }}/assets/images/lone-knight-focus/prato_0_AM.png" alt="prato_00_AM" style="width: 100%;" /></td>
+     <td style="width: 40%; "><img src="{{ site.baseurl }}/assets/images/lone-knight-focus/prato_9_AM.png" alt="prato_09_AM" style="width: 100%;" /></td>
 </tr>
 
 <tr>
     <td style="width: 12%; text-align: right; vertical-align: top; background-color: rgb(200, 200, 200);"><i>palette</i></td>
-    <td style="width: 40%; "><img src="http://www.limulo.net/images/lone-knight-focus/palette-0-prato.png" alt="palette prato 00 AM" style="width: 100%;" /></td>
-    <td style="width: 40%; "><img src="http://www.limulo.net/images/lone-knight-focus/palette-9-prato.png" alt="palette prato 09 AM" style="width: 100%;" /></td>
+    <td style="width: 40%; "><img src="{{ site.baseurl }}/assets/images/lone-knight-focus/palette-0-prato.png" alt="palette prato 00 AM" style="width: 100%;" /></td>
+    <td style="width: 40%; "><img src="{{ site.baseurl }}/assets/images/lone-knight-focus/palette-9-prato.png" alt="palette prato 09 AM" style="width: 100%;" /></td>
 </tr>
 
 <tr>
     <td style="width: 12%; text-align: center; vertical-align: middle; background-color: rgb(200, 200, 200);"><b>knight</b></td>
-    <td style="width: 40%; text-align: center;"><img src="http://www.limulo.net/images/lone-knight-focus/cavaliere_0_AM.png" alt="cavaliere_00_AM" /></td>
-    <td style="width: 40%; text-align: center;"><img src="http://www.limulo.net/images/lone-knight-focus/cavaliere_9_AM.png" alt="cavaliere_09_AM" /></td>
+    <td style="width: 40%; text-align: center;"><img src="{{ site.baseurl }}/assets/images/lone-knight-focus/cavaliere_0_AM.png" alt="cavaliere_00_AM" /></td>
+    <td style="width: 40%; text-align: center;"><img src="{{ site.baseurl }}/assets/images/lone-knight-focus/cavaliere_9_AM.png" alt="cavaliere_09_AM" /></td>
     </tr>
 
 <tr>
     <td style="width: 12%; text-align: right; vertical-align: top; background-color: rgb(200, 200, 200);"><i>palette</i></td>
-    <td style="width: 40%; "><img src="http://www.limulo.net/images/lone-knight-focus/palette-0-cavaliere.png" alt="palette cavaliere 00 AM" style="width: 100%;" /></td>
-    <td style="width: 40%; "><img src="http://www.limulo.net/images/lone-knight-focus/palette-9-cavaliere.png" alt="palette cavaliere 09 AM" style="width: 100%;" /></td>
+    <td style="width: 40%; "><img src="{{ site.baseurl }}/assets/images/lone-knight-focus/palette-0-cavaliere.png" alt="palette cavaliere 00 AM" style="width: 100%;" /></td>
+    <td style="width: 40%; "><img src="{{ site.baseurl }}/assets/images/lone-knight-focus/palette-9-cavaliere.png" alt="palette cavaliere 09 AM" style="width: 100%;" /></td>
  </tr>
 
 <tr>
     <td style="width: 12%; text-align: center; vertical-align: middle; background-color: rgb(200, 200, 200);"><b>total</b></td>
-    <td style="width: 40%; text-align: center;"><img src="http://www.limulo.net/images/lone-knight-focus/totale_0_AM.png" alt="totale_00_AM" style="width: 100%;" /></td>
-    <td style="width: 40%; text-align: center;"><img src="http://www.limulo.net/images/lone-knight-focus/totale_9_AM.png" alt="totale_09_AM" style="width: 100%;" /></td>
+    <td style="width: 40%; text-align: center;"><img src="{{ site.baseurl }}/assets/images/lone-knight-focus/totale_0_AM.png" alt="totale_00_AM" style="width: 100%;" /></td>
+    <td style="width: 40%; text-align: center;"><img src="{{ site.baseurl }}/assets/images/lone-knight-focus/totale_9_AM.png" alt="totale_09_AM" style="width: 100%;" /></td>
 </tr>
 
 </table>
@@ -156,7 +156,7 @@ Every local pseudocolor palette entry represent one of the element colors at a g
 Thus, thanks to this technique, every pixels is colored with the appropriate nuance according to the time flow.
 
 
-![](/assets/images/lone-knight-focus/processing-debug.png)
+![]({{ site.baseurl }}/assets/images/lone-knight-focus/processing-debug.png)
 
 ### Future improvements
 

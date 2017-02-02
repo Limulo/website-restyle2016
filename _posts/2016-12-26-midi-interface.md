@@ -12,7 +12,7 @@ category: [coding, physical-computing]
 
 Other communication protocols already existed but MIDI soon became more valuable as it was recognised as a market standard and it made use of digital signals (streams of _bytes_) instead of analog.
 
-![MIDI communcation](/assets/images/midi-interface/MIDI-intro.png)
+![MIDI communcation]({{ site.baseurl }}/assets/images/midi-interface/MIDI-intro.png)
 
 From a more technical point of view, MIDI is an asynchronous serial communication protocol with a transmission speed of **31250 baud**. On the physical layer it uses the classic [5 pin DIN connector](https://en.wikipedia.org/wiki/DIN_connector) and cable.
 
@@ -20,7 +20,7 @@ From a more technical point of view, MIDI is an asynchronous serial communicatio
 
 Here's a picture of a standard MIDI message:
 
-![standard MIDI msg](/assets/images/midi-interface/status-and-data.png){: width="60%;"}
+![standard MIDI msg]({{ site.baseurl }}/assets/images/midi-interface/status-and-data.png){: width="60%;"}
 
 As you can see, inside a MIDI message there are two main bytes categories:
 * **Status Byte**;
@@ -30,13 +30,13 @@ Suppose we are a MIDI device and we are receiving MIDI messages from a MIDI cont
 
 From a binary point of view it means that the leftmost _bit_ of a _status byte_ is always **1** while it is **0** for the _data byte_.
 
-![immagine binary point of view](/assets/images/midi-interface/status-and-data-bits.png){: width="60%;"}
+![immagine binary point of view]({{ site.baseurl }}/assets/images/midi-interface/status-and-data-bits.png){: width="60%;"}
 
 #### MIDI channels
 
 What is a MIDI channel? Suppose we have only one MIDI keyboard/controller connected to many stacked synths.
 
-![MIDI channels](/assets/images/midi-interface/MIDI-channels.png)
+![MIDI channels]({{ site.baseurl }}/assets/images/midi-interface/MIDI-channels.png)
 
 How can we use all the synths sounds each one mapped on a certain portion of the keyboard, so we could play different sounds with different notes?
 
@@ -45,7 +45,7 @@ Here comes the **MIDI channel**! Using MIDI channels we can say to each synth to
 The MIDI protocol provides up to 16 different MIDI channels.
 Each MIDI message contains information regarding the MIDI channel used to send it; we can retrieve the information reading the lower nibble of the _status byte_
 
-![status byte and its nibbles](/assets/images/midi-interface/nibbles.png){: width="60%;"}
+![status byte and its nibbles]({{ site.baseurl }}/assets/images/midi-interface/nibbles.png){: width="60%;"}
 
 ### Reference
 
@@ -80,7 +80,7 @@ Let's focus on the **MIDI In** section. We need:
 
 Here's the _Fritzing scheme_ of our circuit.
 
-![Fritzing MIDI in](/assets/images/midi-interface/MIDI-IN_bb.png)
+![Fritzing MIDI in]({{ site.baseurl }}/assets/images/midi-interface/MIDI-IN_bb.png)
 
 ### Software
 
@@ -120,14 +120,14 @@ void loop()
 
 In order to examine the MIDI messages flow we have to connect a MIDI device (such a MIDI keyboard or controller) to our Arduino MIDI interface.
 
-![Studio MIDI In Setup](/assets/images/midi-interface/MIDI-studio-in.png)
+![Studio MIDI In Setup]({{ site.baseurl }}/assets/images/midi-interface/MIDI-studio-in.png)
 
 ### Tests
 
 Now that everything is set up, let's upload the sketch. We play some notes on the keyboard and see what happens.
 Here's a screenshot of the Serial monitor output:
 
-![Serial monitor output 1](/assets/images/midi-interface/serial-monitor-1.png)
+![Serial monitor output 1]({{ site.baseurl }}/assets/images/midi-interface/serial-monitor-1.png)
 
 Wow! It works!
 
@@ -165,7 +165,7 @@ Now, let's try with the opposite approach: we want to create an Arduino MIDI ins
 ### Studio Setup
 This would be our studio configuration:
 
-![Studio MIDI Out Setup](/assets/images/midi-interface/MIDI-studio-out.png)
+![Studio MIDI Out Setup]({{ site.baseurl }}/assets/images/midi-interface/MIDI-studio-out.png)
 
 What we need is a synth to be connected to our Arduino MIDI interface output.
 
@@ -177,7 +177,7 @@ We have to create a **MIDI out** interface so we need only:
 
 Here the _Fritzing scheme_ of our circuit.
 
-![Fritzing MIDI in](/assets/images/midi-interface/MIDI-OUT_bb.png)
+![Fritzing MIDI in]({{ site.baseurl }}/assets/images/midi-interface/MIDI-OUT_bb.png)
 
 ### Software
 
@@ -243,13 +243,13 @@ What we need to build our circuit:
 
 Here's the _Fritzing_ scheme:
 
-![Fritzing MIDI in & out](/assets/images/midi-interface/MIDI-IN-OUT_bb.png)
+![Fritzing MIDI in & out]({{ site.baseurl }}/assets/images/midi-interface/MIDI-IN-OUT_bb.png)
 
 ### Studio Setup
 
 We are going to connect our MIDI keyboard/controller to the Arduino MIDI interface. Then we connect the interface to the synth. We can possibly use the USB serial communication to debug our code using the PC.
 
-![Studio MIDI In Out Setup](/assets/images/midi-interface/MIDI-studio-in-out.png)
+![Studio MIDI In Out Setup]({{ site.baseurl }}/assets/images/midi-interface/MIDI-studio-in-out.png)
 
 ### Software
 

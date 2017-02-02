@@ -23,7 +23,7 @@ You can find more information on the <em>User Manual</em> included with the soft
 
 ---
 
-![Natron logo](http://www.limulo.net/images/logos/natron-logo.jpg){: width="10%"}
+![Natron logo]({{ site.baseurl }}/assets/images/logos/natron-logo.jpg){: width="10%"}
 
 We have included a Natron session file to be used with **Natron**, a powerful multiplatform free and open-source compositing software. This session is the project we have used to render the video file you've seen at the beginning of this article.
 

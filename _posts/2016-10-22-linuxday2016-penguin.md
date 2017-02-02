@@ -18,13 +18,13 @@ That's why **limulo.net** used a penguin stuffed animal in one of its interactiv
 
 This interactive station is entirely based on the [**TouchBoard**](https://www.bareconductive.com/shop/touch-board/), a prototyping board by [Bareconductive](https://www.bareconductive.com/) based on the **Arduino Leonardo**. This board is specifically designed to be used with capacitive sensors and it is suited for situations where you need to be completely independent from the main power supply.
 
-![penguin 2]({{site.url}}/assets/images/linuxday2016/IMG_0864.jpg)
+![penguin 2]({{site.baseurl}}/assets/images/linuxday2016/IMG_0864.jpg)
 
 The board can be powered using a LiPo battery, so it can be placed everywhere. The board also mounts an MP3 shield and a female minijack TRS that we used to reproduce a sound.
 
 We connected the _TouchBoard_ to a particular electrode made of a square shaped copper foil attached inside a little card box.
 
-![front desk]({{site.url}}/assets/images/linuxday2016/station_7.png)
+![front desk]({{site.baseurl}}/assets/images/linuxday2016/station_7.png)
 
 This sensor detects user proximity while the _TouchBoard_ sends trigger to two different servo motors:
 

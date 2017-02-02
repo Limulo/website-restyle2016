@@ -8,7 +8,7 @@ category: [coding, physical-computing]
 
 Let's try our new [vibration motor](https://www.adafruit.com/products/1201). It is a little device that vibrates according to the tension applied.
 
-![photo 1](/assets/images/vibration-motor-test/DSCF0747.JPG)
+![photo 1]({{ site.baseurl }}/assets/images/vibration-motor-test/DSCF0747.JPG)
 
 ## Buiding Process
 
@@ -22,9 +22,9 @@ To avoid excessive current consumption (so we can use the motor with an Arduino 
 
 So here's the circuit we have prepared:
 
-![circuit](/assets/images/vibration-motor-test/circuit_01_bb.png)
+![circuit]({{ site.baseurl }}/assets/images/vibration-motor-test/circuit_01_bb.png)
 
-![photo 1](/assets/images/vibration-motor-test/P1020543.JPG)
+![photo 1]({{ site.baseurl }}/assets/images/vibration-motor-test/P1020543.JPG)
 
 And here's our sample code:
 

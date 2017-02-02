@@ -12,7 +12,8 @@ title: limulo
 tagline: 'sound design and coding'
 description: 'sound design and coding'
 url: http://www.limulo.net
-baseurl: /
+baseurl: /website
+#baseurl: /site/
 
 author:
   name: limulo.net
@@ -26,7 +27,7 @@ gems:
   - jekyll-paginate
 
 # Custom vars
-version: 
+version:
 github:
   repo: https://github.com/Limulo/website-restyle2016
 thumbnail:

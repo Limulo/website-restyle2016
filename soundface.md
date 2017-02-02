@@ -9,7 +9,7 @@ category: [installation]
 
 **Long story short**: it's an interactive tangible surface. Like a table. It's possible to interact with the surface by placing little objects with different shapes upon it.
 
-[![soundface](/assets/images/soundface/teaser/orizzontale.jpg)]({{site.url}}/assets/images/soundface/teaser/orizzontale.jpg)
+[![soundface]({{site.baseurl}}/assets/images/soundface/teaser/orizzontale.jpg)]({{site.baseurl}}/assets/images/soundface/teaser/orizzontale.jpg)
 
 Every object is associated with a sound and and image.
 
@@ -17,13 +17,13 @@ Every object is associated with a sound and and image.
 
 The surface reacts creating graphics and sounds in real time.
 
-![red haired girl](/assets/images/soundface/teaser/P1020359.jpg){: width="100%"} | ![CMYK elk](/assets/images/soundface/teaser/P1020363.jpg){: width="100%"}
+![red haired girl]({{site.baseurl}}/assets/images/soundface/teaser/P1020359.jpg){: width="100%"} | ![CMYK elk]({{site.baseurl}}/assets/images/soundface/teaser/P1020363.jpg){: width="100%"}
 
-![hands on](/assets/images/soundface/teaser/P1020308.jpg){: width="100%"}
+![hands on]({{site.baseurl}}/assets/images/soundface/teaser/P1020308.jpg){: width="100%"}
 
 The software has been developed using **openFrameworks** libraries with some external addons, such as _ofxTUIO_ and _ofxOSC_.
 
-![ohibo](/assets/images/soundface/teaser/IMG_1802_marked.jpg)
+![ohibo]({{site.baseurl}}/assets/images/soundface/teaser/IMG_1802_marked.jpg)
 
 The audio is procedurally produced by a **Pure Data** patch we specifically developed.
 
@@ -36,15 +36,15 @@ The audio is procedurally produced by a **Pure Data** patch we specifically deve
 {% if post.category contains 'soundface' %}
 
 <div>
-<a href="{{post.url}}">
+<a href="{{site.baseurl}}{{post.url}}">
 {% if post.shortcut %}
-<img src="/assets/images/shortcuts/{{post.shortcut}}" alt="{{post.title}}" class="shortcut-image"/>
+<img src="{{site.baseurl}}/assets/images/shortcuts/{{post.shortcut}}" alt="{{post.title}}" class="shortcut-image"/>
 {% else %}
-<img src="/assets/images/shortcuts/shortcut-default-installations.png" alt="{{post.title}}" class="shortcut-image"/>
+<img src="{{site.baseurl}}/assets/images/shortcuts/shortcut-default-installations.png" alt="{{post.title}}" class="shortcut-image"/>
 {% endif %}
 </a>
 
-<h3 class="post-title"><a href="{{post.url}}">{{ post.title }}</a></h3>
+<h3 class="post-title"><a href="{{site.baseurl}}{{post.url}}">{{ post.title }}</a></h3>
 {{ post.excerpt}}
 
 <hr class="clear" />

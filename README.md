@@ -108,6 +108,37 @@ Use these _liquid_ tags before and after code blocks.
 {% endhighlight %}
 ```
 
+## How to deploy the site
+
+[Here](http://jekyllrb.com/docs/deployment-methods/) you will find a useful link!
+
+### Before
+
+Use the following code in inserting images:
+
+```
+({{ site.baseurl }}/assets/images/petunia-la-rana/festa-mondiale-zanzare-2011.jpg)
+```
+
+instead of this one:
+
+```
+(/assets/images/petunia-la-rana/festa-mondiale-zanzare-2011.jpg)
+```
+
+Use the folling code for link:
+
+```
+<h3 class="post-title"><a href="{{ site.baseurl }}{{post.url}}">{{ post.title }}</a></h3>
+```
+
+instead of this:
+
+```
+<h3 class="post-title"><a href="{{post.url}}">{{ post.title }}</a></h3>
+```
+
+
 
 ## Useful links
 

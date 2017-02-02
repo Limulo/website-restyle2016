@@ -11,7 +11,7 @@ excerpt: technical details about soundface
 The soundface is basically just a table. Well, apparently it is. Actually, it's also much more than this.
 Let's take a closer look...
 
-![slide](/assets/images/soundface/technical/soundface-structure.png)
+![slide]({{site.baseurl}}/assets/images/soundface/technical/soundface-structure.png)
 
 In order to visualise the graphics you need three elements:
 * The projector: we use a _Acer S1210_ projector.
@@ -24,15 +24,15 @@ We chose this model because it can render very big images at very small distance
 
 The opacity provided by the frost let the user see on the plexiglass sheet what is projected from the engine underneath the surface
 
-![materials](/assets/images/soundface/technical/slide-2-materiali_2-1024x296.png)
+![materials]({{ site.baseurl }}/assets/images/soundface/technical/slide-2-materiali_2-1024x296.png)
 
-![lamps](/assets/images/soundface/technical/illuminatore-IR.jpg)
+![lamps]({{ site.baseurl }}/assets/images/soundface/technical/illuminatore-IR.jpg)
 
 Now, let's consider the infra-red ligh spotlights.
 
 We placed 4 of them inside the table structure in order to properly radiate the infra-red light to capture the objects on the surface.
 
-![camera](/assets/images/soundface/technical/telecamera.jpg)
+![camera]({{ site.baseurl }}/assets/images/soundface/technical/telecamera.jpg)
 
 The infra-red light, after being bounced from the objects on the surface, is intercepted by the camera.
 
@@ -41,7 +41,7 @@ We removed the ps3Eye IR filter and we replaced it with a visible light filter (
 
 We also changed the ps3Eye lens, provinding it with a a wide-angle lens. This new lens allows peripheral vision and we can reduce the distance among the plexiglass sheet and the camera.
 
-![visible-IR-light](/assets/images/soundface/technical/visible-IR-light.jpg)
+![visible-IR-light]({{ site.baseurl }}/assets/images/soundface/technical/visible-IR-light.jpg)
 
 Visible light domain | Infra-red light domain
 Reception of the image related to the surface status | Projection of a graphic interface concordant with the surface statuse
@@ -56,7 +56,7 @@ As a precaution, we mounted two fans to provide a proper air flow inside the tab
 Before implementing the '4 IR spotlights + camera' solution, we experimented other 'lighting and sensing' setups.
 First, we tried  a surveillance IR camera with an integrated IR spothlight circuit (implemented in **Prototype #2**). Then we attempted to create a specific circuit implementing a 555 timer IC to create a pulsating IR light spotlight with some IR LEDs.
 
-![555](/assets/images/soundface/technical/circuito-555.jpg)
+![555]({{ site.baseurl }}/assets/images/soundface/technical/circuito-555.jpg)
 
 Due to many problems arising from these setups, we finally decided to implement the current solution.
 
@@ -67,7 +67,7 @@ The software structure relies on a client-server architecture
 By "Client" we mean an application demanding a service. By "Server" we mean an application that can supply the service.
 Basically: the client asks the server a service. The server identifies the client and supplies the service. Eventually the client confirms the reception of the service to the server.
 
-![client & server](/assets/images/soundface/technical/client-server.png)
+![client & server]({{ site.baseurl }}/assets/images/soundface/technical/client-server.png)
 
 There are two main communictaion protocols between Client and Server. They both fulfill specific tasks:
 
@@ -144,7 +144,7 @@ Amongst the others, we focused on these two:
 
 In more detail, here are the TUIO v1.1 specs:
 
-![tuio](/assets/images/logos/tuio-logo.jpg){: width="20%;"}
+![tuio]({{ site.baseurl }}/assets/images/logos/tuio-logo.jpg){: width="20%;"}
 
 This is the structure of a TUIO message:
 [src] / [alive] / [set] / [fseq]
@@ -161,7 +161,7 @@ The TUIO protocol has been developed by M. Kaltenbrunner, T. Bovermann, R. Benci
 The TUIO protocol is at the core of [ReacTIVision](http://reactivision.sourceforge.net/).
 ReacTIVision is a server software that eases the creation and dispatch of properly formatted messages within interactive applications.
 
-![reacTIVision](/assets/images/logos/reactivision-logo.jpg){: width="20%;"}
+![reacTIVision]({{ site.baseurl }}/assets/images/logos/reactivision-logo.jpg){: width="20%;"}
 
 It's time to dive more deeply into the fiducial markers issue.
 Fiducial markers are symbols/images easily and uniquely recognizable by a computer vision system.
@@ -170,22 +170,22 @@ Fiducial markers are symbols/images easily and uniquely recognizable by a comput
 
 * [ARToolKit](http://www.hitl.washington.edu/artoolkit/) - Augmented Reality fiducial markers;
 
-![ARToolkit fids]({{site.url}}/assets/images/soundface/technical/ARToolkit.jpg)
+![ARToolkit fids]({{site.baseurl}}/assets/images/soundface/technical/ARToolkit.jpg)
 
 * [d-touch](https://d-touch.org/) - generic fiducial markers. The markers discrimination is done on the basis of a topological analysis (black areas with white spots and viceversa);
 
-![dtouch 0](/assets/images/soundface/technical/dtouch-0.jpg)
+![dtouch 0]({{ site.baseurl }}/assets/images/soundface/technical/dtouch-0.jpg)
 
-![a](/assets/images/soundface/technical/dtouch-a.jpg) | ![b](/assets/images/soundface/technical/dtouch-b.jpg) | ![c](/assets/images/soundface/technical/dtouch-c.jpg)
+![a]({{ site.baseurl }}/assets/images/soundface/technical/dtouch-a.jpg) | ![b]({{ site.baseurl }}/assets/images/soundface/technical/dtouch-b.jpg) | ![c]({{ site.baseurl }}/assets/images/soundface/technical/dtouch-c.jpg)
 
 
-![d](/assets/images/soundface/technical/dtouch-cards.jpg)
+![d]({{ site.baseurl }}/assets/images/soundface/technical/dtouch-cards.jpg)
 
 {% comment %}
 <table>
 <tbody>
 <tr>
-<td colspan="3" style="text-align:center; vertical-align:top;" ><img src="{{site.url}}/assets/images/soundface/technical/dtouch-0.jpg" alt="Schermata 2013-10-19 a 18.32.33"/>
+<td colspan="3" style="text-align:center; vertical-align:top;" ><img src="{{site.baseurl}}/assets/images/soundface/technical/dtouch-0.jpg" alt="Schermata 2013-10-19 a 18.32.33"/>
 </td>
 </tr>
 <tr>
@@ -201,7 +201,7 @@ Fiducial markers are symbols/images easily and uniquely recognizable by a comput
 </tr>
 <tr>
 <td colspan="3" style="text-align:center; vertical-align:top;" >
-<img src="{{site.url}}/assets/images/soundface/technical/cards.png" alt="cards" style="width: 60%;"/>
+<img src="{{site.baseurl}}/assets/images/soundface/technical/cards.png" alt="cards" style="width: 60%;"/>
 </td>
 </tr>
 </tbody>
@@ -210,34 +210,34 @@ Fiducial markers are symbols/images easily and uniquely recognizable by a comput
 
 * [Amoeba](http://reactivision.sourceforge.net/) - d-touch improvement. Amoeba has been created by a genetic algorithm to fulfill the proper space and efficency needs of the [Reactable](http://www.reactable.com/) project.
 
-![0](/assets/images/soundface/technical/amoeba-0.jpg)
+![0]({{ site.baseurl }}/assets/images/soundface/technical/amoeba-0.jpg)
 
-![1](/assets/images/soundface/technical/amoeba-1.jpg) | ![2](/assets/images/soundface/technical/amoeba-2.jpg) | ![3](/assets/images/soundface/technical/amoeba-3.jpg)
+![1]({{ site.baseurl }}/assets/images/soundface/technical/amoeba-1.jpg) | ![2]({{ site.baseurl }}/assets/images/soundface/technical/amoeba-2.jpg) | ![3]({{ site.baseurl }}/assets/images/soundface/technical/amoeba-3.jpg)
 
-![abcd](/assets/images/soundface/technical/amoeba-abcd.jpg)
+![abcd]({{ site.baseurl }}/assets/images/soundface/technical/amoeba-abcd.jpg)
 
 {% comment %}
 <table class="img">
 <tbody>
 <tr>
 <td colspan="3" style="text-align:center; vertical-align:top;" >
-<img src="{{site.url}}/assets/images/soundface/technical/Schermata-2013-10-19-a-18.34.28-1024x189.png" alt="Schermata 2013-10-19 a 18.34.28" />
+<img src="{{site.baseurl}}/assets/images/soundface/technical/Schermata-2013-10-19-a-18.34.28-1024x189.png" alt="Schermata 2013-10-19 a 18.34.28" />
 </td>
 </tr>
 <tr>
 <td colspan="3" style="text-align:center; vertical-align:top;" >
-<img src="{{site.url}}/assets/images/soundface/technical/Schermata-2013-10-19-a-18.33.34.png" alt="Schermata 2013-10-19 a 18.33.34"/>
+<img src="{{site.baseurl}}/assets/images/soundface/technical/Schermata-2013-10-19-a-18.33.34.png" alt="Schermata 2013-10-19 a 18.33.34"/>
 </td>
 </tr>
 <tr>
 <td style="width: 33%;">
-<img src="{{site.url}}/assets/images/soundface/technical/Schermata-2013-10-19-a-18.43.13.png" alt="Schermata 2013-10-19 a 18.43.13"/>
+<img src="{{site.baseurl}}/assets/images/soundface/technical/Schermata-2013-10-19-a-18.43.13.png" alt="Schermata 2013-10-19 a 18.43.13"/>
 </td>
 <td style="width: 33%;">
-<img src="{{site.url}}/assets/images/soundface/technical/Schermata-2013-10-19-a-18.43.03.png" alt="Schermata 2013-10-19 a 18.43.03"/>
+<img src="{{site.baseurl}}/assets/images/soundface/technical/Schermata-2013-10-19-a-18.43.03.png" alt="Schermata 2013-10-19 a 18.43.03"/>
 </td>
 <td style="width: 33%;">
-<img src="{{site.url}}/assets/images/soundface/technical/Schermata-2013-10-19-a-18.43.33.png" alt="Schermata 2013-10-19 a 18.43.33"/>
+<img src="{{site.baseurl}}/assets/images/soundface/technical/Schermata-2013-10-19-a-18.43.33.png" alt="Schermata 2013-10-19 a 18.43.33"/>
 </td>
 </tr>
 </tbody>
@@ -250,14 +250,14 @@ Here are some examples:
 
 * the **net** (whether global or local), for example internet that can link two devices, no matter how distant they are.
 
-![computers](/assets/images/soundface/technical/client-server-2.png)
+![computers]({{ site.baseurl }}/assets/images/soundface/technical/client-server-2.png)
 
 * the client and the server are not necessarily two physical separeted devices. The same device can work as a server and a client at the same time. In this case there will be two applications - one working as the client and the other as the server - running simultaneusly.
 
 
 The latter is our case! In our project, reacTIVision, acting as a server, dispatches TUIO messages to our custom application that is the client.
 
-![computer 2](/assets/images/soundface/technical/client-server-tuio.png)
+![computer 2]({{ site.baseurl }}/assets/images/soundface/technical/client-server-tuio.png)
 
 
 We use Reactivision on the server side, so we focused on the client side developement.
@@ -279,18 +279,18 @@ To examine in depth procedural audio, follow [Andy Farnell](http://obiwannabe.co
 </tr>
 <tr>
 <td style="width: 10%">
-<img src="{{site.url}}/assets/images/logos/processing-logo.jpg" alt="Processing_Logo" width="115" height="115" style="float:left;" />
+<img src="{{site.baseurl}}/assets/images/logos/processing-logo.jpg" alt="Processing_Logo" width="115" height="115" style="float:left;" />
 </td>
 <td style="text-align:center; vertical-align:top;" >
-<a href="http://www.processing.org/" target="_blank" alt="Processing">Processing</a>: both a language and an IDE. It's been developed at MIT by ben fry and Casey Reas. It's very adaptable and easy to learn. Anyway, if you need low level control, that's probably not the tool for you.
+<a href="http://www.processing.org/" alt="Processing">Processing</a>: both a language and an IDE. It's been developed at MIT by ben fry and Casey Reas. It's very adaptable and easy to learn. Anyway, if you need low level control, that's probably not the tool for you.
 </td>
 </tr>
 <tr>
 <td style="width: 10%">
-<img src="{{site.url}}/assets/images/logos/openframeworks-logo.jpg" alt="ofw-logo" width="114" height="60" />
+<img src="{{site.baseurl}}/assets/images/logos/openframeworks-logo.jpg" alt="ofw-logo" width="114" height="60" />
 </td>
 <td style="text-align:left; vertical-align:top;" >
-<a class="ext" title="OpenFrameworks" href="http://www.openframeworks.cc/" target="_blank">OpenFrameworks</a>:
+<a class="ext" title="OpenFrameworks" href="http://www.openframeworks.cc/">OpenFrameworks</a>:
 It'a set of utilities libraries that embed Processing easiness within C/C++ completeness.
 Just like processing, it's a comunity developed project, suited for the main OSes (Linux, OSX, windows, ...)
 </td>
@@ -300,20 +300,20 @@ Just like processing, it's a comunity developed project, suited for the main OSe
 </tr>
 <tr>
 <td style="width: 10%">
-<img src="{{site.url}}/assets/images/logos/pd-2-logo.jpg" alt="pure_data_logo" width="126" height="81" />
+<img src="{{site.baseurl}}/assets/images/logos/pd-2-logo.jpg" alt="pure_data_logo" width="126" height="81" />
 </td>
 <td style="text-align:left; vertical-align:top;" >
-<a class="ext" title="Pure Data" href="http://puredata.info/" target="_blank">Pure Data</a>:
+<a class="ext" title="Pure Data" href="http://puredata.info/">Pure Data</a>:
 it's a programmable DSP developed by Miller Puckette at IRCAM and maintained by the community.
 You can program PureData directly inside its IDE using graphical tools, or you can embed it inside your C program.
 </td>
 </tr>
 <tr>
 <td style="width: 10%">
-<img src="{{site.url}}/assets/images/logos/supercollider-logo.jpg" alt="SuperCollider" width="128" height="128" />
+<img src="{{site.baseurl}}/assets/images/logos/supercollider-logo.jpg" alt="SuperCollider" width="128" height="128" />
 </td>
 <td style="text-align:left; vertical-align:top;" >
-<a class="ext" title="Supercollider" href="http://supercollider.sourceforge.net/" target="_blank">Supercollider</a>: it's a scripting language use for the generation and manipulation of sounds in real time. It' internal architecture is based on a server-client structure.
+<a class="ext" title="Supercollider" href="http://supercollider.sourceforge.net/">Supercollider</a>: it's a scripting language use for the generation and manipulation of sounds in real time. It' internal architecture is based on a server-client structure.
 </td>
 </tr>
 </tbody>
@@ -357,7 +357,7 @@ Here's our [source code](https://github.com/Limulo/videotavolo) al nostro reposi
 <td style="width: 20%;">Vannes, France, 2005
 </td>
 <td style="width: 5%;">
-<a class="ext" href="http://opensoundcontrol.org/files/tuio_gw2005.pdf" target="_blank">link</a>
+<a class="ext" href="http://opensoundcontrol.org/files/tuio_gw2005.pdf">link</a>
 </td>
 </tr>
 
@@ -369,7 +369,7 @@ Here's our [source code](https://github.com/Limulo/videotavolo) al nostro reposi
 <td style="width: 20%;">Baton Rouge, Louisiana, 2007
 </td>
 <td style="width: 5%;">
-<a class="ext" href="http://vigliensoni.com/BUP/DropBox_10_12_09/proyectoMarco/Info/reactivision_tei2007.pdf" target="_blank">link</a>
+<a class="ext" href="http://vigliensoni.com/BUP/DropBox_10_12_09/proyectoMarco/Info/reactivision_tei2007.pdf">link</a>
 </td>
 </tr>
 <tr>
@@ -380,7 +380,7 @@ Here's our [source code](https://github.com/Limulo/videotavolo) al nostro reposi
 <td style="width: 20%;">Montreal, Canada, 2003.
 </td>
 <td style="width: 5%;">
-<a class="ext" href="http://cnmat.berkeley.edu/system/files/attachments/Open+Sound+Control-state+of+the+art.pdf" target="_blank">link</a></td>
+<a class="ext" href="http://cnmat.berkeley.edu/system/files/attachments/Open+Sound+Control-state+of+the+art.pdf">link</a></td>
 </tr>
 <tr>
 <td style="width: 20%;">Kaltenbrunner M.
@@ -390,7 +390,7 @@ Here's our [source code](https://github.com/Limulo/videotavolo) al nostro reposi
 <td style="width: 20%;">Banff, Canada.
 </td>
 <td style="width: 5%;">
-<a class="ext" href="http://modin.yuri.at/publications/tuio_its2009.pdf" target="_blank">link</a>
+<a class="ext" href="http://modin.yuri.at/publications/tuio_its2009.pdf">link</a>
 </td>
 </tr>
 <tr>
@@ -401,7 +401,7 @@ Here's our [source code](https://github.com/Limulo/videotavolo) al nostro reposi
 <td style="width: 20%;">Melbourne,Australia
 </td>
 <td style="width: 5%;">
-<a class="ext" href="http://modin.yuri.at/publications/reactivision_3rditeration2005.pdf" target="_blank">link</a>
+<a class="ext" href="http://modin.yuri.at/publications/reactivision_3rditeration2005.pdf">link</a>
 </td>
 </tr>
 </tbody>
@@ -410,7 +410,7 @@ Here's our [source code](https://github.com/Limulo/videotavolo) al nostro reposi
 
 ## Books
 
-![books](/assets/images/soundface/technical/libri.jpg)
+![books]({{ site.baseurl }}/assets/images/soundface/technical/libri.jpg)
 
 * J. Kreidler, “**loadbang**”, 2009, wolke;
 * A. Farnell, ”**Designing Sound**”, 2010, MIT Press;

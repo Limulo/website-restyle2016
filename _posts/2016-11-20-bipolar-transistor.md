@@ -17,7 +17,7 @@ Before starting, take a look a [this](https://learn.adafruit.com/adafruit-arduin
 
 According to what we read in _chapter 4_ from the book "**Practical Elctronics for inventors**" by **Paul Sherz** about transistors, we have to consider some important formulae when we are using a _npn_ one:
 
-![transistor graph 1](/assets/images/vibration-motor-test/transistor-graph-1.png)
+![transistor graph 1]({{ site.baseurl }}/assets/images/vibration-motor-test/transistor-graph-1.png)
 
 $$ I_{c} = H_{fe} I_{b} = \beta I_{b} $$
 
@@ -73,7 +73,7 @@ At page 153, in section **Important Things to Know about Bipolar Transistors** P
 
 The motor is partially an inductor. If the transistor shuts off quickly, then the current that must still flow through the inductor for a little while will flow thru the diode and cause no harm. Without the diode, the voltage accross the motor would get as large as necessary to keep the current flowing, which would probably require frying the transistor.
 
-![transistor graph 2](/assets/images/vibration-motor-test/transistor-graph-2.png){: width="30%;" }
+![transistor graph 2]({{ site.baseurl }}/assets/images/vibration-motor-test/transistor-graph-2.png){: width="30%;" }
 
 This way we avoid a positive $$ V_{ce} $$ voltage spark to break the transistor.
 
@@ -100,19 +100,19 @@ As **Olin Lathrop** says, we can use a little capacitor in parallel with the mot
 ## Testing
 Keeping attention to the transistor pinout
 
-![transistor pinout](/assets/images/vibration-motor-test/2N2222.png){: width="30%;" }
+![transistor pinout]({{ site.baseurl }}/assets/images/vibration-motor-test/2N2222.png){: width="30%;" }
 
 and to the diode direction, we create the circuit shown in this _Fritzing_ diagram and schematics
 
-![fritzing circuit](/assets/images/vibration-motor-test/with_2N2222_bb.png)
+![fritzing circuit]({{ site.baseurl }}/assets/images/vibration-motor-test/with_2N2222_bb.png)
 
-![fritzing circuit](/assets/images/vibration-motor-test/with_2N2222_schem.png)
+![fritzing circuit]({{ site.baseurl }}/assets/images/vibration-motor-test/with_2N2222_schem.png)
 
 Here the final result. Time to make some test!
 
-![circuit](/assets/images/vibration-motor-test/P1020551.JPG)
+![circuit]({{ site.baseurl }}/assets/images/vibration-motor-test/P1020551.JPG)
 
-![circuit](/assets/images/vibration-motor-test/P1020554.JPG)
+![circuit]({{ site.baseurl }}/assets/images/vibration-motor-test/P1020554.JPG)
 
 Below some data we've collected using our very elementary analog multimeter. We measured the base current and the collector current for a fixed value of the Base resistance, slightly varying the PWM duty cycle.
 Maybe these measurements are not teoretically correct 'casue the current signal is not a direct one but a time varying one so it will be very appreciated if anybody will let us now how can we improve our workflow in doing this.
