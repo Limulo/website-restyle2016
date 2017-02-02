@@ -3,11 +3,11 @@ layout: page
 title: Installations
 ---
 
-Welcome to our interactive installation page.
+Welcome to our interactive installations page.
 
 ## Works
 
-See our installation in action.
+See our installations in action.
 
 {% comment %}Questo primo blocco per fare sì che la pagina SOUNDFACE compaia all'interno dell'elenco{% endcomment %}
 
