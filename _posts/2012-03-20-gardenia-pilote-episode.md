@@ -15,4 +15,4 @@ Here you can listen to our sound effects track for the pilote episode!
 
 <iframe src="http://www.youtube.com/embed/ejCZ8fGYH8Q" width="100%" height="360" allowfullscreen></iframe>
 
-Here you can watch the series [teaser]({% post_url 2010-08-20-gardenia-palace-teaser %}).
+Here you can watch the series [teaser]({{ site.baseurl }}{% post_url 2010-08-20-gardenia-palace-teaser %}).

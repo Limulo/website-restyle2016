@@ -59,14 +59,14 @@ You can donwnload the code for this interactive installation from [this](https:/
 
 ## Issues
 
-* [LiPo Battery polarity]({% post_url 2016-10-20-LiPo-polarity %}) issue;
-* [Servo and MP3 player]({% post_url 2016-10-21-servo-mp3 %}) issue;
+* [LiPo Battery polarity]({{ site.baseurl }}{% post_url 2016-10-20-LiPo-polarity %}) issue;
+* [Servo and MP3 player]({{ site.baseurl }}{% post_url 2016-10-21-servo-mp3 %}) issue;
 
 ---
 
 ## More
 
-* Check out our [LinuxDay 2016](({% post_url 2016-10-22-linuxday2016 %})) page if you need more information about the event and the other interactive installations.
+* Check out our [LinuxDay 2016](({{ site.baseurl }}{% post_url 2016-10-22-linuxday2016 %})) page if you need more information about the event and the other interactive installations.
 
 
 

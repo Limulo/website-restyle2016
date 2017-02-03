@@ -13,7 +13,7 @@ Let's try our new [vibration motor](https://www.adafruit.com/products/1201). It 
 ## Buiding Process
 
 **Note**: this tutorial uses a resistance value that is too little and can cause **damage** to your Arduino board. Better to use a much higher value so to reduce corrent from the Arduino digital pin.
-Take a look at [another]({% post_url 2016-11-20-bipolar-transistor %}) experiment we have made that is more respectful of the Arduino board.
+Take a look at [another]({{ site.baseurl }}{% post_url 2016-11-20-bipolar-transistor %}) experiment we have made that is more respectful of the Arduino board.
 {: .note}
 
 According to the [Adafruit reference](https://www.adafruit.com/products/1201) the vibration motor can be powered with a tension between 2V and 5V. The greater the tension, the greater the vibrations produced and the current consumed.
@@ -60,7 +60,7 @@ Everything seems to work very well:
 In this configuration, using a 220 Ohms resistor, we measure a current of ~65mA;
 
 **Note**: this current is higher than the maximum amount of current we can obtain from an Arduino digital pin. This circuit configuration can **damage** your Arduino. Please substitute this resistor with another one with a much higher resistance value.
-Take a look at [another]({% post_url 2016-11-20-bipolar-transistor %}) experiment we have made that is more respectful of the Arduino board.
+Take a look at [another]({{ site.baseurl }}{% post_url 2016-11-20-bipolar-transistor %}) experiment we have made that is more respectful of the Arduino board.
 {: .note}
 
 ### Motor Technical details
@@ -74,4 +74,4 @@ Take a look at [another]({% post_url 2016-11-20-bipolar-transistor %}) experimen
 * Weight: 0.9 gram
 
 ## Future experiments
-Take a look at [this]({% post_url 2016-11-20-bipolar-transistor %}) improvement we have made. We are usign a **PN2222** transistor to manage the current that will flow through the motor.
+Take a look at [this]({{ site.baseurl }}{% post_url 2016-11-20-bipolar-transistor %}) improvement we have made. We are usign a **PN2222** transistor to manage the current that will flow through the motor.

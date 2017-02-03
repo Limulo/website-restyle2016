@@ -63,6 +63,6 @@ A titolo di promemoria lasciamo qui anche alcuni altri riferimenti ad informazio
 
 ## More
 
-* Check out our [LinuxDay 2016]({% post_url 2016-10-22-linuxday2016 %}) page if you need more information about the event and the other interactive installations.
+* Check out our [LinuxDay 2016]({{ site.baseurl }}{% post_url 2016-10-22-linuxday2016 %}) page if you need more information about the event and the other interactive installations.
 
 {% endcomment %}

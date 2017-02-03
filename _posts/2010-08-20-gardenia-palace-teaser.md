@@ -13,4 +13,4 @@ Here you can listen to our sound effects track!
 
 <iframe src="http://www.youtube.com/embed/5AXI1WseH3E" width="100%" height="360" allowfullscreen></iframe>
 
-Here you can watch the series [**pilote episode**]({% post_url 2012-03-20-gardenia-pilote-episode %}).
+Here you can watch the series [**pilote episode**]({{ site.baseurl }}{% post_url 2012-03-20-gardenia-pilote-episode %}).
