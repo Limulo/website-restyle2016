@@ -107,7 +107,7 @@ Use these _liquid_ tags before and after code blocks.
 
 Because of the filesystem structure of the website,
 
-![website structure](www.limulo.net/website/website-structure-1.png)
+![website structure](http://www.limulo.net/website/website-structure-1.png)
 
 we are usign 2 important **YAML** variable inside the ```config.yml``` file:
 
