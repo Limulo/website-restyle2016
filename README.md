@@ -157,10 +157,44 @@ instead of this one:
 ![image](/assets/images/petunia-la-rana/festa-mondiale-zanzare-2011.jpg)
 ```
 
+## Loading Problems
+
+Because we want to load **MathJax** and **FontAwesome** scripts only when it is necessary, we inserted inside the ```head.html``` file some Liquid Code to prevent these scripts to be loaded in each page of the web site.
+
+Thisi code checks if the page/post contains special variables inside the _Front Matter_ so to decide if the corresponding script has to be loaded.
+
+Here's the code:
+
+```
+{% if page.usefa %}
+<!-- Font Awesome -->
+<script src="https://use.fontawesome.com/d68500c562.js"></script>
+{% endif %}
+
+{% if page.usemath %}
+<!-- MathJax for matemathics formulae rendering -->
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+{% endif %}
+```
+
+If you want your page to use math formulae remember to insert the variable ```usemath``` in the _Front Matter_ like this:
+
+```
+...
+usemath: true
+___
+```
+
 
 ## How to deploy the site
 
 [Here](http://jekyllrb.com/docs/deployment-methods/) you will find a useful link!
+
+## Analytics
+
+We use [Open Web Analytics](http://www.openwebanalytics.com/).
+[Direct link](http://www.limulo.net/analytics) to our site analytics.
+[Wiki](https://github.com/padams/Open-Web-Analytics/wiki)
 
 ## Useful links
 

@@ -4,6 +4,7 @@ title: Arduino MIDI interface
 date: 2016-12-26 09:30:00
 excerpt: Arduino sending and receiving MIDI messages!
 category: [coding, physical-computing]
+usemath: true
 ---
 
 ## MIDI: an introduction

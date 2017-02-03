@@ -4,7 +4,9 @@ title: Bipolar Transistor and other stuff
 date: 2016-11-20 12:40:00
 excerpt: on how to drive a motor with Arduino using transistors
 category: [coding, physical-computing]
+usemath: true
 ---
+
 Coming from [this]({{ site.baseurl }}{% post_url 2016-11-16-vibration-motor-test %}) experiment, now we want to improve it adding some more electric components.
 
 Infact we know that we cannot draw too much current from the Arduino pins as you can conclude from this wonderful [scheme](http://www.pighixxx.com/test/portfolio-items/uno/?portfolioID=314) by **Pighixxx**, or read [here](http://arduino-info.wikispaces.com/ArduinoPinCurrent?responseToken=595ebf2e544e90f92f087b693242b0a4). The motor we want to drive is a load that is better not to connect directly to the Arduino board in order to prevent this.
