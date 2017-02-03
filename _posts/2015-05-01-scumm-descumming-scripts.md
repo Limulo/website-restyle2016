@@ -30,7 +30,7 @@ Supponiamo di voler esaminare alcuni scripts da **Monkey Island 2** e in partico
 
 Per specificare che vogliamo caricare questo salvataggio, l'opzione da usare è <span class="code">-x</span> seguito da 29 nel nostro caso;
 
-![Phatt Island Falls](/assets/images/scumm/cascata-phatt.png)
+![Phatt Island Falls]({{ site.baseurl }}/assets/images/scumm/cascata-phatt.png)
 
 L'altra opzione è, chiaramente, quella che attiva l'estrazione degli script. Si usa <span class="code">-u</span>. Importante ricordare che questa estrazione avviene soltanto se nella directory corrente esiste una sotto directory chiamata _dumps_, in caso contrario la creiamo!
 
@@ -55,7 +55,7 @@ Questi files **.dmp** sono i famosi files scritti in binario di cui abbiamo parl
 Per capire meglio cosa stiamo per fare può essere d'aiuto capire come questi file binari siano stati ottenuti.
 Abbiamo più volte ripetuto che il gioco veniva scritto dai programmatori LucasArts facendo uso del linguaggio di scripting SCUMM. Tutti questi script venivano compilati con un apposito compilatore per ottenerne il codice binario (espresso in 0 e 1) corrispondente; questi codici erano successivamente integrati con moltissimi altri dati a formare i files di risorse leggibili dall'interprete ed essere finalmente _giocati_ dall'utente finale.
 
-![Scumm Scripts Compiling](/assets/images/scumm/scumm-compiling.png)
+![Scumm Scripts Compiling]({{ site.baseurl }}/assets/images/scumm/scumm-compiling.png)
 
 Con il passare del tempo e le esigenze tecniche ed artistiche delle nuove avventure grafiche, anche il linguaggio SCUMM evolveva, modificandosi ed ampliandosi di nuove istruzioni e funzionalità. Di pari passo evolveva quindi anche il compilatore il quale ora doveva tradurre in binario set di istruzioni via via differenti rispetto a quelli delle versioni di linguaggio precedenti.
 
@@ -63,7 +63,7 @@ Quello che qui ci accingiamo a fare è il processo inverso: la _de-compilazione_
 
 E' qui che entra in gioco **descumm** degli ScummVM-Tools.
 
-![Scumm Scripts De-compiling](/assets/images/scumm/scumm-decompiling.png)
+![Scumm Scripts De-compiling]({{ site.baseurl }}/assets/images/scumm/scumm-decompiling.png)
 
 Anche per questo tool faremo uso della linea di comando passando lui alcune opzioni.
 L'opzione più importante da passare al tool è la **versione** del linguaggio con cui il gioco è stato scritto, infatti è solo conoscendo il set di istruzioni del linguaggio SCUMM usato nello scrivere il listato originale che il de-compilatore **descumm** sarà in grado di tradurre il binario in modo corretto. Ecco perchè i primi tempi ci siamo soffermati su [questi]({% post_url 2015-06-01-scumm-versions %}) concetti.

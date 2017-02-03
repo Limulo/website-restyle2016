@@ -17,18 +17,18 @@ La password deve essere inserita esattamente così com'è, a seguire, una combin
 <div class="dashed-border" style="padding: 1em;">
 
 <p><b>Debug Password</b>: shinymetal</p>
-<p><b>Activation Key</b>: <b><img alt="Ctrl" src="{{ site.baseurl }}/assets/images/scumm/Ctrl.jpg"> + <img alt="Shift" src="http://127.0.0.1/limulo.net/images/scumm/shift.jpg"> + <img alt="D" src="http://www.limulo.net/images/scumm/D.jpg"></b></p>
+<p><b>Activation Key</b>: <b><img alt="Ctrl" src="{{ site.baseurl }}/assets/images/scumm/Ctrl.jpg"> + <img alt="Shift" src="http://127.0.0.1/limulo.net/images/scumm/shift.jpg"> + <img alt="D" src="{{ site.baseurl }}/assets/images/scumm/D.jpg"></b></p>
 <p><b>Keys</b></p>
 <ul>
-    <li><b><img alt="Ctrl" src="http://www.limulo.net/images/scumm/Ctrl.jpg"> + <img alt="E" src="http://127.0.0.1/limulo.net/images/scumm/E.jpg"> =</b> Set variable ;</li>
-    <li><b><img alt="Ctrl" src="http://www.limulo.net/images/scumm/Ctrl.jpg"> + <img alt="F" src="http://127.0.0.1/limulo.net/images/scumm/F.jpg"> =</b> Fast mode ;</li>
-    <li><b><img alt="Ctrl" src="http://www.limulo.net/images/scumm/Ctrl.jpg"> + <img alt="G" src="http://127.0.0.1/limulo.net/images/scumm/G.jpg"> =</b> Goto room ;</li>
-    <li><b><img alt="Ctrl" src="http://www.limulo.net/images/scumm/Ctrl.jpg"> + <img alt="O" src="http://127.0.0.1/limulo.net/images/scumm/O.jpg"> =</b> Pick up object in room x ;</li>
-    <li><b><img alt="Ctrl" src="http://www.limulo.net/images/scumm/Ctrl.jpg"> + <img alt="L" src="http://127.0.0.1/limulo.net/images/scumm/L.jpg"> =</b> Enter a bootparam ;</li>
+    <li><b><img alt="Ctrl" src="{{ site.baseurl }}/assets/images/scumm/Ctrl.jpg"> + <img alt="E" src="http://127.0.0.1/limulo.net/images/scumm/E.jpg"> =</b> Set variable ;</li>
+    <li><b><img alt="Ctrl" src="{{ site.baseurl }}/assets/images/scumm/Ctrl.jpg"> + <img alt="F" src="http://127.0.0.1/limulo.net/images/scumm/F.jpg"> =</b> Fast mode ;</li>
+    <li><b><img alt="Ctrl" src="{{ site.baseurl }}/assets/images/scumm/Ctrl.jpg"> + <img alt="G" src="http://127.0.0.1/limulo.net/images/scumm/G.jpg"> =</b> Goto room ;</li>
+    <li><b><img alt="Ctrl" src="{{ site.baseurl }}/assets/images/scumm/Ctrl.jpg"> + <img alt="O" src="http://127.0.0.1/limulo.net/images/scumm/O.jpg"> =</b> Pick up object in room x ;</li>
+    <li><b><img alt="Ctrl" src="{{ site.baseurl }}/assets/images/scumm/Ctrl.jpg"> + <img alt="L" src="http://127.0.0.1/limulo.net/images/scumm/L.jpg"> =</b> Enter a bootparam ;</li>
 </ul>
 </div>
 
-<p>La console di ScummVM si abilita tramite la combinazione di tasti <img alt="Ctrl" src="http://www.limulo.net/images/scumm/Ctrl.jpg"> + <img alt="D" src="http://www.limulo.net/images/scumm/D.jpg"> . <br>Si tratta di una console interattiva che permette di controllare e manipolare i dati utilizzati dall'engine di gioco in tempo reale. Molto utile per fare debug ed esperimenti vari!</p>
+<p>La console di ScummVM si abilita tramite la combinazione di tasti <img alt="Ctrl" src="{{ site.baseurl }}/assets/images/scumm/Ctrl.jpg"> + <img alt="D" src="{{ site.baseurl }}/assets/images/scumm/D.jpg"> . <br>Si tratta di una console interattiva che permette di controllare e manipolare i dati utilizzati dall'engine di gioco in tempo reale. Molto utile per fare debug ed esperimenti vari!</p>
 
 <p>Dall'esperienza personale posso dire che talvolta la manipolazione di questi dati può comportare il crash della macchina virtuale! Usate questi comandi a vostro rischio e pericolo :)!</p>
 

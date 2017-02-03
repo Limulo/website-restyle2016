@@ -190,13 +190,13 @@ Fiducial markers are symbols/images easily and uniquely recognizable by a comput
 </tr>
 <tr>
 <td style="width: 33%;">
-<img src="{{site.url}}/assets/images/soundface/technical/dtouch-a.jpg" alt="a" />
+<img src="{{site.baseurl}}/assets/images/soundface/technical/dtouch-a.jpg" alt="a" />
 </td>
 <td style="width: 33%;">
-<img src="{{site.url}}/assets/images/soundface/technical/dtouch-b.jpg" alt="b" />
+<img src="{{site.baseurl}}/assets/images/soundface/technical/dtouch-b.jpg" alt="b" />
 </td>
 <td style="width: 33%;">
-<img src="{{site.url}}/assets/images/soundface/technical/dtouch-c.jpg" alt="c" />
+<img src="{{site.baseurl}}/assets/images/soundface/technical/dtouch-c.jpg" alt="c" />
 </td>
 </tr>
 <tr>

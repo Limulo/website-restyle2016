@@ -33,7 +33,7 @@ Ebbene, scelto Lua come linguaggio per la stesura degli script, questi stessi sc
 
 Informazioni utili sul bundle e il tipo di risorse contenute so trovano al link **[h]** cliccabile dalla sezione riferimenti più in basso.
 
-![GrimE Scripts Compiling](/assets/images/scumm/grime-compiling.png)
+![GrimE Scripts Compiling]({{ site.baseurl }}/assets/images/scumm/grime-compiling.png)
 
 Il progetto **ResidualVM** si è occupato di riscrivere l'interprete GrimE per rendere possibile l'esecuzione di questi giochi sui moderni sistemi.
 
@@ -45,7 +45,7 @@ Nonostante questi tools non siano così ben documentati come lo sono quelli dell
 
 Ebbene sì, sembra che gli script .lua siano stati impacchettati nei file contenitore una volta che siano già stati compilati. Per riuscire a leggerli sono necessarie quindi due operazioni: lo spacchettamento e la decompilazione lua entrambe visibili nella figura sottostante e denominate rispettivamente con il nome del tool preposto all'operazione, **unlab** e **delua**.
 
-![GrimE Scripts De-Compiling](/assets/images/scumm/grime-decompiling.png)
+![GrimE Scripts De-Compiling]({{ site.baseurl }}/assets/images/scumm/grime-decompiling.png)
 
 I comandi da terminale per eseguire le operazioni di cui sopra sono i seguenti:
 

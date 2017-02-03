@@ -17,7 +17,7 @@ You can also use special script commands inside this file to make the computer d
 
 While the Processing sketch provides the visual representation of the virtual monochrome monitor, PureData, receiving OSC messages from Processing, handles the corresponding sound synthesis.
 
-![monichromitor working principle pt1](/assets/images/monichromitor/pt1.jpg)
+![monichromitor working principle pt1]({{ site.baseurl }}/assets/images/monichromitor/pt1.jpg)
 
 You can find more information on the <em>User Manual</em> included with the software. You can download it from the link below.
 
@@ -29,28 +29,28 @@ We have included a Natron session file to be used with **Natron**, a powerful mu
 
 ---
 
-<a href="{{site.url}}/assets/images/monichromitor/input.png">
-<img alt="natron input" src="{{site.url}}/assets/images/monichromitor/input_low.png"/>
+<a href="{{site.baseurl}}/assets/images/monichromitor/input.png">
+<img alt="natron input" src="{{site.baseurl}}/assets/images/monichromitor/input_low.png"/>
 </a>
 
 **Input**: the output image from the Processing sketch is used as Natron input.
 
-<a href="{{site.url}}/assets/images/monichromitor/output.png">
-<img alt="natron output" src="{{site.url}}/assets/images/monichromitor/output_low.jpg"/>
+<a href="{{site.baseurl}}/assets/images/monichromitor/output.png">
+<img alt="natron output" src="{{site.baseurl}}/assets/images/monichromitor/output_low.jpg"/>
 </a>
 
 **Output**: this is the final output image from Natron.
 
 <!--
 <div class="img">
-<img alt="monichromitor working principle pt1" src="http://www.limulo.net/images/monichromitor/pt2.jpg"/>
+<img alt="monichromitor working principle pt1" src="{{ site.baseurl }}/assets/images/monichromitor/pt2.jpg"/>
 </div>
 -->
 
 ## Downloads
 
 <div>
-<img src="http://www.limulo.net/images/logos/github-octocat.jpg" alt="GitHub Octocat" style="float: left; width: 20%;"/>
+<img src="{{ site.baseurl }}/assets/images/logos/github-octocat.jpg" alt="GitHub Octocat" style="float: left; width: 20%;"/>
 <p>You can download the entire <em>Monichromitor</em> project from our GitHub repo <a class="ext" href="https://github.com/Limulo/monichromitor" >here</a></p>
 <hr class="clear">
 </div>

@@ -18,7 +18,7 @@ A dire il vero avevamo a disposizione anche una vecchia copia interamente fotoco
 
 Forse un indizio dal quale avremmo potuto capire era quella immagine proprio tra le prime pagine del manuale...
 
-![boat image](/assets/images/scumm/boat-image.jpg)
+![boat image]({{ site.baseurl }}/assets/images/scumm/boat-image.jpg)
 
 Una barca? ma quando? dove?
 
@@ -34,7 +34,7 @@ Io non so che sforzo indicibile possa essere stato per lui, decisamente avverso 
 
 Fatto sta che lo fece: l'indomani a pranzo ci svelò una più grande verità: l'esistenza di un modo per _salvare_ i propri progressi aprendoci un mondo di nuove possibilità, fu allora che mio fratello ed io scoprimmo i **Salvataggi**!!!
 
-![combinazioni](/assets/images/scumm/combinazioni.png)
+![combinazioni]({{ site.baseurl }}/assets/images/scumm/combinazioni.png)
 
 Rimembranze a parte, qualche tempo fa mi sono tornati alla mente altri particolari. Forse non sono l'unico ad essermi chiesto "ma che fine hanno fatto gli enigmi iniziali? Quelli che eri obbligato a superare ancor prima di cominciare a giocare sul serio?"
 
@@ -43,18 +43,18 @@ Forse alcuni di voi si ricorderanno di immagini come queste:
 <table style="width: 100%;">  
 <tr>
   <td>
-    <img src="http://www.limulo.net/images/scumm/copy-protection-indy-2.png" alt="Indy Copy Protection"/>
+    <img src="{{ site.baseurl }}/assets/images/scumm/copy-protection-indy-2.png" alt="Indy Copy Protection"/>
   </td>
   <td>
-    <img src="http://www.limulo.net/images/scumm/copy-protection-monkey2-2.png" alt="Monkey 2 Copy Protection" />
+    <img src="{{ site.baseurl }}/assets/images/scumm/copy-protection-monkey2-2.png" alt="Monkey 2 Copy Protection" />
   </td>
 </tr>
 <tr>
   <td>
-    <img src="http://www.limulo.net/images/scumm/copy-protection-monkey.png" alt="Monkey Copy Protection" />
+    <img src="{{ site.baseurl }}/assets/images/scumm/copy-protection-monkey.png" alt="Monkey Copy Protection" />
   </td>
   <td>
-    <img src="http://www.limulo.net/images/scumm/copy-protection-samnmax.png" alt="Sam and Max Copy Protection" />
+    <img src="{{ site.baseurl }}/assets/images/scumm/copy-protection-samnmax.png" alt="Sam and Max Copy Protection" />
   </td>
 </tr>
 </table>

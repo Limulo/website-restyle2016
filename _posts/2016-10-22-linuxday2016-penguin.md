@@ -35,7 +35,7 @@ When the user approaches the little card box to donate, the sensor inside it sen
 
 While the penguin is waiving you hear the warble by the wind chimes.
 
-![penguin 1]({{site.url}}/assets/images/linuxday2016/IMG_0868.jpg)
+![penguin 1]({{site.baseurl}}/assets/images/linuxday2016/IMG_0868.jpg)
 
 ## How does it work?
 
@@ -49,7 +49,7 @@ Another 3,5mm TRS jack is used to connect and external speaker to play a sound w
 
 Here is an image that gives you the idea:
 
-[![fritzing]({{site.url}}/assets/images/linuxday2016/station_7_def_circuit_bb_bis.png)]({{site.url}}/assets/images/linuxday2016/station_7_def_circuit_bb_bis.png)
+[![fritzing]({{site.baseurl}}/assets/images/linuxday2016/station_7_def_circuit_bb_bis.png)]({{site.baseurl}}/assets/images/linuxday2016/station_7_def_circuit_bb_bis.png)
 
 ## Source Code
 

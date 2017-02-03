@@ -35,10 +35,10 @@ La _camera_ si può muovere eseguendo carrellate laterali, verticali, oppure pu�
 <table class="img">
 <tr>
   <td>
-  <img alt="camera-azzorre" src="{{site.url}}/assets/images/scumm/camera-azzorre.gif" />
+  <img alt="camera-azzorre" src="{{site.baseurl}}/assets/images/scumm/camera-azzorre.gif" />
   </td>
   <td>
-  <img alt="camera-ascensore" src="{{site.url}}/assets/images/scumm/camera-ascensore.gif" />
+  <img alt="camera-ascensore" src="{{site.baseurl}}/assets/images/scumm/camera-ascensore.gif" />
   </td>
 </tr>
 
@@ -49,11 +49,11 @@ La _camera_ si può muovere eseguendo carrellate laterali, verticali, oppure pu�
 
 <tr>
   <td>
-  <img alt="camera-scabb" src="{{site.url}}/assets/images/scumm/camera-scabb.gif" />
+  <img alt="camera-scabb" src="{{site.baseurl}}/assets/images/scumm/camera-scabb.gif" />
 
   </td>
   <td>
-  <img alt="camera-newyork" src="{{site.url}}/assets/images/scumm/camera-thera.gif" />
+  <img alt="camera-newyork" src="{{site.baseurl}}/assets/images/scumm/camera-thera.gif" />
   </td>
 </tr>
 
@@ -86,11 +86,11 @@ La _camera_ si può muovere eseguendo carrellate laterali, verticali, oppure pu�
 <tr>
   <td>In altri casi può succedere che gli script del gioco forzino un attore a cambiare del tutto il proprio <em>Costume</em> e caricare così un set di disegni completamente nuovo (come ad esempio accade quando Indy si cambia d'abito all'interno del sommergibile tedesco).</td>
   <td>
-    <img alt="cambio abito" src="http://www.limulo.net/images/scumm/cambio-abito.gif" />
+    <img alt="cambio abito" src="{{ site.baseurl }}/assets/images/scumm/cambio-abito.gif" />
   </td>   
   <td>
-    <img alt="abito 1" src="http://www.limulo.net/images/scumm/abito-1.png" />
-    <img alt="abito 2" src="http://www.limulo.net/images/scumm/abito-2.png" />
+    <img alt="abito 1" src="{{ site.baseurl }}/assets/images/scumm/abito-1.png" />
+    <img alt="abito 2" src="{{ site.baseurl }}/assets/images/scumm/abito-2.png" />
   </td> 	
 </tr>
 </table>
@@ -107,11 +107,11 @@ TODO: link ad articolo comandi Console
 <p>Se volete fare anche voi qualche prova, vi lascio qui alcune indicazioni:</p>
 <ul>
   <li>Avviate ScummVM e caricate una partita di un gioco a vostra scelta!</li>
-  <li>sulla tastiera del computer premete la combinazione di tasti <img alt="Ctrl" src="http://www.limulo.net/images/scumm/Ctrl.jpg"> + <img alt="D" src="http://www.limulo.net/images/scumm/D.jpg"> per passare alla console di Debug;</li>
+  <li>sulla tastiera del computer premete la combinazione di tasti <img alt="Ctrl" src="{{ site.baseurl }}/assets/images/scumm/Ctrl.jpg"> + <img alt="D" src="{{ site.baseurl }}/assets/images/scumm/D.jpg"> per passare alla console di Debug;</li>
   <li>digitate il comando <span class="code">actors</span> e date l'invio per visualizzare in output una tabella che mostri le informazioni su tutti gli attori in scena;</li>
   <li>digitate il comando <span class="code">actor &lt;actorId> name</span>, sostituendo l'identificativo numerico dell'attore in vece di <span class="code">&lt;actorId></span>, quindi date l'invio. Otterrete così il nome dell'attore sotto forma di stringa in output;</li>
   <li>per effettuare un cambio di <em>Costume</em>, usate il comando <span class="code">actor &lt;actorId> costume &lt;costumeId></span> sostituendo l'identificativo numerico del costume da far indossare all'attore;</li>
-  <li>infine premete <img alt="ESC" src="http://www.limulo.net/images/scumm/Esc.jpg"> per tornare al gioco;</li>
+  <li>infine premete <img alt="ESC" src="{{ site.baseurl }}/assets/images/scumm/Esc.jpg"> per tornare al gioco;</li>
 </ul>
 
 <br>
@@ -139,18 +139,18 @@ TODO: link ad articolo comandi Console
 <tbody>
     <tr>
         <td>
-            <img alt="loom room image" src="http://www.limulo.net/images/scumm/room-loom.png" />
+            <img alt="loom room image" src="{{ site.baseurl }}/assets/images/scumm/room-loom.png" />
         </td>
         <td>
-            <img alt="indy room image" src="http://www.limulo.net/images/scumm/room-indy.png" />
+            <img alt="indy room image" src="{{ site.baseurl }}/assets/images/scumm/room-indy.png" />
         </td>
     </tr>
   <tr>
         <td>
-            <img alt="monkey2 room image" src="http://www.limulo.net/images/scumm/room-monkey2.png" />
+            <img alt="monkey2 room image" src="{{ site.baseurl }}/assets/images/scumm/room-monkey2.png" />
         </td>
         <td>
-            <img alt="zack room image" src="http://www.limulo.net/images/scumm/room-zack.png" />
+            <img alt="zack room image" src="{{ site.baseurl }}/assets/images/scumm/room-zack.png" />
         </td>
     </tr>
 </tbody>
@@ -160,7 +160,7 @@ TODO: link ad articolo comandi Console
 <p>In <b>Maniac Mansion</b> infatti i protagonisti si muovono esclusivamente all'interno di stanze!</p>   
 
 <div>
-<img alt="maniac room image" src="http://www.limulo.net/images/scumm/room-maniac.png" style="width: 100%;">
+<img alt="maniac room image" src="{{ site.baseurl }}/assets/images/scumm/room-maniac.png" style="width: 100%;">
 </div>
 
 <h3>Cut-scene</h3>

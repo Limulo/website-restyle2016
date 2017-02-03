@@ -55,12 +55,12 @@ Non si trattava soltanto di un problema di risorse (moltissime e di tipologia di
 
 Sin dalla loro prima avventura grafica, sto parlando di **Maniac Mansion**, i programmatori della LucasArts (allora ancora LucasFilm games) utilizzarono un sistema di loro invenzione: SCUMM (**Script Creation Utility** for **Maniac Mansion**) <b>[a]</b>, un linguaggio di programmazione appositamente studiato per facilitare la creazione di questo tipo di videogiochi.
 
-![Scumm bar](/assets/images/scumm/scumm-bar.png)
+![Scumm bar]({{ site.baseurl }}/assets/images/scumm/scumm-bar.png)
 
 I programmatori sarebbero così stati in grado di manipolare la moltitudine di risorse di cui il gioco aveva bisogno in modo tutto sommato semplice, sfruttando una serie di funzioni ad-hoc preconfezionate, stilando script, più compatti e comprensibili, senza perdersi nella stesura di innumerevoli righe di codice a basso livello.
 
 
-![Scumm interpreter](/assets/images/scumm/scumm-interpreter.png)
+![Scumm interpreter]({{ site.baseurl }}/assets/images/scumm/scumm-interpreter.png)
 
 Volendo, il termine SCUMM si può estendere al modo in cui i dati del gioco venivano codificati ed accorpati in grandi files contenitore, all'interno dei quali, oltre alle risorse di cui abbiamo parlato, venivano immagazzinati gli stessi scripts.
 
@@ -76,7 +76,7 @@ Ed è qui che entra in gioco il Team ScummVM!
 
 ### ScummVM
 
-![ScummVM Logo](/assets/images/scumm/scummvm-128.png)
+![ScummVM Logo]({{ site.baseurl }}/assets/images/scumm/scummvm-128.png)
 
 L'idea che sta alla base del lavoro degli sviluppatori del sistema ScummVM  è semplice: costruire nuovi interpreti SCUMM. <b>[c]</b>
 
@@ -103,7 +103,7 @@ Insomma ...tanto di cappello e lunga vita a **ScummVM**!
 Il progetto ScummVM non è certo l'unico attraverso il quale ci è possibile rigiocare ai vecchi giochi o far funzionare vecchi programmi. Tra tutte le altre possibilità credo doveroso menzionare il sistema **DOSBox** <b>[g]</b>.
 
 
-![DOSBox Logo](/assets/images/scumm/dosbox-128.png)
+![DOSBox Logo]({{ site.baseurl }}/assets/images/scumm/dosbox-128.png)
 
 Si tratta sempre di una macchina virtuale, anche se in questo caso parliamo di una _System virtual machine_ anzichè di un _Process virtual machine_.
 
