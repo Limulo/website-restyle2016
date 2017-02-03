@@ -62,12 +62,6 @@ To create a **note** section, simly put this line of code after the paragraph en
 {: .note}
 ```
 
-## How to create an internal link between posts
-
-```
-[here'a link between post]({% post_url 2015-02-01-name-of-the-post %})
-```
-
 ## How to create a .png shortcut from a font awesome character
 Use [font-awesome-png-converter](https://github.com/Pythonity/icon-font-to-png), an interesting utility to convert vectorial fonts into png images.
 
@@ -78,6 +72,7 @@ Use the following command to generate the `IMAGE` from the corresponding `CHARAC
 ```
 icon-font-to-png --css ../css/font-awesome.css --ttf ./fontawesome-webfont.ttf --size 110 CHARACTER --filename IMAGE
 ```
+
 ## How to render Math formulae inside a post
 
 We can use [MathJax](https://www.mathjax.org/) as explained in the Jekyll Documentation [here](http://jekyllrb.com/docs/extras/#math-support).
@@ -108,25 +103,22 @@ Use these _liquid_ tags before and after code blocks.
 {% endhighlight %}
 ```
 
-## How to deploy the site
+## NOTE
 
-[Here](http://jekyllrb.com/docs/deployment-methods/) you will find a useful link!
+Because of the filesystem structure of the website,
 
-### Before
+![website structure](www.limulo.net/website/website-structure-1.png)
 
-Use the following code in inserting images:
+we are usign 2 important **YAML** variable inside the ```config.yml``` file:
 
-```
-({{ site.baseurl }}/assets/images/petunia-la-rana/festa-mondiale-zanzare-2011.jpg)
-```
+* url: ```http://www.limulo.net```
+* baseurl: ```/website```
 
-instead of this one:
+We have to pay attention when we create:
 
-```
-(/assets/images/petunia-la-rana/festa-mondiale-zanzare-2011.jpg)
-```
+### links to posts inside Liquid block code
 
-Use the folling code for link:
+Use the folling code for links:
 
 ```
 <h3 class="post-title"><a href="{{ site.baseurl }}{{post.url}}">{{ post.title }}</a></h3>
@@ -138,7 +130,37 @@ instead of this:
 <h3 class="post-title"><a href="{{post.url}}">{{ post.title }}</a></h3>
 ```
 
+### internal link between posts
 
+Use this synthax:
+
+```
+[here'a link between post]({{ site.baseurl }}{% post_url 2015-02-01-name-of-the-post %})
+```
+instead of this:
+
+```
+[here'a link between post]({% post_url 2015-02-01-name-of-the-post %})
+```
+
+### images
+
+Use the following code in inserting images:
+
+```
+![image]({{ site.baseurl }}/assets/images/petunia-la-rana/festa-mondiale-zanzare-2011.jpg)
+```
+
+instead of this one:
+
+```
+![image](/assets/images/petunia-la-rana/festa-mondiale-zanzare-2011.jpg)
+```
+
+
+## How to deploy the site
+
+[Here](http://jekyllrb.com/docs/deployment-methods/) you will find a useful link!
 
 ## Useful links
 
