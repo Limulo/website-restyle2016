@@ -1,6 +1,6 @@
 ---
 layout: post
-title: SDL and Bit Blitting: SDL_BlitSurface vs. Custom Blit
+title: SDL and Bit Blitting, SDL_BlitSurface vs. Custom Blit
 date: 2015-05-22 09:00:00
 excerpt: una funzione alternativa a SDL_BlitSurface per fare Bit Blit tra due Surfaces indicizzate
 category: [coding, game, focus]
@@ -12,7 +12,7 @@ category: [coding, game, focus]
 -->
 
 	<div>
-	<img src="http://www.limulo.net/images/logos/sdl-logo.jpg" alt="sdl logo" style="float: left;"/>
+	<img src="{{ site.baseurl }}/assets/images/logos/sdl-logo.jpg" alt="sdl logo" style="float: left;"/>
 
 	<p>Da qualche giorno Valentina ed io abbiamo ripreso lo studio della libreria SDL e ci siamo da subito scontrati con un problema interessante:<br>
 come si fa a copiare le informazioni dei pixel da una immagine sorgente ad una di destinazione?</p>
@@ -20,9 +20,9 @@ come si fa a copiare le informazioni dei pixel da una immagine sorgente ad una d
 	<hr class="clear">
 	</div>
 
-	<div class="nota">
-	<p>L'operazione che ci interessa svolgere porta il nome di <b>Bit Blit</b> (vedi <b>[a]</b>), in poche parole, una operazione di computer graphics in cui differenti immagini bitmap vengono combinate tra loro.</p>
-	</div>
+
+L'operazione che ci interessa svolgere porta il nome di **Bit Blit** (vedi **[a]**), in poche parole, una operazione di computer graphics in cui differenti immagini bitmap vengono combinate tra loro.
+{: class="note"}
 
 	<p>Usando le "<em>superfici</em>" come strutture contenitore delle immagini da manipolare, la libreria SDL mette a disposizione una funzione particolare chiamata:</p>
 	<p class="code">int SDL_BlitSurface( SDL_Surface* src, const SDL_Rect* srcrect, SDL_Surface* dst, SDL_Rect* dstrect )</p>
@@ -31,7 +31,7 @@ come si fa a copiare le informazioni dei pixel da una immagine sorgente ad una d
 
 
 	<div class="img" >
-	<img src="http://www.limulo.net/images/game-focus-03/schematico.png" alt="scheme"/>
+	<img src="{{ site.baseurl }}/assets/images/game-focus-03/schematico.png" alt="scheme"/>
 	</div>
 
 
@@ -69,9 +69,9 @@ Uhm...</p>
 	</tr>
 
 	<tr>
-		<td><img src="http://www.limulo.net/images/game-focus-03/A-didascalie-bianco.png" alt="A" style="width: 80%;"/>
+		<td><img src="{{ site.baseurl }}/assets/images/game-focus-03/A-didascalie-bianco.png" alt="A" style="width: 80%;"/>
 </td>
-		<td><img src="http://www.limulo.net/images/game-focus-03/B-didascalie-bianco.png" alt="B" style="width: 80%;"/>
+		<td><img src="{{ site.baseurl }}/assets/images/game-focus-03/B-didascalie-bianco.png" alt="B" style="width: 80%;"/>
 </td>
 	</tr>
 
@@ -98,7 +98,7 @@ Uhm...</p>
 <p>Ecco un veloce diagramma di flusso delle prossime operazioni da completare: come si può vedere, subito dopo aver valutato la validità delle 2 superfici, passiamo a controllare il rettangolo di sorgente <b>rA</b>.<br>Nel caso esso sia <span class="code">NULL</span> oppure abbia area = 0 (in altre parole si non valido) esso viene fatto coincidere con il <b>crA</b>.</p>
 
 <div class="img" >
-<img src="http://www.limulo.net/images/game-focus-03/diagramma-parte-1.png" alt="diagram-part-1" style="width: 50%;"/>
+<img src="{{ site.baseurl }}/assets/images/game-focus-03/diagramma-parte-1.png" alt="diagram-part-1" style="width: 50%;"/>
 </div>
 
 <div class="dashed-border" style="padding: 1em;">
@@ -107,10 +107,10 @@ Uhm...</p>
 	<table style="width: 100%;">
 		<tr>
 			<td>
-			<img src="http://www.limulo.net/images/game-focus-03/A-dentro-fondo-bianco.png" alt="A-dentro" style="width: 70%;"/>
+			<img src="{{ site.baseurl }}/assets/images/game-focus-03/A-dentro-fondo-bianco.png" alt="A-dentro" style="width: 70%;"/>
 			</td>
 			<td>
-			<img src="http://www.limulo.net/images/game-focus-03/A-fuori-fondo-bianco.png" alt="A-fuori" style="width: 70%;"/>
+			<img src="{{ site.baseurl }}/assets/images/game-focus-03/A-fuori-fondo-bianco.png" alt="A-fuori" style="width: 70%;"/>
 			</td>
 		</tr>
 	</table>
@@ -124,7 +124,7 @@ In tal caso è necessario '<em>clippare</em>' il rettangolo <b>rA</b> alle dimen
 <p>Prendiamo spunto dalla <span class="code">SDL_BlitSurface</span> e, nel caso <b>rB</b> sia <span class="code">NULL</span> o invalido, impostiamo l' "<em>Upper Left Corner</em>" per il rettangolo di destinazione a <span class="code">(0, 0)</span>.<br>
 Se invece il rettangolo <b>rB</b> è valido, ne conserviamo la posizione per l' "<em>Upper Left Corner</em>", senza modifiche. In entrami i casi settiamo larghezza ed ampiezza di <b>rB</b> pari a quelle di <b>rA</b>.</p>
 <div class="img">
-<img src="http://www.limulo.net/images/game-focus-03/diagramma-parte-2.png" alt="diagram-part-2" style="width: 50%;"/>
+<img src="{{ site.baseurl }}/assets/images/game-focus-03/diagramma-parte-2.png" alt="diagram-part-2" style="width: 50%;"/>
 </div>
 
 <p>A questo punto i due rettangoli <b>rA</b> e <b>rB</b> hanno le stesse dimensioni ma questo non significa che i problemi siano finiti!</p>
@@ -134,7 +134,7 @@ Se invece il rettangolo <b>rB</b> è valido, ne conserviamo la posizione per l' 
 In tal caso la funzione dovrebbe semplicemente <em>ritornare</em> senza fare alcuna copia.
 
 <div class="img">
-<img src="http://www.limulo.net/images/game-focus-03/diagramma-parte-3.png" alt="diagram-part-3" style="width: 50%;"/>
+<img src="{{ site.baseurl }}/assets/images/game-focus-03/diagramma-parte-3.png" alt="diagram-part-3" style="width: 50%;"/>
 </div>
 
 <p>Prendiamo un altro caso non impossibile, sebbene molto poco probabile, in cui <b>sA</b> sia molto più ampia di <b>sB</b>: potrebbe verificarsi che i rettangoli <b>rA</b> e <b>rB</b> (a questo punto di dimensioni identiche) siano più grandi di <b>sB</b>.</p>
@@ -151,10 +151,10 @@ In tal caso la funzione dovrebbe semplicemente <em>ritornare</em> senza fare alc
 		</tr>
 		<tr>
 			<td>
-			<img src="http://www.limulo.net/images/game-focus-03/B-fuori-bianco-1.png" alt="caso-limite-1" style="width: 70%;"/>
+			<img src="{{ site.baseurl }}/assets/images/game-focus-03/B-fuori-bianco-1.png" alt="caso-limite-1" style="width: 70%;"/>
 			</td>
 			<td>
-			<img src="http://www.limulo.net/images/game-focus-03/B-fuori-bianco-2.png" alt="caso-limite-2" style="width: 70%;"/>
+			<img src="{{ site.baseurl }}/assets/images/game-focus-03/B-fuori-bianco-2.png" alt="caso-limite-2" style="width: 70%;"/>
 			</td>
 		</tr>
 		<tr>
