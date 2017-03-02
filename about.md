@@ -6,7 +6,7 @@ nav: true
 
 Welcome to our **About** page! We are:
 
-<div>
+<div style="margin-top: 4em;">
 <img src="{{site.baseurl}}/assets/images/about/valentina.png" alt="" style="float:left; width:40%; padding:0; margin-right: 2em;"/>
 <h2>Valentina Lorè</h2>
 
@@ -20,13 +20,13 @@ I worked as a trainee as a digital label manager assistant. After that I started
 <p>The fields in which I'm mostly skilled  are multimedia and interactive art, music industry, programming.
 I'm well versed in multimedia and interactive arts, music industry, video and sound editing, programming.</p>
 
-<a href="https://www.linkedin.com/in/valentinalore">linkedin</a>
+<p>Visit my <a href="https://www.linkedin.com/in/valentinalore">linkedin</a> profile.</p>
 </div>
 
 <hr class="clear" />
 
 
-<div>
+<div style="margin-top: 4em;">
 <img src="{{site.baseurl}}/assets/images/about/nicola.png" alt="" style="float:right; width:40%; padding:0; margin-left: 2em;"/>
 <h2>Nicola Ariutti</h2>
 
@@ -41,5 +41,5 @@ won several prizes and received special mentions in different animation festival
 <p>Being passionate about software development, I often create my own sound design tools and I eventually release them
 through my web site limulo.net, in compliancy with free software licenses.</p>
 
-<a href="https://www.linkedin.com/in/nicolaariutti">linkedin</a>
+<p>Visit my <a href="https://www.linkedin.com/in/nicolaariutti">linkedin</a> profile.</p>
 </div>

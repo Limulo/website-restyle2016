@@ -64,6 +64,33 @@ A bunch of posts related to graphics:
 {% endfor %}
 
 
+### Sound and Music
+When the code meets music and sound we are really happy:
+
+{% for post in site.posts %}
+{% if post.category contains 'coding' and post.category contains 'sound' %}
+
+<div>
+
+<a href="{{post.url}}">
+{% if post.shortcut %}
+<img src="{{ site.baseurl }}/assets/images/shortcuts/{{post.shortcut}}" alt="{{post.title}}" class="shortcut-image"/>
+{% else %}
+<img src="{{ site.baseurl }}/assets/images/shortcuts/shortcut-default-coding.png" alt="{{post.title}}" class="shortcut-image"/>
+{% endif %}
+</a>
+
+<h3 class="post-title"><a href="{{ site.baseurl }}{{post.url}}">{{ post.title }}</a></h3>
+{{ post.excerpt}}
+
+<hr class="clear" />
+
+</div>
+
+{% endif %}
+{% endfor %}
+
+
 {% comment %}
 ### Physics
 A bunch of posts related to physics engine and physics simulations:

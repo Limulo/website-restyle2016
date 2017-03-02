@@ -22,7 +22,7 @@ Seriuosly, we're huge fans of free software, open source and free sharing of ide
 {% if page.shortcut %}
 <a href="{{ site.baseurl }}{{ page.url }}">
   <img src="{{ site.baseurl }}/assets/images/shortcuts/{{ page.shortcut }}"
-     class="shortcut-image"
+     class="homepage-shortcut-image"
      alt="{{ page.title }}"
      title="{{ page.title }}" />
 </a>
@@ -34,7 +34,7 @@ Seriuosly, we're huge fans of free software, open source and free sharing of ide
 {% if post.shortcut %}
 <a href="{{ site.baseurl }}{{ post.url }}">
   <img src="{{ site.baseurl }}/assets/images/shortcuts/{{ post.shortcut }}"
-     class="shortcut-image"
+     class="homepage-shortcut-image"
      alt="{{ post.title }}"
      title="{{ post.title }}" />
 </a>

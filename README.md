@@ -93,7 +93,7 @@ $\frac{1}{\sqrt{2}}$
 
 ## How to have synthax highlighted
 
-Use these _liquid_ tags before and after code blocks.
+Use these _liquid_ tags before and after code blocks. [Here](http://pygments.org/languages/)'s a list of supported languages.
 
 ```
 {% highlight c %}

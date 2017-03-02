@@ -9,9 +9,7 @@ shortcut: shortcut-loneknight.png
 
 **Lone Knight** is the first videogame experiment made by [Giovanni](https://www.facebook.com/pages/Art-of-Giovanni-Ariutti/442721242537449?fref=ts) and [Nicola Ariutti](http://www.limulo.net) inspired by [Mark Ferrari](http://markferrari.com/art/8bit-game-art/) and [Tim e Adrien Soret](http://timsoret.itch.io/the-last-night) works in order to take part to the [itch.io](http://itch.io) [Flying Toast With Jam](http://itch.io/jam/flying-toast-with-jam).
 
-Take a look at the game [here](http://www.limulo.net/games/loneknight).
-
-[Here](http://limulo.itch.io/lone-knight) instead you can find the original version of it.
+[Here](http://limulo.itch.io/lone-knight) you can find the original version of the game while [here](http://www.limulo.net/games/loneknight) you can try an updated version.
 
 ![screen shot]({{ site.baseurl }}/assets/images/lone-knight-focus/copertina-utente-loneknight-640_236.png)
 
@@ -47,28 +45,41 @@ The images are converted in **JSON**, so they can be parsed by the **JavaScript*
 
 Here's a snippet of a JSON file used in the game:
 
-
 ```   
 [
-    {
-        "width" : 640,
-        "height" : 240,
-        "nSprites" : 12,
-        "Time" : 504,
-        "palettes": [
-            [[255, 0, 0], [ 35,  47,  71], ..., [ 39,  47,  83], [  0,   0,  43]], /* palette 0 */
-            [[255, 0, 0], [ 11,  23,  43], ..., [ 21,  27,  49], [  7,   0,  23]], /* palette 1 */
-            [[255, 0, 0], [ 17,  25,  49], ..., [ 16,  33,  71], [ 33,  41,  85]], /* palette 2 */
-            [[255, 0, 0], [215, 201,  56], ..., [103, 103, 135], [255, 211, 171]], /* palette 3 */
-            [[255, 0, 0], [223, 215,  83], ..., [163, 139, 135], [254, 226, 198]], /* palette 4 */
-            [[255, 0, 0], [247, 239,  87], ..., [255, 215, 191], [119,  92, 108]], /* palette 5 */
-            [[255, 0, 0], [254, 201, 102], ..., [253, 190, 125], [212,  94,  95]], /* palette 6 */
-            [[255, 0, 0], [ 27,  39,  62], ..., [ 28,  34,  61], [  7,   0,  33]]  /* palette 7 */
-        ],
-        "indexes" : [0, 0, 0, 1, 6, 6, 6, 8, 1, 2, ... ] /* indexes array */
-    }
-]
+  {
+    "width" : 640,
+    "height" : 240,
+    "nSprites" : 12,
+    "Time" : 504,
+    "palettes": [
+      /* palette 0 */
+      [[255, 0, 0], [35, 47, 71], ..., [39, 47, 83], [0, 0, 43]],
 
+      /* palette 1 */
+      [[255, 0, 0], [11, 23, 43], ..., [21, 27, 49], [7, 0, 23]],
+
+      /* palette 2 */
+      [[255, 0, 0], [17, 25, 49], ..., [16, 33, 71], [33, 41, 85]],
+
+      /* palette 3 */
+      [[255, 0, 0], [215, 201, 56], ..., [103, 103, 135], [255, 211, 171]],
+
+      /* palette 4 */
+      [[255, 0, 0], [223, 215, 83], ..., [163, 139, 135], [254, 226, 198]],
+
+      /* palette 5 */
+      [[255, 0, 0], [247, 239, 87], ..., [255, 215, 191], [119, 92, 108]],
+
+      /* palette 6 */
+      [[255, 0, 0], [254, 201, 102], ..., [253, 190, 125], [212, 94, 95]],
+
+      /* palette 7 */
+      [[255, 0, 0], [27, 39, 62], ..., [28, 34, 61], [7, 0, 33]]
+    ],
+    "indexes" : [0, 0, 0, 1, 6, 6, 6, 8, 1, 2, ... ] /* indexes array */
+  }
+]
 ```
 
 ### Palette Shifting
@@ -156,8 +167,12 @@ Every local pseudocolor palette entry represent one of the element colors at a g
 Thus, thanks to this technique, every pixels is colored with the appropriate nuance according to the time flow.
 
 
-![]({{ site.baseurl }}/assets/images/lone-knight-focus/processing-debug.png)
+![debug image]({{ site.baseurl }}/assets/images/lone-knight-focus/processing-debug.png)
 
 ### Future improvements
 
 As an homage to the old videogames, the next improvement will be the introduction of the color cycling feature.
+
+### Download
+
+If you are interested in examine the source code for this project, you can fint it on our [GitHub repository](https://github.com/Limulo/rider-screensaver)!

@@ -14,7 +14,6 @@ This is not the only place where we talk about sound: check-out [Valentina](http
 ## Tools & techniques
 This list is dedicated to sound and sound designing tools and techniques. We will talk about Pure Data, Praat, FMOD, Wwise, Ableton, and more...
 
-
 {% for post in site.posts%}
 {% if post.category contains 'sound-design' and post.category contains 'tool' %}
 
@@ -28,7 +27,7 @@ This list is dedicated to sound and sound designing tools and techniques. We wil
 {% endif %}
 </a>
 
-<h3 class="post-title"><a href="{{post.url}}">{{ post.title }}</a></h3>
+<h3 class="post-title"><a href="{{site.baseurl}}{{post.url}}">{{ post.title }}</a></h3>
 {{ post.excerpt}}
 
 <hr class="clear" />

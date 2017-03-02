@@ -434,9 +434,15 @@ a.pagination-item:hover {
 
 /* nuove regole, aggiunte il 1 Nov 2016 */
 .shortcut-image {
-	margin-right: 0.7em;
+  /* display: inline-block;  */
   padding: 0em;
-	float: left;
+  float: left;
+  margin-right: 0.7em;
+}
+
+.homepage-shortcut-image {
+  display: inline-block; /* float: left; */
+  padding: 0em;
 }
 
 hr.clear {
@@ -447,8 +453,8 @@ hr.clear {
 }
 
 .project-category {
-  display: inline-block;
-  padding: .5em;
+  display: inline-block; /* float: left; */
+  padding: 1em;
   text-align: center;
 }
 
