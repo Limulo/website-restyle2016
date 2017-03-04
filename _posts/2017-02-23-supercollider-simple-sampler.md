@@ -107,9 +107,9 @@ for filename in os.listdir("."):
 
 {% endhighlight %}
 
-I decided to use the [standard MIDI note numbering](http://newt.phys.unsw.edu.au/jw/graphics/notesinvert.GIF) for indexing the files so that a **c4**, for example, would have corresponded to the _index_ 60, for example:
-* ```148432__neatonk__piano-loud-c4.wav``` would be renamed this way ```60-loud-c4.wav```;
-* a ```148556__neatonk__piano-med-e3.wav``` would become ```med-052-e3.wav``` and so on.
+I decided to use the [standard MIDI note numbering](http://newt.phys.unsw.edu.au/jw/graphics/notesinvert.GIF) for indexing the files so that a **e7**, for example, would have corresponded to the _index_ **100**, or a **c4** to the **60**:
+* ```148577__neatonk__piano-med-e7.wav``` would be renamed this way ```med-100-e7.wav```;
+* ```148432__neatonk__piano-loud-c4.wav``` would be renamed this way ```loud-060-c4.wav``` (mind the ```0``` I've used to be consistent with a 3 digit enumeration);
 
 Here's an image from the folder containing all the ```med``` renamed files:
 
