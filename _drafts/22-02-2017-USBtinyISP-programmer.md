@@ -77,6 +77,11 @@ avrdude -pm328p -C/etc/avrdude.conf -U flash:w:filename.hex:a     (inserendo usb
 avrdude -pm328p -U flash:w:filename.hex:a     (/etc/avrdude.conf è il file di configurazione default)     
 avrdude -pm328p -U filename.hex     (shortcut di avrdude per l'opzione -U)     
 
+
+## driver USB (libusb1.0)
+gcc -I /usr/include/libusb-1.0 -Wall -lusb-1.0 usbtest2.c -o usbtest_vale
+
+
 ## Reference
 
 * http://www.nongnu.org/avr-libc/user-manual/group__demo__project.html

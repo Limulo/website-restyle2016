@@ -1,27 +1,27 @@
-<!-- ARTICOLO -->
-<article style="clear: both;">
-<header>
-<a id="arduino-ultrasonic-theremin"></a>
-<h2>Arduino - Ultrasonic Theremin</h2>
-</header>
+---
+layout: post
+title: Arduino Ultrasonic Theremin
+date: 2017-03-08 18:48:00
+excerpt: making a theremin like musical instrument with Arduino
+category: [coding, physical-computing]
+---
 
 <div>
 <img alt="Leon Theremin e il suo strumento" src="http://www.limulo.net/images/arduino-theremin/leon-theremin.jpg" style="float: left; width: 15%" />
 
 <p>Voglia di ritornare un poco su Arduino, facciamo una esperimento allora, construimo un piccolo dispositivo che possa emettere suono. Come?</p>
 
-<p>Prendiamo spunto dal <a class="ext" title="Theremin" href="http://it.wikipedia.org/wiki/Theremin" target="_blank">Theremin</a> ad esempio (l'immagine qui a fianco ritrae Leon Theremin con il suo strumento); per chi non lo conoscesse, il theremin è stato il primo strumento musicale elettronico mai realizzato. Per essere suonato questo strumento non prevede il contatto fisico con l'esecutore. Allontanando e avvicinando le mani alle 2 antenne dello strumento si possono creare variazioni di intonazione e di volume.</p>
+<p>Prendiamo spunto dal <a class="ext" title="Theremin" href="http://it.wikipedia.org/wiki/Theremin">Theremin</a> ad esempio (l'immagine qui a fianco ritrae Leon Theremin con il suo strumento); per chi non lo conoscesse, il theremin è stato il primo strumento musicale elettronico mai realizzato. Per essere suonato questo strumento non prevede il contatto fisico con l'esecutore. Allontanando e avvicinando le mani alle 2 antenne dello strumento si possono creare variazioni di intonazione e di volume.</p>
 
 <p>Proviamo a fare un Theremin anche noi, sì ma molto più semplice. Diciamo che ci limiteremo a realizzare uno strumento che per emettere suono, non abbia bisogno del contatto fisico dell'esecutore.</p>
+
 <hr class="clear" />
 </div>
 
-<p>Dopo aver <a title="Devantech US sensor SRF04 and Arduino UNO" href="pensatoio.php#devantech-arduino">qui</a> analizzato le caratteristiche tecniche del sensore ad ultrasuoni Devantech SRF04, potremmo ora pensare di rispolverare il vecchio codice per ampliarlo e inserire una componente che si occupi di generare suono. Diciamo che utilizzeremo un piccolo altoparlante piezoelettrico (buzzer).</p>
+Dopo aver analizzato le caratteristiche tecniche del sensore ad ultrasuoni Devantech SRF04, potremmo ora pensare di rispolverare il vecchio codice per ampliarlo e inserire una componente che si occupi di generare suono. Diciamo che utilizzeremo un piccolo altoparlante piezoelettrico (buzzer).
 
-<div class="img">
-<img style="display: inline;" alt="schematic" src="http://www.limulo.net/images/arduino-theremin/fritzing.jpg"/>
+![schematic]({{ site.baseurl }}/assets/images/arduino-theremin/fritzing.jpg)
 <br>Arduino Theremin schematic
-</div>
 
 <div>
 <img alt="operating principle" src="http://www.limulo.net/images/arduino-theremin/schema.png" style="float: right; width: 30%;"/>
@@ -209,10 +209,9 @@ return valoreUS;
 <br>graph 1
 </div>
 
-<p>Questo segnale elettrico viene sintetizzato da Arduino e inviato al pin 'pinBuzz' e quindi al buzzer.</p>
+Questo segnale elettrico viene sintetizzato da Arduino e inviato al pin ```pinBuzz``` e quindi al buzzer.
 
-<script type="syntaxhighlighter" class="brush: java; highlight: 1;">
-<![CDATA[
+{% highlight c%}
 void playTone(int t_) {
 int semiT = t_;
 long intialTime = millis();
@@ -226,12 +225,6 @@ while (spentTime &lt; 150) {
 }
 digitalWrite(pinBuzz, LOW);
 }
-]]></script>
+{% endhighlight %}
 
-<p>Tra una lettura dal sensore e la successiva intercorre sempre un intervallo di tempo pari a 150ms. Normalmente questo è un normale tempo di attesa che viene però speso emettendo suono quando l'ostacolo si trovi nella zona di prossimità.</p>
-
-<footer>
-<div class="firma">http://www.limulo.net</div>
-<a class="top" href="#top-page">torna all'indice</a>
-</footer>
-</article>
+Tra una lettura dal sensore e la successiva intercorre sempre un intervallo di tempo pari a 150ms. Normalmente questo è un normale tempo di attesa che viene però speso emettendo suono quando l'ostacolo si trovi nella zona di prossimità.
