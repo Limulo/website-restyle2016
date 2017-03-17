@@ -514,6 +514,15 @@ p.caption {
 }
 */
 
+.dashed {
+  border: 2px dashed #ccc;
+  /* background-color: #ffd700; */
+  padding: 1em;
+  margin: 1em 0 2em;
+  border-radius: 5px;
+}
+
+
 /* TABELLA WALK MATRIX */
 table.walk-matrix {
     font-size: 0.8em;
