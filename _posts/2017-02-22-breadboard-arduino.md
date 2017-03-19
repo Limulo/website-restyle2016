@@ -53,7 +53,7 @@ To create the circuit we followed the instructions included within the kit; we o
 
 [![schematic]({{ site.baseurl }}/assets/images/arduino-breadboard/schematic.png)]({{ site.baseurl }}/assets/images/arduino-breadboard/schematic.png)
 
-While we were building the circuit we double-checked it using other sources of informations like [this](https://itp.nyu.edu/archive/physcomp-spring2014/Tutorials/ArduinoBreadboard) interesting tutorial from the **ITP** which has a lot of useful photos.
+While we were building the circuit we double-checked it using other sources of informations like [this](https://itp.nyu.edu/archive/physcomp-spring2014/Tutorials/ArduinoBreadboard) interesting tutorial from the **ITP** which has a lot of useful photos ([Here](https://www.arduino.cc/en/Main/Standalone)'s a similar version from the Arduin website).
 
 We found other resources on this topic online, like this illustration by **Pighixxx**:
 
