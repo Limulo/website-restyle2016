@@ -119,7 +119,6 @@ After having all these softwares installed, it's time to compile and upload our 
 
 First let's write a simple _C_ program to replicate the legendary Arduino "_blink_" sketch:
 
-```
 {% highlight c%}
 #include <avr/io.h>
 #define F_CPU 16000000UL
@@ -141,8 +140,6 @@ int main(void)
     return 0;
 }
 {% endhighlight %}
-```
-
 
 {% comment %}
 #include <avr/io.h>
@@ -296,13 +293,6 @@ An improvement we can make is to gather our entire workflow inside a single ```m
 Another interesting thing about this project is that if we are planning to print out our circuit on a custom PCB, we can simply include a 3 pair male headers in it in order to program the mcu without any other components being needed. In this way we can certainly reduce costs (and size) of our project!;
 
 Note that the Arduino UNO board can be programmed in this very way, so why don't try it.
-
-If you find this article useful and you like it, please leave a comment below: let us know what do you think about it, we'd really appreciate it.
-Thank you very much and, as always, stay tuned for more to come!
-
-
-
-
 
 
 
