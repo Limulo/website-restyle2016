@@ -332,7 +332,7 @@ More precisely, we used:
 
 ## Downloads
 
-Here's our [source code](https://github.com/Limulo/videotavolo) al nostro repository GitHub dal quale potrete scaricare i codici sorgente del progetto.
+Here's the Github [repository](https://github.com/Limulo/videotavolo) where you can find the source code of the project.
 
 ## To go further
 
