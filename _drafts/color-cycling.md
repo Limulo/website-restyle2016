@@ -79,3 +79,6 @@ Ho provato ASEPRITE, una utility molto interessante legata alla libreria Allegro
 - ASEPRITE
 - GRAPH2X
 -
+
+
+http://www.aaronbell.com/secret-colours-of-the-commodore-64/

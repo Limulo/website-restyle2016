@@ -109,7 +109,7 @@ Read synth manuals for more information. Contact us for any question or suggesti
 
 Enjoy!
 
-### Riferimenti
+### References
 
 * from Wikipedia: [Heart sound](https://en.wikipedia.org/wiki/Heart_sounds), [elettrocardigramma](https://it.wikipedia.org/wiki/Elettrocardiogramma);
 * from [WikiDoc](http://www.wikidoc.org/index.php/Normal_sinus_rhythm);
