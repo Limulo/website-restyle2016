@@ -1,10 +1,27 @@
 Welcome in this repo!
 
-This is hte place where we are saving our **WIP** files for [limulo.net](http://www.limulo.net) website restyle.
+This is the place where we are saving our **WIP** files for [limulo.net](http://www.limulo.net) website.
 
 For this particular restyle we are using a Jekyll theme called [**Hyde**](http://hyde.getpoole.com/) made by [Mark Otto](https://twitter.com/mdo).
 
+## How to deply changes
+
+### phase 1: update the repository
+First we need to update this git repository the usual way, using ```git add```, ```git commit``` and ```git push```.
+
+### phase 2
+Than we need to compile the site an upload it to the server usign **Filezilla**.
+
+The command to use to compile is
+```
+bundle exec jekyll build
+```
+Possibly you can use the ```--future``` argument.
+
+Then you need to open **FileZilla** and upload the ```_site``` folder content.
+
 ## How to create a page
+
 If you want the page to appears inside the sidebar you have to give that page a **front matter** like the one shown below
 
 ```

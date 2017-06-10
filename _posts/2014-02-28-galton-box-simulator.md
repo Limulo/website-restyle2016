@@ -8,7 +8,7 @@ shortcut: shortcut-galton-box.png
 ---
 Here's one of our first experiment with a physics library: we used the **Box2D** library for Processing to recreate a physics simulation.
 
-<iframe src="http://player.vimeo.com/video/87855949" height="375" width="100%" allowfullscreen="" ></iframe>    
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/r-LoCYxqUMk" frameborder="0" allowfullscreen></iframe>
 
 Taking inspiration from the work of Sir Francis Galton, and thanks to what we have learned from "[**The Nature of Code**](http://natureofcode.com/)" book from [Daniel Shiffman](http://shiffman.net/), we have recreated the **Bean Machine** in code!
 
@@ -21,14 +21,12 @@ Honestly we created this sketch also to see if the balls would have been arrange
 You can download the source code from our [GitHub](https://github.com/Limulo/galton-box-simulator) page.
 
 
-
-
 {% comment %}
 Non vedevamo l'ora di acquisire le competenze necessarie per realizzare un sketch che implementasse un po' le leggi fisiche come forze, gravità, attriti, collisioni etc...
 
 Ecco ci qui allora un piccolo esperimento per testare la libreria Box2D la quale aggiunge a Processing la capacità di computare le leggi fisiche.
 
-<iframe src="http://player.vimeo.com/video/87855949" height="375" width="100%" allowfullscreen="" ></iframe>    
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/r-LoCYxqUMk" frameborder="0" allowfullscreen></iframe>
 
 Abbiamo preso spunto dal lavoro di Sir Francis Galton e abbiamo simulato la sua macchina detta "Macchina di Galton" o "Scatola di Galton".
 
