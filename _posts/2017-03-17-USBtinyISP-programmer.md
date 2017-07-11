@@ -239,7 +239,7 @@ avrdude -pm328p -cusbtiny -C/etc/avrdude.conf -U flash:w:filename.hex:a
 ```
 ![image]({{site.baseurl}}/assets/images/USBtiny-programmer/04.png)
 
-To fully understand how ```avrdure``` works and what all these arguments stand for, we recommend you to read the command manual (```man avrdude```), but here's it's a little recap:
+To fully understand how ```avrdude``` works and what all these arguments stand for, we recommend you to read the command manual (```man avrdude```), but here's it's a little recap:
 * The **p** option stands for _partno_ and we are using it to specify the type of our mcu (_m328p_ stands for ATmega328p). You can use the command with the ```-p?``` option to see the full list of supported micro-controllers;
 * The **c** option stands for _programmer-id_; with this we are able to specify the USBtinyISP as our programmer. Also in this case we can run the command with the ```-c?``` syntax to see the full list of supported programmers;
 * The **C** option is used here to specify the location of the avrdude configuration file;

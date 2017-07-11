@@ -12,12 +12,12 @@ shortcut: shortcut-chaotic-robots-music.png
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/SDqNaqEHwzE" frameborder="0" allowfullscreen></iframe>
 
 ## Notes on the main project
+
 The [Chaotic Robots](http://dev.hacklabterni.org/projects/cr21) project concerns the developement of BEAM (<b>B</b>iology, <b>E</b>lectronics, <b>A</b>esthetics, <b>M</b>echanics) robots.
 High Entropy circuits and accurately located light sources control the robots behaviour. An openFrameworks application obtains the images from a camera positioned on the ceiling facing downwards towards the robots arena. The data are visually rendered as colored curved trails following the robots tracks as they move .
 The application is available for download at the bottom of the section.
 
 ![robot A]({{site.baseurl}}/assets/images/chaotic-robots-music/a.jpg){: width="100%" } | ![robot B]({{site.baseurl}}/assets/images/chaotic-robots-music/b.jpg){: width="100%" }
-
 
 ## Notes on the complementary project
 

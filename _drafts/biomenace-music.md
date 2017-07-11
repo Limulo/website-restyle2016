@@ -8,7 +8,7 @@ category: [game, curiosity, music]
 
 Do you know [BioMenace](https://en.wikipedia.org/wiki/Bio_Menace) (you can find it on the [abandonia](http://www.abandonia.com/en/games/236/Bio+Menace.html) website)? It's a very pleasant platform game by **Apogee Software** about a man rescuing the Eart from strange mutant creaturs. It's a game that I was used to play many years ago and sometimes I continue playing still today, when I feel nostalgic about these years.
 
-One of the most interesting thing about this game I think is its music. Only recently I've spent some time to search information about that and I've found that **Robert - Bobby - Prince** was the name of the guy who composed it.
+One of the most interesting thing about this game I think is its music. Only recently I've spent some time to search information about that and I've found that **Robert "Bobby" Prince** was the name of the guy who composed it.
 
 I wondered if I could listen to his music even if not playing at the game so I examined the game files and I found that music files had the **IMF** extension.
 
@@ -20,7 +20,7 @@ I wondered if I could listen to his music even if not playing at the game so I e
 
 AdPlug
 
-Articolo WiKi sul chip utilizzato all'interno delle schede audio per omputer anni '90. Usato nelle schede AdLib e SoundBlaster.
+Articolo WiKi sul chip utilizzato all'interno delle schede audio per computer anni '90. Usato nelle schede AdLib e SoundBlaster.
 https://en.wikipedia.org/wiki/Yamaha_YM3812
 
 

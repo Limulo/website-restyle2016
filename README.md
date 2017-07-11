@@ -4,7 +4,7 @@ This is the place where we are saving our **WIP** files for [limulo.net](http://
 
 For this particular restyle we are using a Jekyll theme called [**Hyde**](http://hyde.getpoole.com/) made by [Mark Otto](https://twitter.com/mdo).
 
-## How to deply changes
+## How to deploy changes
 
 ### phase 1: update the repository
 First we need to update this git repository the usual way, using ```git add```, ```git commit``` and ```git push```.
@@ -19,6 +19,11 @@ bundle exec jekyll build
 Possibly you can use the ```--future``` argument.
 
 Then you need to open **FileZilla** and upload the ```_site``` folder content.
+
+Use the following options which makes the job easier:
+* toggle _synchronized browsing_ on;
+* toggle _directory comparison_ on;
+* "_overwrite if different size or source newer_" + "_Always use this action_";
 
 ## How to create a page
 
@@ -62,6 +67,17 @@ A post can also have a shortcut image that will be shown at the bottom of the **
 If you don't specified a dedicated image for the post, the post will be given a default image accoring to its belonging to a particular category.
 
 In this case you will not see the post listed in the homepage but you can access the post browsing its category page.  
+
+### Categories
+
+Here a list of the categories currently in use:
+
+sound-design: work, tool
+installation: _none_, soundface, issue
+coding: math, physics, graphics, physical-computing, sound
+game: experiment, scumm, technique, abandonia(?)
+teaching: _none_
+linuxday2016: installation
 
 ## How to create Tables
 [Here](http://kramdown.gettalong.org/syntax.html#tables) you can find more information, but in general below the code you can use to creare a simple table with an header and content centered:
