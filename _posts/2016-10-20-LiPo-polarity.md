@@ -43,7 +43,7 @@ Nelle foto è mostrato il risultato finale dove si può vedere anche l'uso di gu
 
 Ora, con la polarità invertita, la batteria lavora nel modo descritto da _BareConductive_. Connettendo alla scheda anche il cavo micro USB se ne ha la prova in quanto il led ambra **CHG** si accende e resta illuminato per tutta la fase di ricarica della batteria.
 
-In queste ultime foto invece è mostrata la batteria e la scheda _TouchBoard_ come appaiono nella loro sistemazione definitiva, alloggiate all'interno della piccola centralina costruita appositamente in occasione del [Linux Day 2016](http://www.linuxdaymilano.org/).  
+In queste ultime foto invece è mostrata la batteria e la scheda _TouchBoard_ come appaiono nella loro sistemazione definitiva, alloggiate all'interno della piccola centralina costruita appositamente in occasione del [Linux Day 2016](http://linuxdaymilano.org//).  
 
 ![battery img 5]({{ site.baseurl }}/assets/images/lipo-battery/IMG_0794_mod.jpg)
 ![battery img 6]({{ site.baseurl }}/assets/images/lipo-battery/IMG_0799_mod.jpg)

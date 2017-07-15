@@ -12,7 +12,7 @@ This OS is often associated with the image of a penguin called _tux_.
 
 ![tux](https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg){: width="20%;"}
 
-That's why **limulo.net** used a penguin stuffed animal in one of its interactive installation for the [**Linux Day Milan 2016**](http://www.linuxdaymilano.org), an important annual event in Italy dedicated to Free and Open Source software.
+That's why **limulo.net** used a penguin stuffed animal in one of its interactive installation for the [**Linux Day Milan 2016**](http://linuxdaymilano.org), an important annual event in Italy dedicated to Free and Open Source software.
 
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/lpZxsX3hyhc" frameborder="0" allowfullscreen></iframe>
 
@@ -53,7 +53,7 @@ Here is an image that gives you the idea:
 
 ## Source Code
 
-You can donwnload the code for this interactive installation from [this](https://github.com/Limulo/linuxday2016/tree/master/stazione_7/Arduino_sketches/station_7_v01) repository.
+You can download the code for this interactive installation from [this](https://github.com/Limulo/linuxday2016/tree/master/stazione_7/Arduino_sketches/station_7_v01) repository.
 
 ---
 
@@ -66,7 +66,7 @@ You can donwnload the code for this interactive installation from [this](https:/
 
 ## More
 
-* Check out our [LinuxDay 2016](({{ site.baseurl }}{% post_url 2016-10-22-linuxday2016 %})) page if you need more information about the event and the other interactive installations.
+* Check out our [LinuxDay 2016]({{ site.baseurl }}{% post_url 2016-10-22-linuxday2016 %}) page if you need more information about the event and the other interactive installations.
 
 
 
@@ -75,7 +75,7 @@ You can donwnload the code for this interactive installation from [this](https:/
 
 Abbiamo parlato di software libero e di sicuro quello più conosciuto è **GNU/Linux**, un sistema operativo che nulla ha da invidiare ai più diffusi Windows e MacOs.
 
-Il simbolo di GNU/Linux è un pinguino per questo ecco un' altra installazione realizzata per l'evento [**Linux Day**](http://www.linuxdaymilano.org), riferimento per utilizzatori e simpatizzanti del software libero in Italia.
+Il simbolo di GNU/Linux è un pinguino per questo ecco un' altra installazione realizzata per l'evento [**Linux Day**](http://linuxdaymilano.org/), riferimento per utilizzatori e simpatizzanti del software libero in Italia.
 
 ![penguin 2](assets/linuxday2016/IMG_0864.jpg)
 

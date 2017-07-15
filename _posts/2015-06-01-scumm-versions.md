@@ -8,11 +8,11 @@ category: [game, scumm]
 
 When back in 1987 **Ron Gilbert** and **Aric Wilmunder**, later nicknamed the "_SCUMM lords_", started working on SCUMM, the procedure to split game software into two different parts, _assets_ on one side and _interpreter_ on the other, was quite usual, at least for what concerns adventure videogames.
 
-The thing was already beed tried out succesfully by **Siera On-line** developers since 1984 with their **AGI** (<b>A</b>dventure <b>G</b>ame <b>I</b>nterpreter) and **SCI** (<b>S</b>ierra <b>C</b>reative <b>I</b>nterpreter) interpreters and earlier by the famous **Infocom**: we are now in 1979 with the **Z-machine**, the virtual machine in charge of intepreting resource files containing all the _interactive fiction_ contents.
-
-![Adventure genre hierarchy]({{ site.baseurl }}/assets/images/scumm/adventure-genre.png)
+The thing was already beed tried out successfully by **Siera On-line** developers since 1984 with their **AGI** (<b>A</b>dventure <b>G</b>ame <b>I</b>nterpreter) and **SCI** (<b>S</b>ierra <b>C</b>reative <b>I</b>nterpreter) interpreters and earlier by the famous **Infocom**, back in 1979 with the **Z-machine**, the virtual machine in charge of intepreting resource files containing all the _interactive fiction_ contents.
 
 By the way, if you search "_interactive fiction_" on Wikipedia, you will find that this is only one of the many sub-genres related to the overall adventure game one. Actually, interactive fiction was one of the first kind of adventure games which was bring to the market.
+
+![Adventure genre hierarchy]({{ site.baseurl }}/assets/images/scumm/adventure-genre.png)
 
 The change to use the mouse as a mean to interact with the game came later (from here the name _click-and-point_ adventure). The images too came later, initially only in black and white format, then in colors (vectorial and bitmap graphics).
 
@@ -20,13 +20,15 @@ Adventure games became _graphical_ only gradually while, at the beginning, the g
 
 Even more interesting can be to link the _interactive fiction_ genre to the "analog" version of it: I'm talking about the "**Choose your own adventure**" literary genre which gained a great popularity in the '80 but began to be experimented since the '40.
 
-... better for me to stop here before to definitely loose myself in looking for the origin of the adventure genre. Anyway, from the [reference](#Reference) section you can find a list of useful links you can use yourself to go deeper into the subject.
+... better for me to stop here before to definitely loose myself in looking for the origin of the adventure genre. Anyway, from the reference section below you can find a list of useful links you can use yourself to go deeper into the subject.
 
+{% comment %}
 However I must confess I would really like to examine the thing in depth, maybe in some future post: as an example I would like to analyse the differences between Sierra game engines and SCUMM not to mention that I have never played even a Sierra adventure and need to remedy it!
+{% endcomment %}
 
 ## Game and Intepreter
 
-Stop wandering now and let's start to examine something concrete about the SCUMM world. Let's make an example and see what's the difference between the game and the interpreter.
+Stop wandering now and let's start to examine something concrete about the SCUMM world. Let's see what's the difference between the game and the interpreter.
 
 We will need to run our LucasArts games, either on an old PC or on an emulated one (using **DOSBox** for example), and type some commands to show information about the interpreter and the game itself.
 
@@ -34,18 +36,18 @@ Here's a video I've prepared for the occasion (english subtitles will be availbl
 
 <iframe width="100%" height="360" src="https://www.youtube.com/embed/ZCdnodwgBT4" allowfullscreen></iframe>
 
-In this example I've used one of my favourite game, "_Indiana Jones and the Fate of Atlantis_" and **DOSBox**. Suppose you already have the game folder on your virtual hard drive, let's enter inside it, with the `cd` command, and print the list of its content usign the `dir` command:
+In this example I've used one of my favourite game, "_Indiana Jones and the Fate of Atlantis_" running in DOSBox. Suppose you already have the game folder on your virtual hard drive, let's enter inside it, with the `cd` command, and print the list of its content usign the `dir` command:
 
 ![DIR]({{ site.baseurl }}/assets/images/scumm/ver-cd-dir.png)
 
 We are interested in that file with the `.exe` extension: this is the SCUMM interpreter, the computer program in charge of decoding game resources and able to run the game!
 
-We want to know what's its version (we will need this information later when we'll move to scritp "_descumming_") and in order to do this we try to run the interpreter passing it an intentionally invalid argument (say `foo`). The interpreter will not understand the command so it will show an error message but also the information we are looking for!
+We want to know what's its version (we will need this information later when we'll move to scritp "_descumming_") and in order to do this we try to run the interpreter passing it an intentionally invalid argument (say `foo`). The interpreter will not understand it so it will show an error message and also the information we are looking for!
 
 ![atlantis foo]({{ site.baseurl }}/assets/images/scumm/ver-atlantis-foo.png)
 {% comment %}![interpreter version]({{ site.baseurl }}/assets/images/scumm/ver-interpreter.png){% endcomment %}
 
-As you can see from the image above, this massage is showing us what are the correct argoments to use. In addition to that, on the upper right corner, we clearly read the version number.
+As you can see from the image above, this massage is showing us what are the correct arguments to use. In addition to that, on the upper right corner, we clearly read the version number.
 
 ![atlantis interpreter version]({{ site.baseurl }}/assets/images/scumm/ver-foo-output.png)
 
@@ -53,7 +55,7 @@ Now, let's run the game passing some contemplated parameter: let's say I want to
 
 ---
 
-When the game has started, let's use a keys combination to show, this time, the version of the game: the combination is made of `ctrl` + `v` and will cause the game to pause and a message to pop-up on screen showing the information required (among other concerning the memory usage)
+When the game has started, let's use a keys combination to show the version of the game this time: the combination is made of `ctrl` and `v` and will cause the game to pause and a message to pop-up on screen.
 
 {% comment %}
 lo commento perchè non mi piace come viene fuori l'effetto delle immagini inline
@@ -63,20 +65,19 @@ When the game has started, let's use a keys combination to show, this time, the 
 un altro modo di mostrarle sarebbe questo:
 
 <p>La combinazione di tasti da usare è <img alt="Ctrl" src="{{ site.baseurl }}/assets/images/scumm/Ctrl.jpg" style="display: inline"> + <img alt="V" src="{{ site.baseurl }}/assets/images/scumm/V.jpg" style="display: inline"> e provocherà la comparsa di un messaggio al centro dello schermo che riporta appunto la versione del gioco, differente rispetto a quella dell'interprete, oltre ad altre statistiche relative all'uso della memoria (che magari vedremo meglio in un altro post).</p>
-
 {% endcomment %}
 
-As we see there is a difference from the interpreter version and the game version·
+As we see there is a difference from the interpreter version and the game version.
 
 ![game version]({{ site.baseurl }}/assets/images/scumm/ver-game.png)
 
-Game and interpreter versions are different because game and interpreter are two different software components. The _game_ is indeed a whole made of images, text and scripts, compacted and encoded in specific resource files inside the directory while the _interpreter_ is a software program which job is to decode these files and interpret them in order to run the game on our computer.
+Game and interpreter versions are different because game and interpreter are two different software components. The _game_ is indeed a whole made of images, text and scripts, compacted and encoded into specific resource files inside the directory while the _interpreter_ is a software program which job is to decode these files and interpret them in order to run the game on our computer.
 
 The same keys combo seen above is still valid if we are playing the game using _ScummVM_!
 
 ![game version in scummVM]({{ site.baseurl }}/assets/images/scumm/ver-game-scummvm.png)
 
-Here's a table where I listed all the informations about my LucasArts games:
+Here's a table where I listed all the informantion about my LucasArts games:
 
 <table>
     <tr>
@@ -161,7 +162,6 @@ Here's a table where I listed all the informations about my LucasArts games:
 * from Wikipedia: [adventure game genre](https://en.wikipedia.org/wiki/Adventure_game), [interactive fiction](https://en.wikipedia.org/wiki/Interactive_fiction), [Choose your own adventure](https://en.wikipedia.org/wiki/Choose_Your_Own_Adventure);
 * [Sierra On-Line](https://en.wikipedia.org/wiki/Sierra_Entertainment) [AGI](https://en.wikipedia.org/wiki/Adventure_Game_Interpreter) and [SCI](https://en.wikipedia.org/wiki/Sierra_Entertainment#1980s) interpreters;
 * [Here](http://wiki.scummvm.org/index.php/SCUMM/Versions) the ScummVM _Technical Reference_ Wiki page dedicated to SCUMM versions.
-
 
 {% comment %}
 
