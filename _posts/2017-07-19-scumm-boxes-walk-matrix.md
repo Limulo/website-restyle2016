@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Boxes & walk matrix
-date: 2015-05-01 09:00:00
+date: 2017-07-19 09:00:00
 excerpt: a place to walk
 category: [game, scumm]
 usemath: true
@@ -9,23 +9,23 @@ usemath: true
 
 What are boxes? Everything started when I tried to understand the walking algorithm in SCUMM
 
-On every player click, the SCUMM engine identifies a path and the actor starts to move following it, bypassing obstacles along the road and eventually arriving to its destination withaout any problem. How is all this possible?
+On every player click, the SCUMM engine identifies a path and the actor starts to move following it, bypassing obstacles along the road and eventually arriving to its destination without any problem. How is all this possible?
 
-Computer science literature **[1]** handle the topic broadly, highlighting different types of algorithms used to solve these kind of problems which are called _pathfinding_ problems. The best known of which is the <b>A*</b>, a natural evolution of the simpler **Dijkstra**'s one, often used to solve _tactical decision making_ problems rather that _pathfinding_ problems.
+Computer science literature **[1]** handle the topic broadly, highlighting different types of algorithms used to solve these kind of problems which are called _pathfinding_ problems. The best known of these algorithms is the <b>A*</b>, a natural evolution of the simpler **Dijkstra**'s one, often used to solve _tactical decision making_ problems rather that _pathfinding_ problems.
 
 <div class="dashed">
 <img alt="Edsger Dijkstra" src="{{site.baseurl}}/assets/images/scumm/Dijkstra.jpg" style="float: right; padding:20px;"/>
 <p>The Dijkstra algorithm is named after its discoverer, the mathematician Edsger Dijkstra and, despite the algorithm was originally designed to solve the <em>shortest path</em> problem (a particular problem in mathematical graph theory), it was later used in videogames.</p>
-<p>Dijkstra is also famous for his 1968 well-known article "<em>GOTO statement considered harmful</em>" <b>[b]</b> where he fought against the so called <em>spaghetti code</em>, low quality programs difficult to read or modify because of the extreme use of <em>GOTO</em> statement (see <b>[c]</b>).</p>
+<p>Dijkstra is also famous for his 1968 well-known article "<em>GOTO statement considered harmful</em>" <b>[b]</b> where he fought against the so called <em>spaghetti code</em>, low quality programs which were difficult to read or modify because of the extreme use of <em>GOTO</em> statement (see <b>[c]</b>).</p>
 </div>
 
-The _A*_ algorithm is quite complex and it is very useful in situation where the AI engine is frequently asked to find the best way throw a series of point in space always changing dynamically. However SCUMM does not use it for its internal pathfinding mechanism; the _A*_ algorithm is too much sophisitcated, especially considering that "_walkable area_" inside a SCUMM room stay pretty the same all the time, in addition to that I think probably the _A*_ would have been too CPU hungry for old computers.
+The _A*_ algorithm is quite complex and it is very useful in situation where the AI engine is frequently asked to find the best way throw a series of point in space always changing dynamically. However SCUMM does not use it for its internal pathfinding mechanism; the _A*_ algorithm is too much sophisitcated, especially considering that the "_walkable area_" inside a SCUMM room stays pretty the same throughout the game, in addition to that I think probably the _A*_ would have been too CPU hungry for old computers.
 
 SCUMM instead uses a relatively simple system which is pretty elegant in my opinion!
 
 ## Fingolfin docet
 
-In order to better understand what we are talking about, let's examine a post by **Max "Fingolfin" Horn** (by now an ex-member of the ScummVM development team) where he talks about SCUMM pathfinding on the ScummVM forum (see **[a]**):
+In order to better understand what we are talking about, let's examine a post by **Max "Fingolfin" Horn** (an ex-member of the ScummVM development team by now) where he talks about SCUMM pathfinding on the ScummVM forum (see **[a]**):
 
 {% comment %}
 In order to better understand what we are talking about, I would like to quote **Max "Fingolfin" Horn** (by now an ex-member of the ScummVM development team) who talked about SCUMM pathfinding on the forum (see **[a]**):
@@ -42,7 +42,7 @@ Anyway, so the actor walks a bit and reaches box k. If this was the same as the 
 
 Fingolfin essentially says that the walkable area of a room is subdivided into a series of quadrilateral non-overlapping areas called **boxes**.
 
-**Actor** movements (as those of Indy in "_Indiana Jones and the Fate od Atlantis_") are bordered inside those boxes and actor has also an attribute to keep track of what is the box he is currently in.
+**Actor** movements (as those of Indy in "_Indiana Jones and the Fate of Atlantis_") are bordered inside those boxes and actor has also an attribute to keep track of what is the box he is currently in.
 
 When the player clicks on a point on the screen, the engine acts differnetly according on where this point is in relation with the boxes:
 1. if the point is inside the same box where the actor is, then the actor simply starts to move toward the point;
@@ -52,12 +52,11 @@ If _current box_ and _destination box_ are different, the engine will refer to t
 
 For each pair of boxes, $$i$$ and $$j$$, the matrix contains a value $$k$$ which means "_If you are in box **i** now and you want to reach box **j**, you mast go to box **k** first!_"
 
-When the actor will arrive in box $$k$$ and this box is not the destination one, this process will repeat or at the opposite ($$k == j$$, i.e. boxes $$i$$ and $$j$$ are adjacent), the actor is arrived and no more calculation will be needed.
+When the actor arrives in box $$k$$ and this box doesn't correspond to the desired final destination, this process will repeat. On the other hand, when $$k == j$$ (i.e. boxes $$i$$ and $$j$$ are adjacent), the actor is arrived and no more calculation are needed.
 
 ## In practice...
 
-Let's do a practical example: we can use ScummVM, and its debugger in particular, to make some experiment.
-
+Let's do a practical example: we can use ScummVM and its debugger to make some tests.
 Let's load a savegame from "_Indiana Jone and the Fate of Atlantis_":
 
 ![tikal]({{ site.baseurl }}/assets/images/scumm/tikal.png)
@@ -68,30 +67,30 @@ The ScummVM debugger offers 2 different commands in order to show and examine th
 * the `box`command;
 * the `matrix` command
 
-TODO: video
+{% comment %} TODO: video {% endcomment %}
 
-Let's examine them in depth
+Let's examine them in depth.
 
 Pay attention, this is a SCUMM version 5 game and these information may be different for different games.<br/><br/>In addition to that I should mention that these data (walk matrix in particular) can change during the game so, if are using this commands yourself you could get different results.<br/><br/>See the **[d]** reference for more details
 {: class="note"}
 
 ## Box command
 
-The `box` command shows a schematic report about the current room boxes, let's try to send it at the debugger prompt and see what happens:
+The `box` command shows a schematic report about the current room boxes, let's try to insert it at the debugger prompt and see what happens:
 
 ![tikal boxes]( {{ site.baseurl }}/assets/images/scumm/console-01.png)
 
-The 12 rows of text output, one for each of the boxes, shows information about their geometry and more. Let's put aside for the moment the row/box number `0` (it is used as a sort of walk-matrix header and doesn't contain useful information really), and take a look at each row; here we see numerical values corresponding to
+The 12 rows of text output, one for each of the boxes, show information about their geometry and more. Let's put aside for the moment the row/box number `0` (it is used as a sort of walk-matrix header and doesn't contain useful information really), and take a look at the other rows; here we see numerical values corresponding to
 
 | Upper Left Coords | Lower Left Coords | Upper Right Coords | Lower Right Coords | Mask | Flags | Scale |
 
-Let's omit the last three values for now, they represents `mask`, `flags` and `scale` values we will cover in details in future posts. Now let's concentrate to the first 4 pairs of coordinates.
+Let's omit the last three values for now, they represent `mask`, `flags` and `scale` values we will cover in details in future posts. Now let's concentrate to the first 4 pairs of coordinates.
 
 ![example box]( {{site.baseurl}}/assets/images/scumm/box-new.png){: align="right" width="50%"}
 
-Each of these pair represents one of the 4 box vertices, expressed in _pixels_. In order we have the upper left vertex first and then the lower left one and so on with the upper and lower right.
+Each of these pair represents one of the 4 box vertices, expressed in _pixels_. In order we have the upper left vertex first and then the lower left one and so on with the upper and lower right vertices.
 
-Tracing vertexes and lines on the room background image we obtain a visual representation of the walable area, very useful for our study.
+Tracing vertices and lines on the room background image we obtain a visual representation of the walkable area, very useful for our study.
 
 ![tikal boxes]({{site.baseurl}}/assets/images/scumm/tikal-boxes-02.png)
 
@@ -103,11 +102,11 @@ Now let's try the `matrix` command instead an see what the debugger shows up:
 
 ![tikal boxes]({{ site.baseurl }}/assets/images/scumm/console-02.png)
 
-These values are quite criptical to interpret but fortunately the ScummVM wiki **[d]** comes in handy. From here we read that tha matrix has a line for each box, and for each one it lists a triad of values for each adjacent box to the one we are considering.
+These values are quite criptical to interpret but fortunately the ScummVM wiki **[d]** comes in handy. From here we read that the matrix has a line for each box, and for each one it lists a triad of values for each adjacent box to the one we are considering.
 
 The first two values of the triad define a range (`start` and `end` values) of boxes which, in order to be reached, they force the actor to visit another box, which is the one represented by the third value.
 
-As an example lets examine the first valid row number `4` of the debugger output. The first triad is represented like this `[1-3=>2]` which means that if the actor current box is 4 and he is asked to go to box 1 through 3, he must first visit the send box. Now the second triad `[4-4=>4]` is easier to understand, if we already are on box 4 and the player click is still on this box, we should remain here!
+As an example lets examine row number `4`: the first triad is represented like this `[1-3=>2]` which means that if the actor current box is 4 and he is asked to go to box 1 through 3, he must first visit the second box. Now the second triad `[4-4=>4]` is easier to understand, if we already are on box 4 and the player click is still on this box, we should remain here!
 
 The same kind of thinking can be used for all the boxes in the room eventually creating something like the table below (which i think is easier to read than the debugger output!)
 
@@ -286,25 +285,25 @@ The same kind of thinking can be used for all the boxes in the room eventually c
 
 Let's pretend we are the SCUMM engine and let's try to solve some SCUMM "_real_" pathfinding problem!
 
-Here's the image showing the walkable area
+Here's again the image showing the walkable area
 
 ![tikal boxes]({{ site.baseurl }}/assets/images/scumm/tikal-boxes-02.png)
 
-Now suppose Indy is on box 1 and the player click on a point which is inside the 4th box. We the engine must refer to the walk matrix a see what we get from here. we get 2, the number which is on the corssing between the frist row and the fourth column.
+Now suppose Indy is on box 1 and the player clicks on a point which is inside the 4th box. We the engine must refer to the walk matrix a see what we get from here. We get 2, the number which is on the crossing between the first row and the fourth column.
 
-Great! This is perfectly reasonable from the moment box 1 and 2 are adjacent and that if we move to box 2 we are closer to our destination.
+Great! This is perfectly reasonable, especially looking at the picture, from the moment that box 1 and 2 are adjacent and that if we move to box 2 we are closer to our destination.
 
-So Indy now is walking to box 2 and, once he arrives here, because box 2 is not the original destination we wanted, we must consult the walk maatrix again. Now we look at the crossing of row 2 and column 4 and we read 4!
+So Indy now is walking to box 2 and, once he arrives here, because box 2 is not the original destination we wanted, we must consult the walk matrix again. Now we look at the crossing of row 2 and column 4 and we read 4!
 
-So one last stroll will suffice for Indy to reach his finale destination on box 4!
+So one last stroll will suffice for Indy to reach his final destination on box 4!
 
-So try youself, imagine the user is clicking near box 6, are you able to find the route using the wal matrix? Let's put your solution in the comment below!
+So try youself, imagine the user is clicking near box 6, are you able to find the route using the walk matrix? Let's put your solution in the comment below!
 
 ## References
 
 ### Books and Papers
 
-* **[1]** Millington, I., & Funge J. (2009). [Artificial Intelligence for Games](http://ai4g.com/) (2nd ed.). Morgan Kaufmann.
+* **[1]** Millington, I., & Funge J. (2009). [Artificial Intelligence for Games](https://www.crcpress.com/Artificial-Intelligence-for-Games/Millington-Funge/p/book/9780123747310) (2nd ed.). Morgan Kaufmann ([here](https://github.com/idmillington/aicore)'s the link to the book code repository);
 
 ### Links
 
@@ -312,6 +311,7 @@ So try youself, imagine the user is clicking near box 6, are you able to find th
 * **[b]** [Go-to statement considered harmful](https://www.cs.utexas.edu/users/EWD/ewd02xx/EWD215.PDF);
 * **[c]** from Wikipedia: [Spaghetti Code](https://en.wikipedia.org/wiki/Spaghetti_code), [Programamzione Strutturata](https://en.wikipedia.org/wiki/Structured_programming);
 * **[d]** ScummVM, SCUMM technical reference: [Box](http://wiki.scummvm.org/index.php/SCUMM/Technical_Reference/Box_resources) and [Matrix](http://wiki.scummvm.org/index.php/SCUMM/Technical_Reference/Box_resources#BOXM) resources;
+* [Here](https://www.google.com/patents/US5425139?dq=sierra+on-line+path+finding&hl=en&sa=X&ved=0ahUKEwiqyuHVjZXVAhUF7xQKHfecCOYQ6AEIKzAB)'s another way of looking at the pathfinding problem by **Sierra On-Line**;
 
 {% comment %}
 

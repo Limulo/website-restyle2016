@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Scumm versions
-date: 2015-06-01 09:00:00
+date: 2017-07-18 09:00:00
 excerpt: Let's talk about the different versions of Scumm interpreter
 category: [game, scumm]
 ---
@@ -32,7 +32,7 @@ Stop wandering now and let's start to examine something concrete about the SCUMM
 
 We will need to run our LucasArts games, either on an old PC or on an emulated one (using **DOSBox** for example), and type some commands to show information about the interpreter and the game itself.
 
-Here's a video I've prepared for the occasion (english subtitles will be availble soon):
+Here's a video I've prepared for the occasion (english subtitles will be available soon):
 
 <iframe width="100%" height="360" src="https://www.youtube.com/embed/ZCdnodwgBT4" allowfullscreen></iframe>
 

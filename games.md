@@ -35,10 +35,9 @@ What we have understood about videogames working principles:
 
 {% endcomment %}
 
-## Our Experiments
+## Our Tests
 
 Here some of our experiments in _game design_.
-
 
 {% for post in site.posts%}
 {% if post.category contains 'game' and post.category contains 'experiment' %}
@@ -151,9 +150,9 @@ Qui esamineremo un po' per volta il lavoro svolto dal team ScummVM nel tradurre 
 <div>
 <a href="{{site.baseurl}}{{post.url}}">
 {% if post.shortcut %}
-<img src="{{site.baseurl}}/assets/images/shortcuts/{{post.shortcut}}" alt="{{post.title}}" class="shortcut-image"/>
+<img src="{{site.baseurl}}/assets/images/shortcuts/{{ post.shortcut }}" alt="{{post.title}}" class="shortcut-image"/>
 {% else %}
-<img src="{{site.baseurl}}/assets/images/shortcuts/shortcut-E.png" alt="{{post.title}}" class="shortcut-image"/>
+<img src="{{site.baseurl}}/assets/images/shortcuts/shortcut-scumm.png" alt="{{post.title}}" class="shortcut-image"/>
 {% endif %}
 </a>
 
