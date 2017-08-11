@@ -66,7 +66,7 @@ E' qui che entra in gioco **descumm** degli ScummVM-Tools.
 ![Scumm Scripts De-compiling]({{ site.baseurl }}/assets/images/scumm/scumm-decompiling.png)
 
 Anche per questo tool faremo uso della linea di comando passando lui alcune opzioni.
-L'opzione più importante da passare al tool è la **versione** del linguaggio con cui il gioco è stato scritto, infatti è solo conoscendo il set di istruzioni del linguaggio SCUMM usato nello scrivere il listato originale che il de-compilatore **descumm** sarà in grado di tradurre il binario in modo corretto. Ecco perchè i primi tempi ci siamo soffermati su [questi]({{ site.baseurl }}{% post_url 2015-06-01-scumm-versions %}) concetti.
+L'opzione più importante da passare al tool è la **versione** del linguaggio con cui il gioco è stato scritto, infatti è solo conoscendo il set di istruzioni del linguaggio SCUMM usato nello scrivere il listato originale che il de-compilatore **descumm** sarà in grado di tradurre il binario in modo corretto. Ecco perchè i primi tempi ci siamo soffermati su [questi]({{ site.baseurl }}{% post_url 2017-07-18-scumm-versions %}) concetti.
 
 L'output del comando descumm sarà lo script e verrà mostrato sullo standard output. E' tuttavia possibile reindirizzarlo per ottenere un più pratico file di testo.
 La altre opzioni che è possibile specificare riguardano soprattutto la formattazione del codice in output, che noi, per il momento non useremo.

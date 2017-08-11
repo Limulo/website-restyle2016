@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<html lang="it">
+
+  <!-- HEAD -->
+  <head>
+    <meta charset="UTF-8">
+    <title>patch di controllo</title>
+    <meta name="keywords" content="">
+	<meta name="description" content="">
+
+    <link rel="stylesheet" type="text/css" href="screen.css" media="screen, print"> <!--, handheld"> -->
+    
+    </head>
+  
+  <!-- BODY -->
+  <body>
+    <div id="container">
+    <article>
+
+    <h2>Patch di controllo v0.1 - Introduzione</h2>
+
+<p>Questa nuova versione della patch non richiede la versione <strong>PureData Extended</strong> ma la più semplice e stabile <strong>PureData Vanilla</strong> (v0.47).</p>
+<p>Prima di avviare la patch occorre prima di tutto scaricare PureData Vanilla da <a class="ext" href="https://puredata.info/downloads/pure-data" target="_blank">questo link</a> e installarla sul proprio sistema. Una volta fatto, scaricare <a class="ext" href="http://www.limulo.net/resources/patch/patch.zip" target="_blank">questo</a> archivio <strong>.zip</strong> e scompattarlo. la patch può essere avviata facendo doppio click sul file <strong>main.pd</strong> contenuto all'interno dell'archivio.</p>
+<p>All'apertura la patch si presenta come mostrato nell'immagine seguente.</p>
+
+<div class="figure">
+<img src="images/patch.jpg" alt="patch" />
+</div>
+
+<p>Nel creare la patch, considerato quanto detto negli incontri precedenti, abbiamo previsto che la sessione di <em>Ableton Live</em> sia composta di 5 tracce + 1, rispettivamente:</p>
+
+<ol style="list-style-type: decimal">
+<li>prox</li>
+<li>baule</li>
+<li>portiera</li>
+<li>volante</li>
+<li>cambio</li>
+<li>cofano</li>
+</ol>
+
+<p>Ognuna delle tracce è controllata da uno degli elementi della patch come indicato dalla seguente tabella:</p>
+
+<table class="dati">
+
+<tr>
+<th style="width:20%;">PD</th>
+<th style="width:20%;">elemento</th>
+<th style="width:20%;">Live trk</th>
+<th style="width:20%;">mappato su</th>
+<th>protocollo</th>
+</tr>
+
+<tr>
+<td style="width:20%;">prox</td>
+<td style="width:20%;">slider</td>
+<td style="width:20%;">prox</td>
+<td style="width:20%;">volume</td>
+<td>OSC</td>
+</tr>
+
+<tr>
+<td style="width:20%;">baule</td>
+<td style="width:20%;">toggle</td>
+<td style="width:20%;">baule</td>
+<td style="width:20%;">mute</td>
+<td>OSC</td>
+</tr>
+
+<tr>
+<td style="width:20%;">portiera</td>
+<td style="width:20%;">toggle</td>
+<td style="width:20%;">portiera</td>
+<td style="width:20%;">mute</td>
+<td>OSC</td>
+</tr>
+
+<tr>
+<td style="width:20%;">volante</td>
+<td style="width:20%;">toggle</td>
+<td style="width:20%;">volante</td>
+<td style="width:20%;">mute</td>
+<td>OSC</td>
+</tr>
+
+<tr>
+<td style="width:20%;">cambio</td>
+<td style="width:20%;">toggle</td>
+<td style="width:20%;">cambio</td>
+<td style="width:20%;">mute</td>
+<td>OSC</td>
+</tr>
+
+<tr>
+<td style="width:20%;">cofano</td>
+<td style="width:20%;">slider</td>
+<td style="width:20%;">cofano</td>
+<td style="width:20%;">a scelta (utilizzare la modalità Midi Map MODE di Ableton Live)</td>
+<td>MIDI CC 12</td>
+</tr>
+
+</table>
+
+<p>Come si vede la maggior parte dei controlli della patch pilotano Live utilizzando il protocollo <strong>OSC</strong> per cui non possono essere liberamente mappati. E' diverso il comportamento dello slider denominato <em>cofano</em> il quale, inviando messaggi di tipo <strong>MIDI</strong> sottoforma di <strong>Control Change #12</strong>, può essere mappato a piacere su qualsiasi parametro si preferisca.</p>
+
+<h2 id="istruzioni">Istruzioni</h2>
+
+<p>Per utilizzare la patch, dopo averla aperta occorre:</p>
+
+<ol style="list-style-type: decimal">
+<li>Impostare il device MIDI di uscita per PureData cliccando sulla voce <strong>MIDI Settings...</strong> dal menù <strong>Media</strong> e selezionare <strong>Driver IAC</strong> confermando con <strong>OK</strong>;</li>
+<li>Su Live impostare il device OSC per il controllo remoto come indicato in <a href="#LiveOSC">questa</a> sezione;</li>
+<li>Su Live impostare il device MIDI per il controllo remoto come mostrato nell'immagine seguente</li>
+</ol>
+
+<div class="figure">
+<img src="images/live-preferences.jpg" alt="live preferences" />
+</div>
+
+<ol start="4" style="list-style-type: decimal">
+<li>Creare una sessione come quella mostrata nella figura seguente:</li>
+</ol>
+
+<div class="figure">
+<img src="images/session.jpg" alt="session" />
+</div>
+
+<ol start="5" style="list-style-type: decimal">
+<li>Fare click sul toggle <strong>OSC-connect</strong> di colore rosso della patch per avviare la comunicazione tra la patch e la sessione di Live;</li> 
+<li>Mappare lo slider denominato <strong>cofano</strong> della patch su di un parametro a piacere utilizzando la modalità <strong>Midi Map MODE</strong> di Ableton Live come mostrato nell'immagine seguente:</li>
+</ol>
+
+<div class="figure">
+<img src="images/cc-map.jpg" alt="cc map" />
+</div>
+
+
+<!-- SEZIONE OSC in ABLETON LIVE -->
+<h2>OSC in Ableton Live</h2>
+<a id="LiveOSC"></a>
+Il plugin <strong>LiveOSC</strong> era stato in origine sviluppato per controllare Live tramite il <em>monome</em>. Il plugin può essere scaricato da <a class="ext" href="http://livecontrol.q3f.org/ableton-liveapi/liveosc/" target="_blank">questo</a> sito o da <a class="ext" href="http://monome.q3f.org/changeset/latest/trunk/LiveOSC?old_path=/&filename=LiveOSC&format=zip" target="_blank">questo</a> link diretto.
+
+Di seguito un estratto della procedura di intallazione:
+
+<ol style="list-style-type: decimal">
+<li>Unzip the latest release which should give you a folder called 'trunk' containing a folder called 'LiveOSC'. The 'LiveOSC' folder should be moved to Ableton’s MIDI Remote Scripts folder;</li>
+<li>On OSX this is located in /path/to/ableton/Live.app -> Right click -> show package contents. Navigate to contents/app-resources/MIDI Remote Scripts;</li>
+<li>In Ableton goto Preferences, Midi Settings. Select 'LiveOSC' from the drop down list.</li>
+</ol>
+
+    </article>   
+    </div>
+  </body>
+</html>
