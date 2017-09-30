@@ -309,7 +309,7 @@ So try youself, imagine the user is clicking near box 6, are you able to find th
 
 * **[a]** ScummVM Forum pathfinding [topic](http://forums.scummvm.org/viewtopic.php?t=4532);
 * **[b]** [Go-to statement considered harmful](https://www.cs.utexas.edu/users/EWD/ewd02xx/EWD215.PDF);
-* **[c]** from Wikipedia: [Spaghetti Code](https://en.wikipedia.org/wiki/Spaghetti_code), [Programamzione Strutturata](https://en.wikipedia.org/wiki/Structured_programming);
+* **[c]** from Wikipedia: [Spaghetti Code](https://en.wikipedia.org/wiki/Spaghetti_code), [Structured programming](https://en.wikipedia.org/wiki/Structured_programming);
 * **[d]** ScummVM, SCUMM technical reference: [Box](http://wiki.scummvm.org/index.php/SCUMM/Technical_Reference/Box_resources) and [Matrix](http://wiki.scummvm.org/index.php/SCUMM/Technical_Reference/Box_resources#BOXM) resources;
 * [Here](https://www.google.com/patents/US5425139?dq=sierra+on-line+path+finding&hl=en&sa=X&ved=0ahUKEwiqyuHVjZXVAhUF7xQKHfecCOYQ6AEIKzAB)'s another way of looking at the pathfinding problem by **Sierra On-Line**;
 

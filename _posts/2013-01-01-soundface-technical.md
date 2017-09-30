@@ -275,7 +275,7 @@ To examine in depth procedural audio, follow [Andy Farnell](http://obiwannabe.co
 <table class="dati" style="width: 100%">
 <tbody>
 <tr>
-<td colspan="2" style="background-color: #ccc; text-align:left; vertical-align:top;" ><b>Linguaggi di programmazione pensati per la grafica</b></td>
+<td colspan="2" style="background-color: #ccc; text-align:center; vertical-align:top;" ><b>Programming languages for graphics</b></td>
 </tr>
 <tr>
 <td style="width: 10%">
@@ -296,7 +296,7 @@ Just like processing, it's a comunity developed project, suited for the main OSe
 </td>
 </tr>
 <tr>
-<td colspan="2" style="background-color: #ccc; text-align:center; vertical-align:top;"><b>Linguaggi di programmazione pensati per il sonoro</b></td>
+<td colspan="2" style="background-color: #ccc; text-align:center; vertical-align:top;"><b>Programming languages for sound</b></td>
 </tr>
 <tr>
 <td style="width: 10%">

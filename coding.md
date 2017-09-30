@@ -117,6 +117,7 @@ A bunch of posts related to physics engine and physics simulations:
 {% endfor %}
 
 
+{% comment %}
 ### Math
 
 {% for post in site.posts %}
@@ -143,9 +144,6 @@ A bunch of posts related to physics engine and physics simulations:
 {% endfor %}
 
 
-
-
-{% comment %}
 ### Grammars
 A bunch of posts related to grammars:
 

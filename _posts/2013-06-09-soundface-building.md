@@ -128,7 +128,7 @@ The choise of the projector has been an important issue we had to deal with.
 
 ![tav]({{ site.baseurl }}/assets/images/soundface/building/acer-s1210.jpg)
 
-We opted for a **Acer s1210**, a projector that can render quite large images at relatively small distances. Our plexiglass surface is amost entirely covered by the projection.
+We opted for a [Acer s1210](https://www.acer.com/ac/en/GB/content/support-product/3985?b=1), a projector that can render quite large images at relatively small distances. Our plexiglass surface is amost entirely covered by the projection.
 
 
 

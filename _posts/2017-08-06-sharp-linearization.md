@@ -64,7 +64,7 @@ R (cm) | A2D
 145 | 84
 150 | 80
 
-Now that we have collected all that data let's plot them in order to get the big picture (I'm using [LibreOffice](https://www.libreoffice.org/) **Calc** to do this, I will be very useful for all the upcoming calculation we need)
+Now that we have collected all that data let's plot them in order to get the big picture (I'm using [LibreOffice](https://www.libreoffice.org/) **Calc** to do this, it will be very useful for all the upcoming calculation we need)
 
 ![graph 1]({{ site.baseurl }}/assets/images/sharp-linearization/graph1.png)
 
@@ -127,7 +127,7 @@ Making an helpful substitution with:
 * $$ m' = \frac{1}{m} $$;
 * $$ q' = \frac{q}{m} $$;
 
-the equation eventually becames:
+the equation eventually becomes:
 
 $$
 R = \frac{m'}{(V_{a2d} + q')} - k
@@ -158,7 +158,7 @@ The data from the sensor have been elaborated usign [LibreOffice]() Calc. You ca
 
 Probably the trickiest part of all this job has been to introduce the data inside the Calc document and to fit them inside graphs in order to show them correctly and to compute the regression line.
 
-Here're some of the difficulties I had and the solutions I've found (maybe they ca halp you as well):
+Here're some of the difficulties I had and the solutions I've found (maybe they can be helpful for you as well):
 
 1. I found difficult to place $$V_{a2d}$$ values on the x-axis in a correct way, here's the solution: once you have created the graph, click on it in order to focus the x-axis the click on it with the right button and select _Format Axis..._. Then, from the _Scale_ tab, from the _type_ menu, select the _Date_ option. This way x-axis data will be correctly displaced on the axis;
 
