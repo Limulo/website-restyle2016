@@ -72,12 +72,12 @@ In this case you will not see the post listed in the homepage but you can access
 
 Here a list of the categories currently in use:
 
-sound-design: work, tool
-installation: _none_, soundface, issue
-coding: math, physics, graphics, physical-computing, sound
-game: experiment, scumm, technique, abandonia(?)
-teaching: _none_
-linuxday2016: installation
+* sound-design: work, tool
+* installation: _none_, soundface, issue
+* coding: math, physics, graphics, physical-computing, sound
+* game: experiment, scumm, technique, abandonia(?)
+* teaching: _none_
+* linuxday2016: installation
 
 ## How to create Tables
 [Here](http://kramdown.gettalong.org/syntax.html#tables) you can find more information, but in general below the code you can use to creare a simple table with an header and content centered:
@@ -140,7 +140,7 @@ Use these _liquid_ tags before and after code blocks. [Here](http://pygments.org
 
 Because of the filesystem structure of the website,
 
-![website structure](http://www.limulo.net/website/website-structure-1.png)
+![website structure](http://www.limulo.net/website/website-structure-1.png){: width="40%"}
 
 we are usign 2 important **YAML** variable inside the ```config.yml``` file:
 
