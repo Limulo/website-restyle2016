@@ -2,14 +2,14 @@
 layout: post
 title: Animators
 date: 2017-09-18 11:00:00
-excerpt: A class to crate simple animations
+excerpt: A class to create simple animations
 category: [coding, graphics]
 usemath: true;
 ---
 
 Say we want to create a simple animation for an object which has to appear and disappear according to specific events.
 
-Say, when an **add** event is received, the object - from beeing completely transparent - will become more and more opaque. On the other hand, when a **remove** event is received, the object must return to a complete transparency.
+Say, when an **add** event is received, the object - from beeing completely transparent - will become more and more opaque. On the other hand, when a **remove** event is received, the object must return to a a state of complete transparency.
 
 If we want to deal with such animation we can modify the transparency (_alpha_) value of the object color. We know that alpha normally goes from 0 to 255 but, for the sake of simplicity, we can consider a normalized interval from 0.0 to 1.0.
 
@@ -23,7 +23,7 @@ Here's the graph representing the output value in time:
 
 The **Animator AR** class is a class to create a linear attack/release animation.
 
-The animation will be triggered by a single event which will cause the _attack_ phase to fire. When this initial phase will be completed, the _release_ phase will be automatically triggered (without the need of a second trigger).
+The animation will be triggered by a single event which will cause the _attack_ phase to fire. When this initial phase will be completed, the _release_ phase will be automatically triggered (without the need of a event to trigger it).
 
 ![AR state machine]({{ site.baseurl }}/assets/images/animators/AR-state-machine.png)
 
@@ -80,7 +80,7 @@ class Animator_AR
 }
 {% endhighlight%}
 
-The **Animator** class is used as part of the parent class **Circle**. inside the code note where we use the animator, here we use it to dynamically change the circle diameter:
+The **Animator** class is used as part of the parent class **Circle**; inside the code note where we use the animator. Animator is used to dynamically change the circle diameter:
 
 {% highlight c%}
 class Circle
@@ -115,7 +115,7 @@ class Circle
 }
 {% endhighlight %}
 
-Finally here's the main code where a **Circle** object is used:
+Finally here's the main code is where a **Circle** object is used:
 
 {% highlight c%}
 Circle c;
@@ -136,17 +136,17 @@ void mousePressed() {
 }
 {% endhighlight %}
 
-here you see this exact code in an interactive example: click inside the circle below to trigger the animation!
+Here you see this exact code in an interactive example: click inside the circle below to trigger the animation!
 
 <iframe src="https://www.openprocessing.org/sketch/449430/embed/" width="100%" height="360"></iframe>
 
 ## Linear Attack / Sustain / Release Animator
 
-Now we want to create a different animator in order to have a sligtly more complex animation made of three phases: attack, sustain and release. We'll call it **Animator ASR**.
+Now we want to create a different animator in order to have a sligtly more complex behaviour made of three phases: attack, sustain and release. We'll call it **Animator ASR**.
 
 ![ASR state machine]({{ site.baseurl }}/assets/images/animators/ASR-state-machine.png)
 
-Note that in this case we nedd two different "_trigger_" events, one to start the _attack_ phase, the other to fire the _release_ one.
+Note that in this case we need two different "_trigger_" events, one to start the _attack_ phase, the other to fire the _release_ one.
 {: class="note" }
 
 Here's the _Animator_ASR_ class:
@@ -282,11 +282,11 @@ Click and keep the mouse button pressed to trigger the _attack_ phase, then rele
 
 <iframe src="https://www.openprocessing.org/sketch/449431/embed/" width="100%" height="360"></iframe>
 
-What will happen if the _release_ phase is triggered during the _attack_ phase, when the latter isn't completed yet?
-To contemplate this particular situation we have used a particular algorithm inside the **Animator** `triggerRelease` method.
+**Special case**: What will happen if the _release_ phase is triggered during the _attack_ phase, when the latter isn't completed yet?
+To contemplate this particular situation we have used a special algorithm inside the Animator `triggerRelease` method.
 {: class="note"}
 
-Here's there's an image which is more coherent with the actual animator code
+Here there's an image which is more coherent with the actual animator code:
 
 ![ASR state machine]({{ site.baseurl }}/assets/images/animators/ASR-state-machine-special.png)
 
@@ -346,9 +346,7 @@ class Circle
 }
 {% endhighlight %}
 
-
 There's the main:
-
 
 {% highlight c%}
 Circle c;
@@ -381,7 +379,7 @@ void keyPressed()
 
 The interesting thing of having an _Animator_ class taking care of all the timing stuff and having a normalized output is  is that we can combine animations in very different ways.
 
-Here, for example, we have the ASR animator acting, not only on the alpha channel for the color, but also on the overall amplitude of the diameter:
+Below, for example, we have the ASR animator acting, not only on the alpha channel for the color, but also on the overall amplitude of the diameter:
 
 {% highlight c %}
 fill( c, 255.0*y_asr );
@@ -389,8 +387,8 @@ noStroke();
 ellipse(width/2, height/2, y_asr*diameter*(1+y_ar), y_asr*diameter*(1+y_ar));
 {% endhighlight %}
 
-Working with normalized values is an intelligent way of doing things because this way, anytime we want to change the Circle class, we can get rid of the Animator objects and use some other type of normalized-driver signal (a sound input for example) without change the Circle class implementeation!
+Working with normalized values is a smart way of doing things because this way, anytime we want to change the Circle class, we can get rid of the Animator objects and use some other type of normalized-driver signal (a sound input for example) without change the Circle class implementeation!
 
 ## Future improvements
 
-Now the animators are capable of creatign animations which correspond to a linear changing but what about an exponential curve animation? In future improvements we will add a more complex logic to deal with diefferent kind of animation curves!
+Now the animators are capable of creatign animations which correspond to a linear changing but what about an exponential curve animation? In future improvements we will add a more complex logic to deal with different kind of animation curves!
