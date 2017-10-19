@@ -17,7 +17,7 @@ In order to make an animation like that, we also need to know how much time the 
 
 Here's the graph representing the output value in time:
 
-![graph]({{ site.baseurl }}/assets/images/animators/graph.png){: width="60%"}
+![graph]({{ site.baseurl }}/assets/images/animators-ar-asr/graph.png){: width="60%"}
 
 ## Linear Attack / Release Animator
 
@@ -25,7 +25,7 @@ The **Animator AR** class is a class to create a linear attack/release animation
 
 The animation will be triggered by a single event which will cause the _attack_ phase to fire. When this initial phase will be completed, the _release_ phase will be automatically triggered (without the need of a event to trigger it).
 
-![AR state machine]({{ site.baseurl }}/assets/images/animators/AR-state-machine.png)
+![AR state machine]({{ site.baseurl }}/assets/images/animators-ar-asr/AR-state-machine.png)
 
 Here's the _Animator_AR_ class:
 
@@ -144,7 +144,7 @@ Here you see this exact code in an interactive example: click inside the circle 
 
 Now we want to create a different animator in order to have a sligtly more complex behaviour made of three phases: attack, sustain and release. We'll call it **Animator ASR**.
 
-![ASR state machine]({{ site.baseurl }}/assets/images/animators/ASR-state-machine.png)
+![ASR state machine]({{ site.baseurl }}/assets/images/animators-ar-asr/ASR-state-machine.png)
 
 Note that in this case we need two different "_trigger_" events, one to start the _attack_ phase, the other to fire the _release_ one.
 {: class="note" }
@@ -288,7 +288,7 @@ To contemplate this particular situation we have used a special algorithm inside
 
 Here there's an image which is more coherent with the actual animator code:
 
-![ASR state machine]({{ site.baseurl }}/assets/images/animators/ASR-state-machine-special.png)
+![ASR state machine]({{ site.baseurl }}/assets/images/animators-ar-asr/ASR-state-machine-special.png)
 
 ## Put the two animator together
 
