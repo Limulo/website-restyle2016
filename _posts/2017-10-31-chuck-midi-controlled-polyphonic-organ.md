@@ -15,7 +15,7 @@ If you are interested in some other corse which uses _chuck_ as one of its main 
 
 Now, concerning our experiment, this is a MIDI controlled 4-voice polyphony organ you can play with your MIDI keyboard. You can run it using the [miniAudicle](http://audicle.cs.princeton.edu/mini/) program. Here we played with _functions_, _midi events_ and _classes_.
 
-We implemented a dynamic voice allocation mechanism which is responsible to steal the older voices in order to allocate them to new incoming MIDI notes. The polyphony is ise to 4 in order to make the _stealing_ mechanism more evident but you can change it if you like.
+We implemented a dynamic voice allocation mechanism which is responsible to steal the older voices in order to allocate them to new incoming MIDI notes. The `POLYPHONY` is set to 4 in order to make the _stealing_ mechanism more evident but you can change it if you like.
 
 You should also change the `port` value to match with your input MIDI device.
 

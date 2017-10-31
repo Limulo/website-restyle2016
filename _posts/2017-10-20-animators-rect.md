@@ -2,7 +2,7 @@
 layout: post
 title: Animators pt3, rectangles
 date: 2017-10-20 14:00:00
-excerpt: A class to create a rectangle shaped animationsinusoidal and ramp animations
+excerpt: A class to create a rectangle shaped animations
 category: [coding, graphics]
 usemath: true;
 ---
