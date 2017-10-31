@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sine and Ramp Animators
+title: Animators pt2, Sine and Ramp
 date: 2017-10-19 11:00:00
 excerpt: A class to create sinusoidal and ramp animations
 category: [coding, graphics]
@@ -11,13 +11,13 @@ usemath: true;
 
 And here we are again to see [another]({{ site.baseurl }}{% post_url 2017-09-18-animators-ar-asr %}) example of procedurally generated animation.
 
-This time I would like to create an animator which would use a `sin` function to do the job.
+This time we would like to create an animator which would use a `sin` function to do the job.
 
 Below is the final result: you can interact with it by dragging the mouse from left to right in order to change the oscillation frequency from 1.0 to 4.0 cycles per second.
 
 <iframe src="https://www.openprocessing.org/sketch/462860/embed/" width="100%" height="400"></iframe>
 
-Here's the _animator_ code:
+Here's the _animator_ code (as usual we are usign [Processing](https://processing.org/) here as the base of the prototyping):
 
 ```
 class Animator_Sine
@@ -134,7 +134,7 @@ What's the math behind that? So let's consider this simple illustration:
 
 ![animator sinusoids]({{ site.baseurl }}/assets/images/animators-sine-ramp/sinusoids.png)
 
-Here I show two different oscillations (different frequencies and intial phases):
+Here two different oscillations are shown (different frequencies and intial phases):
 
 $$
 y_{1} = sin( \phi_{1} + 2 \pi f_{1} ( t - t_{0}' ))
@@ -149,7 +149,7 @@ $$
 
 Now suppose we want to change the frequency in run time, it is like if we want to move from the oscillation on the left to the one shown in the right side of the illustration above.
 
-The frequency must update itself to the new desired one and we need also to take care of the phase we are at in order not to brake the animation coherence.
+The frequency must be updated to the new desired value and we need also to take care of the phase we are at in order not to brake the animation coherence.
 
 How can we calculate all the needed parameters?
 
@@ -165,9 +165,9 @@ $$
 \phi_{1} + 2 \pi f_{1} ( t-t_{0}') = \phi_{2} + 2 \pi f_{2} ( t-t_{0}'')
 $$
 
-Now let's think for a moment to the second oscillation: when it assumes this output?
+Now let's think for a moment to the second oscillation: when doeas it assume this output?
 
-The second oscillation will assume this exact value when its time starts counting, i.e. when its time starts form its $$t_{0}''$$ reference, in other word when $$\Delta t'' = (t - t_{0}'') = 0$$.
+The second oscillation will assume this exact value when its time starts counting from its relative beginning, i.e. when its time starts from its $$t_{0}''$$ reference, in other word when $$\Delta t'' = (t - t_{0}'') = 0$$.
 
 This yields to the following result:
 
@@ -193,16 +193,18 @@ t0 = t;
 
 ## Ramp animations
 
-Something similar can be done for another kind of animation. Basically what changes here is that I'm not usign the `sin` function anymore, instead I use a _ramp_ oscillation (_sawtooth_ if we want).
+Something similar can be done for another kind of animation. Basically what changes here is that we are not using the `sin` function anymore, instead we use a _ramp_ oscillation (_sawtooth_ if we want).
 
 Here you can play the interactive example: drag from left to right to change the frequency from 1.0 to 4.0 cycles per second.
 
 <iframe src="https://www.openprocessing.org/sketch/462905/embed/" width="100%" height="400"></iframe>
 
-**Note**: ther are two animated circles intead of one because there are two different animations: on the left you can see a _falling ramp_ while on the right we have a _rising_ one.
+**Note**: there are two animated circles intead of one because there are two different animations: on the left you can see a _rising ramp_ while on the right we have a _falling_ one.
 {: class="note" }
 
-Here's the code for this particular animator; I'm using the boolean variable `inverse` to select if we should use the rising or the falling animation.
+![ramps]({{ site.baseurl }}/assets/images/animators-sine-ramp/ramps.png)
+
+Here's the code for this particular animator; we are using the boolean variable `inverse` to select if we should use the rising or the falling animation.
 
 ```
 class Animator_Ramp
@@ -258,7 +260,7 @@ class Animator_Ramp
   }
 }
 ```
-The Circle class; it isn't changed much from the previous example, I've only added two circles in order to show the maximum and minimum extensions of the animation:
+The _Circle_ class; it isn't changed much from the previous example, we have only added two thin circles in order to show the maximum and minimum extensions of the animation:
 ```
 class Circle
 {
@@ -313,8 +315,8 @@ void setup()
 {
   size(600, 300);
   c = new Circle[2];
-  c[0] = new Circle(150, height*0.5, 100, true);
-  c[1] = new Circle(450, height*0.5, 100, false);
+  c[0] = new Circle(150, height*0.5, 100, flase);
+  c[1] = new Circle(450, height*0.5, 100, true);
 }
 
 void draw()
@@ -333,3 +335,7 @@ void mouseDragged()
   c[1].mouseDrag( mouseX );
 }
 ```
+
+## Future experiments
+
+We are going to make some future experiments to create new different kinds of animator. At the end we will have a complete collection of these and we will be albe to chose the best one according to the project needs. Stay tuned!

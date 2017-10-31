@@ -136,7 +136,7 @@ This is very exciting. All the numbers we see here are the bytes sent from the M
 
 We can see clearly the **144** byte and, because its value is greater than _127_, we know it's a _Status Byte_ and a **Note ON** status byte in particular.
 
-We also know that the MIDI channel we are receiving messages from is the channel **1**, _0_ in binary; actaully, the _Status Byte_ contains both the status information and the MIDI channel number. In our case:
+We also know that the MIDI channel we are receiving messages from is the channel **1**, _0_ in binary; actually, the _Status Byte_ contains both the status information and the MIDI channel number. In our case:
 
 $$ 144 + 0 = 144 $$
 
@@ -151,7 +151,7 @@ For example, the bytes pairs following the **Note ON** status byte are the _Data
 So, for example, the sequence ```144 76 50``` means the I've played an _E5_ (note number 76) with a velocity of 50.
 After that sequence there's a new bytes sequence testifying that I've also released the note: ```144 76 0``` (same note, velocity 0).
 
-**Observation 1**: We don't see the **Note OFF** status byte, why? Clearly it's because my MIDI keyboard is not programmed to send it.MIDI devices are commonly programmed to send _Note ON_ MIDI messages with a 0 velocity value in place of _Note OFF_ messages.
+**Observation 1**: We don't see the "**Note OFF**" status byte, why? Clearly it's because my MIDI keyboard is not programmed to send it. MIDI devices are commonly programmed to send "_Note ON_" MIDI messages with a 0 velocity value in place of "_Note OFF_" messages.
 {: class="note"}
 
 If we examine more in depth our software serial output, we see a long list of consecutive data byte. One single status byte at the beginning (```144```) and then lots of _note_ and _velocity_ pairs. Why the _Status byte_ is not repeated?

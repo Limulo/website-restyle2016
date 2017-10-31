@@ -1,0 +1,28 @@
+#container {
+    border: 1px solid #dddddd;
+    display: block;
+    margin: auto;
+text-align: center;
+}
+
+.slider {
+    /*border: 1px solid red;*/
+    padding: 2px;
+    display: block;
+    width: 200px;
+    margin: auto;
+}
+
+
+p.value{
+    /* border: 1px solid green; */
+    display: block;
+    text-align: right;
+    padding: 0;
+    margin: 0;
+}
+
+canvas {
+    border: 1px solid #eeeeee;
+    margin: 1em;
+}

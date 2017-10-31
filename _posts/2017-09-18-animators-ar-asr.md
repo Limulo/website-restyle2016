@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Animators
+title: Animators pt1, AR and ASR
 date: 2017-09-18 11:00:00
 excerpt: A class to create simple animations
 category: [coding, graphics]
@@ -138,7 +138,7 @@ void mousePressed() {
 
 Here you see this exact code in an interactive example: click inside the circle below to trigger the animation!
 
-<iframe src="https://www.openprocessing.org/sketch/449430/embed/" width="100%" height="360"></iframe>
+<iframe src="https://www.openprocessing.org/sketch/449430/embed/" width="100%" height="400"></iframe>
 
 ## Linear Attack / Sustain / Release Animator
 
@@ -280,7 +280,7 @@ void mouseReleased() {
 
 Click and keep the mouse button pressed to trigger the _attack_ phase, then release it to trigger the _release_ phase.
 
-<iframe src="https://www.openprocessing.org/sketch/449431/embed/" width="100%" height="360"></iframe>
+<iframe src="https://www.openprocessing.org/sketch/449431/embed/" width="100%" height="400"></iframe>
 
 **Special case**: What will happen if the _release_ phase is triggered during the _attack_ phase, when the latter isn't completed yet?
 To contemplate this particular situation we have used a special algorithm inside the Animator `triggerRelease` method.
