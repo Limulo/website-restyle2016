@@ -8,14 +8,14 @@ function Spring()
   this.anchor = 0.0;  // angle which the spring is attached to
   this.rest = 0.0;    // angle where the spring is at its rest position
 
-  this.k = 7; // stiffness
+  this.k = 60; // stiffness
   this.Fe;
 
   this.Ue; // elastic potential energy
 
   this.update = function ()
   {
-    this.k = slider3.value();
+    //do nothing
   }
 
   this.calculateForce = function( _aCurrent )

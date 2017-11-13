@@ -1,0 +1,160 @@
+<!--
+Copyright (c) 2017 Enzien Audio, Ltd.
+
+Redistribution and use in source and binary forms, with or without modification,
+are permitted provided that the following conditions are met:
+
+1. Redistributions of source code must retain the above copyright notice,
+   this list of conditions, and the following disclaimer.
+
+2. Redistributions in binary form must reproduce the phrase "powered by heavy",
+   the heavy logo, and a hyperlink to https://enzienaudio.com, all in a visible
+   form.
+
+  2.1 If the Application is distributed in a store system (for example,
+      the Apple "App Store" or "Google Play"), the phrase "powered by heavy"
+      shall be included in the app description or the copyright text as well as
+      the in the app itself. The heavy logo will shall be visible in the app
+      itself as well.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO,
+THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>creaky_door</title>
+
+    <!-- Generated javascript library includes -->
+    <script type="application/javascript" src="./creaky_door_AudioLib.min.js"></script>
+    <style>
+    .cell {
+      display: table-cell;
+      padding-right: 10px;
+    }
+
+    .row {
+      display: table-row;
+    }
+
+    </style>
+
+    <script type="text/javascript">
+      var isPlaying = false;
+      var webAudioContext = null;
+      var webAudioProcessor = null;
+      var creaky_door = null;
+
+      window.onload = function(e) {
+
+        webAudioContext = new (window.AudioContext || window.webkitAudioContext);
+
+        blockSize = 2048
+
+        creaky_door = new creaky_door_AudioLib({
+          sampleRate: webAudioContext.sampleRate,
+          blockSize: blockSize,
+          printHook: hvPrintHook,
+          sendHook: hvSendHook
+        });
+
+        webAudioProcessor = webAudioContext.createScriptProcessor(
+          blockSize,
+          creaky_door.getNumInputChannels(),
+          // Note: make sure there is at least one output channel specified so that
+          // we can process patches that have no i/o objects (i.e. control only)
+          Math.max(creaky_door.getNumOutputChannels(), 1)
+        );
+
+        webAudioProcessor.onaudioprocess = function(e) { creaky_door.process(e); };
+
+        document.getElementById("transportButton").textContent = "Play";
+        isPlaying = false;
+
+        // Generated Parameter Display Initialisations
+        updateSlider_U(10.0);
+        updateSlider_velocity(0.01);
+      };
+
+      function hvPrintHook(message) {
+        console.log(message);
+      }
+
+      function hvSendHook(sendName, floatValue) {
+        console.log(sendName, floatValue);
+      }
+
+      function start() {
+        webAudioProcessor.connect(webAudioContext.destination);
+        document.getElementById("transportButton").textContent = "Pause";
+        isPlaying = true;
+      }
+
+      function stop() {
+        webAudioProcessor.disconnect(webAudioContext.destination);
+        document.getElementById("transportButton").textContent = "Play";
+        isPlaying = false;
+      }
+
+      function toggleTransport(element) {
+        (isPlaying) ? stop() : start();
+      }
+
+      // Generated Event Update Methods
+
+      // Generated Parameter Update Methods
+      function updateSlider_U(value) {
+        document.getElementById("display_U").textContent = Number(value).toFixed(2);
+        creaky_door.setFloatParameter("U", value);
+      }
+      function updateSlider_velocity(value) {
+        document.getElementById("display_velocity").textContent = Number(value).toFixed(2);
+        creaky_door.setFloatParameter("velocity", value);
+      }
+    </script>
+  </head>
+
+  <body>
+    <div>
+
+      <div>
+        <button style="padding: 10px;" type="button" id="transportButton" onclick="toggleTransport(this);"/>
+      </div>
+
+      <div class="table">
+        <!-- Events -->
+        <!-- Parameters -->
+        <div class="row">
+          <div class="cell">
+            <input id="slider_U" type="range" min="0.0" max="30.0" step="0.01" value="10.0" onchange="updateSlider_U(value);" oninput="updateSlider_U(value)">
+          </div>
+          <div class="cell" id="display_U"></div>
+          <div class="cell"><strong>U</strong></div>
+        </div>
+        <div class="row">
+          <div class="cell">
+            <input id="slider_velocity" type="range" min="0.0" max="0.1" step="0.01" value="0.01" onchange="updateSlider_velocity(value);" oninput="updateSlider_velocity(value)">
+          </div>
+          <div class="cell" id="display_velocity"></div>
+          <div class="cell"><strong>velocity</strong></div>
+        </div>
+      </div>
+
+      <div>
+        <p style="padding: 10px;"><em>powered by </em><a href="https://enzienaudio.com"><strong>Heavy</strong></a></p>
+      </div>
+
+    </div>
+  </body>
+</html>

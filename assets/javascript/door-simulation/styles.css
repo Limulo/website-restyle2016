@@ -1,28 +1,27 @@
-#container {
-    border: 1px solid #dddddd;
-    display: block;
-    margin: auto;
-text-align: center;
+#heavy-container {
+  border: 1px solid #ccc;
+  padding: 10px;
 }
 
-.slider {
-    /*border: 1px solid red;*/
-    padding: 2px;
-    display: block;
-    width: 200px;
-    margin: auto;
+.table {
+  border: 1px solid #ccc;
 }
 
+.cell {
+  display: table-cell;
+  padding-right: 10px;
+}
 
-p.value{
-    /* border: 1px solid green; */
-    display: block;
-    text-align: right;
-    padding: 0;
-    margin: 0;
+.row {
+  display: table-row;
+}
+
+#p5js-container {
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: 10px;
 }
 
 canvas {
-    border: 1px solid #eeeeee;
-    margin: 1em;
+    /* border: 1px solid #ccc; */
 }

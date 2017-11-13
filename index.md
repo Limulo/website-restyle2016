@@ -6,12 +6,16 @@ title: Home
 **limulo.net** is a [Valentina Lore'](about.html) and [Nicola Ariutti](about.html) project.
 We are sound engineers with a passion for computer science, programming and videogames (among many other things!!!).
 
-**limulo.net** main goal is to explore different areas of computer science, ranging from sound synthesis to AI, from physics simulations to 3D graphics, from web applications to videogames.
+**limulo.net** main goal is to explore different areas of computer science, ranging from sound synthesis to AI, from physics simulations to 3D graphics, from web applications to videogames ([STEAM fields](https://en.wikipedia.org/wiki/STEAM_fields)).
 
 Everything we discover, experiment and play with can be found on this site, for free (as in speech, and also in beer!).
 Seriuosly, we're huge fans of free software, open source and free sharing of ideas. So feel free to download everything you want, and share with us your thoughts, ideas and suggestions!
 
 **Enjoy**
+
+Just keep in mind that English is not our native language, so be patient with us if something sounds odd!
+{: style="font-size: 0.7em;" }
+
 
 <hr />
 

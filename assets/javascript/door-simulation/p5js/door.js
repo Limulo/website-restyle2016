@@ -15,7 +15,7 @@ function Door( _x, _y, _w, _l)
   this.aMax = +PI *0.5 ;
   this.aMin = -PI *0.5 ;
 
-  this.m = 8.5;
+  this.m = 30; // kg
   this.I = this.m * this.l * this.l / 3;
 
   this.Ue = 0.0;
@@ -28,9 +28,6 @@ function Door( _x, _y, _w, _l)
   /*************************************************/
   this.update = function()
   {
-    this.m = slider1.value();
-    this.losses = slider2.value();
-
     this.spring.update();
 
     if( this.active )
@@ -77,6 +74,14 @@ function Door( _x, _y, _w, _l)
         this.angle = 0.0;
         this.U = this.Ue = this.Uk = 0.0;
       }
+
+      /** Heavy audio commands **/
+      // uncomment these lines if you want to connect
+      // the P5js sketch to the Enzien applet.
+      // Note: connecting them I've noticed an annoying
+      // delay between animation and sound. Why?
+      //updateSlider_U( this.U );
+      //updateSlider_velocity( this.aVelocity );
 
       this.aAcceleration = 0.0;
     }
@@ -127,7 +132,8 @@ function Door( _x, _y, _w, _l)
     // do necessary computation only if the door is active
     if( this.active )
     {
-      var rSpring = this.l;
+      // we make the spring act on the 10% of the door lenght
+      var rSpring = this.l * 0.1;
       this.calculateI();
       this.spring.calculateForce( this.angle );
       //this.aAcceleration += rSpring * spring.getForce( this.angle ) / this.I;
