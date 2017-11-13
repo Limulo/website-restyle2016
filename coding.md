@@ -19,7 +19,7 @@ A bunch of posts related to Arduino, RaspberryPi and electronics:
 
 <div>
 
-<a href="{{post.url}}">
+<a href="{{ site.baseurl }}{{post.url}}">
 {% if post.shortcut %}
 <img src="{{ site.baseurl }}/assets/images/shortcuts/{{post.shortcut}}" alt="{{post.title}}" class="shortcut-image"/>
 {% else %}
@@ -45,7 +45,7 @@ A bunch of posts related to graphics:
 
 <div>
 
-<a href="{{post.url}}">
+<a href="{{ site.baseurl }}{{post.url}}">
 {% if post.shortcut %}
 <img src="{{ site.baseurl }}/assets/images/shortcuts/{{post.shortcut}}" alt="{{post.title}}" class="shortcut-image"/>
 {% else %}
@@ -72,7 +72,7 @@ When the code meets music and sound we are really happy:
 
 <div>
 
-<a href="{{post.url}}">
+<a href="{{ site.baseurl }}{{post.url}}">
 {% if post.shortcut %}
 <img src="{{ site.baseurl }}/assets/images/shortcuts/{{post.shortcut}}" alt="{{post.title}}" class="shortcut-image"/>
 {% else %}
@@ -187,7 +187,6 @@ A collection of _Interaction Design_ project realized using _Arduino_ and _Proce
 ### Mathematics, Physics, Algorithms, Simulations
 
 <ul>
-<li><a href="#galton-box">Galton Box Simulator</a> (with Processing and Box2D library)</li>
 <li><a href="#convex-hull">Convex Hull - Graham Algorithm </a> (with Processing)</li>
 <li><a href="#pendulum">Pendulum Wave </a> (with Quartz Composer)</li>
 <li><a href="#libreria-box2d">Box2D for videogames</a></li>
