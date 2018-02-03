@@ -48,8 +48,5 @@ DEPENDENCIES
   jekyll-paginate
   minima (~> 2.0)
 
-RUBY VERSION
-   ruby 2.1.5p273
-
 BUNDLED WITH
    1.13.5

@@ -218,7 +218,6 @@ usemath: true
 ___
 ```
 
-
 ## How to deploy the site
 
 [Here](http://jekyllrb.com/docs/deployment-methods/) you will find a useful link!
@@ -235,3 +234,10 @@ We use [Open Web Analytics](http://www.openwebanalytics.com/).
 * [Jekyll official site](http://jekyllrb.com/);
 * **Hyde** [theme repository](https://github.com/poole/hyde) and [demo page](http://hyde.getpoole.com/);
 * Inkscape [extensions]() ([this one](https://github.com/fsmMLK/inkscapeCircuitSymbols) for example let's you create circuits symbols)!
+
+## Install bundler
+
+The following instructions worked for me:
+* ```sudo apt-get install ruby-dev```;
+* ```sudo gem install bundler```;
+* ```bundle install```;
