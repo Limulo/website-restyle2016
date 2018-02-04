@@ -377,7 +377,7 @@ void keyPressed()
 {% endhighlight %}
 
 
-The interesting thing of having an _Animator_ class taking care of all the timing stuff and having a normalized output is  is that we can combine animations in very different ways.
+The interesting thing of having an _Animator_ class taking care of all the timing stuff and having a normalized output is that we can combine animations in very different ways.
 
 Below, for example, we have the ASR animator acting, not only on the alpha channel for the color, but also on the overall amplitude of the diameter:
 

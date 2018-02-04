@@ -75,7 +75,7 @@ You can download the code for this interactive installation from [this](https://
 
 Abbiamo parlato di software libero e di sicuro quello più conosciuto è **GNU/Linux**, un sistema operativo che nulla ha da invidiare ai più diffusi Windows e MacOs.
 
-Il simbolo di GNU/Linux è un pinguino per questo ecco un' altra installazione realizzata per l'evento [**Linux Day**](http://linuxdaymilano.org/), riferimento per utilizzatori e simpatizzanti del software libero in Italia.
+Il simbolo di GNU/Linux è un pinguino per questo ecco un' altra installazione realizzata per l'evento [**Linux Day**](http://linuxdaymilano.org/2016/), riferimento per utilizzatori e simpatizzanti del software libero in Italia.
 
 ![penguin 2](assets/linuxday2016/IMG_0864.jpg)
 

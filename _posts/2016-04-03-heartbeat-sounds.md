@@ -3,7 +3,7 @@ layout: post
 title: Heartbeat sounds
 date: 2016-04-03 09:00:00
 excerpt: <b>HeartBeater</b> and <b>LovelyHeart</b> synthetizers!
-category: [sound-design, tool]
+category: [coding, sound]
 shortcut: shortcut-lovelyheart.png
 ---
 

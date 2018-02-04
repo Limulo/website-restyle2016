@@ -6,7 +6,7 @@ excerpt: How to correct a distorsion created by an inclined projector.
 category: [coding, graphics]
 ---
 
-The problem we are facing today seems to be related to many different computer vision applications like projection mapping, augmented reality, [anamorphic art](https://anamorphicart.wordpress.com/) a many more.
+The problem we are facing today seems to be related to many different computer vision applications like projection mapping, augmented reality, [anamorphic art](https://anamorphicart.wordpress.com/) and many more.
 
 A particular case of [texture mapping](https://en.wikipedia.org/wiki/Texture_mapping) is called [projection texture mapping](https://en.wikipedia.org/wiki/Projective_texture_mapping)
 
@@ -14,7 +14,7 @@ A particular case of anamorphic art is the case when the image is projected on a
 
 A particular tool that will be useful in a case like this is something called [homography](https://en.wikipedia.org/wiki/Homography_%28computer_vision%29).
 
-Fortunately there is some ofx addons which can be helpful in such a case like:
+Fortunately there is some ofx addons which can be helpful such as:
 * [ofxMltMapping2D](https://github.com/morethanlogic/ofxMtlMapping2D)
 
 Interesting [lessons](https://www.youtube.com/playlist?list=PL1pxneANaikCO1-Z0XTaljLR3SE8tgRXY) by Peter Corke.
