@@ -106,7 +106,7 @@ Our purpose here is to create a plausible simulation of a door-spring system whi
 
 ## The physics behind the simulation
 
-Physics explanation
+TODO: Physics explanation
 
 ## Processing: a first prototype
 
@@ -114,7 +114,7 @@ Download a Processing simulation made with
 
 Below the code of the Processing.js simulation
 
-Press the mouse button to apply a force to the door! If you want you can change the simulation parameter like the _stiffness/elasticity_ of the spring, the amount of _losses_ of the system or the door _mass_: simply use the sliders below.
+Press the mouse button to apply a force to the door! If you want you can change the simulation parameters like the _stiffness/elasticity_ of the spring, the amount of _losses_ of the system or the door _mass_: simply use the sliders below.
 
 <div id="p5js-container">
   <div class="table">
