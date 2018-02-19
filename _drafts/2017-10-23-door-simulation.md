@@ -203,5 +203,5 @@ NOTE: libpd/Godot implementation link to the specific article about the topic.
 
 ## Refereces and resources
 
-* The [Godot]() game engine;
+* The [Godot](https://godotengine.org/) game engine;
 * The [Enzien Audio "Heavy Audio Tools"](https://enzienaudio.com/)

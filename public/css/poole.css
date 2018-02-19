@@ -554,3 +554,7 @@ table.walk-matrix td.gray1{
 table.walk-matrix td.gray2{
     background-color: #eee;
 }
+
+#postfooter {
+	font-size: 0.7em;
+}

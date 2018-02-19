@@ -11,6 +11,7 @@ This is not the only place where we talk about sound: check-out [Valentina](http
 
 <!-- sezioni TAGS -->
 
+{% comment %}
 ## Tools & techniques
 This list is dedicated to sound and sound designing tools and techniques. We will talk about Pure Data, Praat, FMOD, Wwise, Ableton, and more...
 
@@ -36,6 +37,7 @@ This list is dedicated to sound and sound designing tools and techniques. We wil
 
 {%endif%}
 {% endfor %}
+{% endcomment %}
 
 <!--
 <ul>

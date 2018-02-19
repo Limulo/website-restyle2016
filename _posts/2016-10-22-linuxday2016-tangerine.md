@@ -7,7 +7,7 @@ category: [linuxday2016, installation]
 shortcut: shortcut-linuxday2016-tangerine.png
 ---
 
-During the [**Linux Day Milan 2016**](http://linuxdaymilano.org/), an inportant event dedicated to free and open source software in Italy, we shown an interactive station that used capacitive sensors to detect user touches.
+During the [**Linux Day Milan 2016**](http://linuxdaymilano.org/2016/), an inportant event dedicated to free and open source software in Italy, we shown an interactive station that used capacitive sensors to detect user touches.
 
 [![elettrodes]({{ site.baseurl }}/assets/images/linuxday2016/IMG_0860.jpg)]({{ site.baseurl }}/assets/images/linuxday2016/IMG_0860.jpg)
 
