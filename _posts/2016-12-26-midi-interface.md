@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Arduino MIDI interface
+title: Arduino MIDI interface (updated)
 date: 2016-12-26 09:30:00
 excerpt: Arduino sending and receiving MIDI messages!
 category: [coding, physical-computing]
@@ -66,11 +66,19 @@ We need and additional hardware serial port for our MIDI interface: we can use t
 
 ### Hardware
 
-First of all we have to build the circuit. We take advantage of the beautiful [pighixxx](http://www.pighixxx.com/) illustrations. Here's the one we will use as a reference:
+First of all we have to build the circuit. We can take advantage of this beautiful illustration by [pighixxx](http://www.pighixxx.com/) as a reference for the schematics:
 
 [![pighixxx MIDI interface](http://www.pighixxx.com/test/wp-content/uploads/2014/10/206.png)](http://www.pighixxx.com/test/abc/page/2/#prettyPhoto[gallery]/6/)
 
-[Here](https://upload.wikimedia.org/wikipedia/commons/a/a5/MIDI_IN_OUT_schematic.svg)'s another schematics from Wikipedia.
+Or maybe we can use the one from the Wikipedia [MIDI page](https://en.wikipedia.org/wiki/MIDI):
+
+![Wikipedia MIDI schematics]({{ site.baseurl }}/assets/images/midi-interface/wikipedia_MIDI_IN_OUT_schematic.jpg)
+
+Or maybe use this other one from the Giovanni Perotti book:
+
+![Perotti MIDI schematics]({{ site.baseurl }}/assets/images/midi-interface/perotti_schematics.jpg)
+
+Schematics illustrated in these images are a bit different from each other but the working principle stays the same.
 
 ---
 Let's focus on the **MIDI In** section. We need:
@@ -81,7 +89,7 @@ Let's focus on the **MIDI In** section. We need:
 
 Here's the _Fritzing scheme_ of our circuit.
 
-![Fritzing MIDI in]({{ site.baseurl }}/assets/images/midi-interface/MIDI-IN_bb.png)
+![Fritzing MIDI in]({{ site.baseurl }}/assets/images/midi-interface/MIDI_IN_bb_new.png)
 
 ### Software
 
@@ -164,6 +172,7 @@ If we examine more in depth our software serial output, we see a long list of co
 Now, let's try with the opposite approach: we want to create an Arduino MIDI instrument.
 
 ### Studio Setup
+
 This would be our studio configuration:
 
 ![Studio MIDI Out Setup]({{ site.baseurl }}/assets/images/midi-interface/MIDI-studio-out.png)
@@ -178,7 +187,7 @@ We have to create a **MIDI out** interface so we need only:
 
 Here the _Fritzing scheme_ of our circuit.
 
-![Fritzing MIDI in]({{ site.baseurl }}/assets/images/midi-interface/MIDI-OUT_bb.png)
+![Fritzing MIDI in]({{ site.baseurl }}/assets/images/midi-interface/MIDI_OUT_bb_new.png)
 
 ### Software
 
@@ -244,7 +253,7 @@ What we need to build our circuit:
 
 Here's the _Fritzing_ scheme:
 
-![Fritzing MIDI in & out]({{ site.baseurl }}/assets/images/midi-interface/MIDI-IN-OUT_bb.png)
+![Fritzing MIDI in & out]({{ site.baseurl }}/assets/images/midi-interface/MIDI_IN_OUT_bb_new.png)
 
 ### Studio Setup
 
