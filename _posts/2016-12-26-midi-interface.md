@@ -302,3 +302,7 @@ void loop()
 We have built our simple MIDI interface with Arduino; good job! Now the only limit is our imagination: what about adding a piece of code that modifies MIDI data in and send them back to create particular harmonizations or other kind of musical effects?
 
 Now we are happy with it but stay tuned for future developements...
+
+## Update
+
+Take also a look at our [slides](http://www.limulo.net/res/terni2018/) and [repository](https://github.com/Limulo/slides_HackLab_Terni_festival_2018) we have prepared for our "Arduino in MIDI" talk @ [Terni Maker Festival 2018]({{ site.baseurl }}{% post_url 2018-03-24-ternimakerfestival2018 %})!
